@@ -25,8 +25,8 @@
 - Activate: `source .venv/bin/activate` (or call `.venv/bin/python` directly).
 - Hardware (verified 2026-10-13, `logs/setup_gpu_check.txt`): NVIDIA RTX A2000 12GB (11.618 GiB visible to torch),
   driver 580.178.04, driver CUDA 13.0, torch 2.14.1+cu130 (CUDA 13.0, cuDNN 92400), Python 3.12.3, 24 CPU threads.
-- No git (user decision 2026-10-13). Versions are recorded by local snapshots in `snapshots/stage_NN/`
-  (`scripts/make_snapshot.py`). Nothing is uploaded or pushed anywhere; everything stays inside the project dir.
+- Versions = local snapshots `snapshots/stage_NN/` (`scripts/make_snapshot.py`). 2026-10-15 (user request): pushed to
+  PRIVATE github.com/kolursamith/Autism_project via dulwich (`.git/` here; `.gitignore` drops .venv, cache, *.pt).
 
 ## 3. Golden rules
 

@@ -1,4 +1,4 @@
-===== D01_eye_tracking -> /tmp/pytest-of-score/pytest-27/test_rerun_make_splits_is_byte0/D01_eye_tracking
+===== D01_eye_tracking -> /tmp/pytest-of-score/pytest-28/test_rerun_make_splits_is_byte0/D01_eye_tracking
 | fold | n_train_samples | n_train_groups | train_label_0 | train_label_1 | n_val_samples | n_val_groups | val_label_0 | val_label_1 | n_test_samples | n_test_groups | test_label_0 | test_label_1 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 998 | 43 | 644 | 354 | 115 | 8 | 81 | 34 | 128 | 6 | 79 | 49 |
@@ -11,7 +11,7 @@
 | 8 | 934 | 43 | 618 | 316 | 166 | 8 | 94 | 72 | 141 | 6 | 92 | 49 |
 | 9 | 981 | 44 | 645 | 336 | 168 | 7 | 106 | 62 | 92 | 6 | 53 | 39 |
 | 10 | 1000 | 44 | 628 | 372 | 123 | 8 | 94 | 29 | 118 | 5 | 82 | 36 |
-===== D02_facial_images_A -> /tmp/pytest-of-score/pytest-27/test_rerun_make_splits_is_byte0/D02_facial_images_A
+===== D02_facial_images_A -> /tmp/pytest-of-score/pytest-28/test_rerun_make_splits_is_byte0/D02_facial_images_A
 | fold | n_train_samples | n_train_groups | train_label_0 | train_label_1 | n_val_samples | n_val_groups | val_label_0 | val_label_1 | n_test_samples | n_test_groups | test_label_0 | test_label_1 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 2268 | 2260 | 1134 | 1134 | 378 | 376 | 189 | 189 | 294 | 293 | 147 | 147 |
@@ -24,7 +24,7 @@
 | 8 | 2268 | 2260 | 1134 | 1134 | 378 | 376 | 189 | 189 | 294 | 293 | 147 | 147 |
 | 9 | 2268 | 2261 | 1134 | 1134 | 378 | 376 | 189 | 189 | 294 | 292 | 147 | 147 |
 | 10 | 2268 | 2260 | 1134 | 1134 | 378 | 376 | 189 | 189 | 294 | 293 | 147 | 147 |
-===== D04_autism_prediction -> /tmp/pytest-of-score/pytest-27/test_rerun_make_splits_is_byte0/D04_autism_prediction
+===== D04_autism_prediction -> /tmp/pytest-of-score/pytest-28/test_rerun_make_splits_is_byte0/D04_autism_prediction
 | fold | n_train_samples | n_train_groups | train_label_0 | train_label_1 | n_val_samples | n_val_groups | val_label_0 | val_label_1 | n_test_samples | n_test_groups | test_label_0 | test_label_1 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 617 | 617 | 493 | 124 | 103 | 103 | 82 | 21 | 80 | 80 | 64 | 16 |
@@ -37,7 +37,7 @@
 | 8 | 617 | 617 | 493 | 124 | 103 | 103 | 82 | 21 | 80 | 80 | 64 | 16 |
 | 9 | 617 | 617 | 493 | 124 | 103 | 103 | 82 | 21 | 80 | 80 | 64 | 16 |
 | 10 | 617 | 617 | 493 | 124 | 103 | 103 | 82 | 21 | 80 | 80 | 64 | 16 |
-===== D05_toddler_screening -> /tmp/pytest-of-score/pytest-27/test_rerun_make_splits_is_byte0/D05_toddler_screening
+===== D05_toddler_screening -> /tmp/pytest-of-score/pytest-28/test_rerun_make_splits_is_byte0/D05_toddler_screening
 | fold | n_train_samples | n_train_groups | train_label_0 | train_label_1 | n_val_samples | n_val_groups | val_label_0 | val_label_1 | n_test_samples | n_test_groups | test_label_0 | test_label_1 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 812 | 751 | 251 | 561 | 136 | 126 | 42 | 94 | 106 | 98 | 33 | 73 |
@@ -50,7 +50,7 @@
 | 8 | 813 | 753 | 251 | 562 | 136 | 125 | 42 | 94 | 105 | 97 | 33 | 72 |
 | 9 | 813 | 752 | 251 | 562 | 136 | 126 | 42 | 94 | 105 | 97 | 33 | 72 |
 | 10 | 813 | 751 | 252 | 561 | 136 | 126 | 42 | 94 | 105 | 98 | 32 | 73 |
-===== D06_early_autism -> /tmp/pytest-of-score/pytest-27/test_rerun_make_splits_is_byte0/D06_early_autism
+===== D06_early_autism -> /tmp/pytest-of-score/pytest-28/test_rerun_make_splits_is_byte0/D06_early_autism
 | fold | n_train_samples | n_train_groups | train_label_0 | train_label_1 | n_val_samples | n_val_groups | val_label_0 | val_label_1 | n_test_samples | n_test_groups | test_label_0 | test_label_1 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 772 | 772 | 455 | 317 | 128 | 128 | 75 | 53 | 100 | 100 | 59 | 41 |
@@ -63,4 +63,4 @@
 | 8 | 772 | 772 | 455 | 317 | 128 | 128 | 75 | 53 | 100 | 100 | 59 | 41 |
 | 9 | 772 | 772 | 454 | 318 | 128 | 128 | 76 | 52 | 100 | 100 | 59 | 41 |
 | 10 | 771 | 771 | 455 | 316 | 129 | 129 | 76 | 53 | 100 | 100 | 58 | 42 |
-SPLITS_MANIFEST.json written; code_hash_at_split_time = 8cee6a97b21b998616ccdc8aac9625725750cab35dfd0f64ad6e852c3d3078b7
+SPLITS_MANIFEST.json written; code_hash_at_split_time = 303781fa6c60ba10e96d09916ec1ba1d6857c42999270ceb7664f6e1976c73c4

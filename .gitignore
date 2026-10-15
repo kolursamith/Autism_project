@@ -8,3 +8,6 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *.lock
+# Patterns required since Stage 1 (tests/test_setup.py, tests/test_stage01.py). logs/*.log already on GitHub stay tracked.
+results/**/best_model.pt
+logs/*.log
