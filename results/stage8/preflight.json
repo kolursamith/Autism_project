@@ -1,0 +1,50 @@
+{
+ "n_predictions_metrics": 800,
+ "n_results_files": 2407,
+ "preflight_ok": true,
+ "reports": {
+  "05": "STAGE 5 DECISION: PASS",
+  "06": "STAGE 6 DECISION: PASS",
+  "07": "STAGE 7 DECISION: PASS"
+ },
+ "snapshots": {
+  "05": {
+   "code_hash_ok": true,
+   "code_report_files_changed_since": [
+    "reports/STAGE_06_REPORT.md",
+    "scripts/06b_verify.py",
+    "scripts/06b_write_report.py",
+    "scripts/08a_preflight.py",
+    "scripts/stage6_launch.sh",
+    "scripts/stage6_status.py",
+    "scripts/stage6_stop.sh",
+    "tests/test_stage02_snapshot.py"
+   ],
+   "data_results_mismatch": [],
+   "n_recorded": 425
+  },
+  "06": {
+   "code_hash_ok": true,
+   "code_report_files_changed_since": [
+    "scripts/08a_preflight.py"
+   ],
+   "data_results_mismatch": [],
+   "n_recorded": 1075
+  },
+  "07": {
+   "code_hash_ok": true,
+   "code_report_files_changed_since": [
+    "reports/STAGE_06_REPORT.md",
+    "scripts/06b_verify.py",
+    "scripts/06b_write_report.py",
+    "scripts/08a_preflight.py",
+    "scripts/stage6_launch.sh",
+    "scripts/stage6_status.py",
+    "scripts/stage6_stop.sh",
+    "tests/test_stage02_snapshot.py"
+   ],
+   "data_results_mismatch": [],
+   "n_recorded": 647
+  }
+ }
+}

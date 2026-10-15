@@ -1,0 +1,179 @@
+{
+ "b1": {
+  "runs": 400,
+  "checks": 4000,
+  "mismatches": []
+ },
+ "b2": {
+  "rows": 50,
+  "checks": 800,
+  "mismatches": []
+ },
+ "b3": {
+  "predictions_equal_fold_test_ids": true,
+  "each_sample_predicted_once_per_model": [
+   40,
+   0
+  ],
+  "train_val_test_disjoint_sample_and_group": true,
+  "groups_in_more_than_one_test_fold": {
+   "D01_eye_tracking": 0,
+   "D02_facial_images_A": 0,
+   "D04_autism_prediction": 0,
+   "D05_toddler_screening": 0,
+   "D06_early_autism": 0
+  },
+  "D02_phash_le4_pairs_total_and_cross_fold": [
+   11,
+   0
+  ],
+  "D03_paths_in_cache": [],
+  "D02_manifest_all_under_D02_folder": true,
+  "CARS_in_inputs": [],
+  "training_code_reading_participants_or_CARS": [],
+  "D05_honest_forbidden_in_set": [],
+  "D05_honest_forbidden_in_run_configs": [],
+  "D05_honest_run_features": [
+   "Age_Mons",
+   "Ethnicity",
+   "Family_mem_with_ASD",
+   "Jaundice",
+   "Sex",
+   "Who completed the test"
+  ],
+  "D04_clean_rows_equal_train_csv": true,
+  "D04_rows_identical_to_test_csv_rows": 0,
+  "D04_run_data_files": [
+   [
+    "cache/D04_autism_prediction/clean.csv"
+   ]
+  ],
+  "problems": []
+ },
+ "b4": {
+  "summary": [
+   {
+    "snapshot": "stage_01",
+    "datetime": "2026-10-13T16:56:45",
+    "checksums_integrity": true,
+    "recorded": 33,
+    "unchanged": 32,
+    "changed": 1,
+    "added": 245,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_02",
+    "datetime": "2026-10-13T17:18:53",
+    "checksums_integrity": true,
+    "recorded": 150,
+    "unchanged": 148,
+    "changed": 2,
+    "added": 128,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_03",
+    "datetime": "2026-10-14T09:10:29",
+    "checksums_integrity": true,
+    "recorded": 186,
+    "unchanged": 174,
+    "changed": 12,
+    "added": 92,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_04",
+    "datetime": "2026-10-14T09:43:34",
+    "checksums_integrity": true,
+    "recorded": 207,
+    "unchanged": 202,
+    "changed": 5,
+    "added": 71,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_05",
+    "datetime": "2026-10-14T10:57:13",
+    "checksums_integrity": true,
+    "recorded": 425,
+    "unchanged": 423,
+    "changed": 2,
+    "added": 64,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_07",
+    "datetime": "2026-10-14T10:57:15",
+    "checksums_integrity": true,
+    "recorded": 647,
+    "unchanged": 645,
+    "changed": 2,
+    "added": 64,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_06",
+    "datetime": "2026-10-14T15:51:44",
+    "checksums_integrity": true,
+    "recorded": 1075,
+    "unchanged": 1074,
+    "changed": 1,
+    "added": 58,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_08",
+    "datetime": "2026-10-14T16:10:41",
+    "checksums_integrity": true,
+    "recorded": 1126,
+    "unchanged": 1125,
+    "changed": 1,
+    "added": 39,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_09",
+    "datetime": "2026-10-14T16:25:26",
+    "checksums_integrity": true,
+    "recorded": 1178,
+    "unchanged": 1172,
+    "changed": 6,
+    "added": 4,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   },
+   {
+    "snapshot": "stage_10",
+    "datetime": "2026-10-14T16:44:42",
+    "checksums_integrity": true,
+    "recorded": 1183,
+    "unchanged": 1183,
+    "changed": 0,
+    "added": 0,
+    "deleted": 0,
+    "stage10_or_unexplained": 0
+   }
+  ],
+  "stage10_changes": [],
+  "deleted": []
+ },
+ "b5": {
+  "decimals_scanned": 1977,
+  "skipped_headings_and_section_refs": 21,
+  "not_in_tables": 4,
+  "by_category": {
+   "protocol constant: one-sided bound level (multiplicity note)": 2,
+   "derived (GPU time from reproducibility_table seconds)": 2
+  },
+  "manual": []
+ }
+}

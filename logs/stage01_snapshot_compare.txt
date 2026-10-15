@@ -1,0 +1,2 @@
+$ cmp data_registry/raw_snapshot_start.tsv data_registry/raw_snapshot_end.tsv
+IDENTICAL: 5944 entries (path, kind, size, mtime_ns), sha256 start=51873a4ec225bc64 end=51873a4ec225bc64

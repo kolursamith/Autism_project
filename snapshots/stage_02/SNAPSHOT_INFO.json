@@ -1,0 +1,28 @@
+{
+ "datetime": "2026-10-13T17:18:53",
+ "stage": 2,
+ "decision": "PASS",
+ "python": "3.12.3",
+ "torch": "2.14.1+cu130",
+ "torch_cuda": "13.0",
+ "gpu": "NVIDIA RTX A2000 12GB",
+ "n_files_checksummed": 150,
+ "hashed_dirs": [
+  "src",
+  "scripts",
+  "configs",
+  "tests",
+  "splits",
+  "reports",
+  "cache"
+ ],
+ "copied_dirs": [
+  "src",
+  "scripts",
+  "configs",
+  "tests",
+  "CLAUDE.md"
+ ],
+ "code_hash": "6b9e88a26149ee0d994010dbac9b9e2e9ec5ea2c7c44c11ff7d98fa213cd2893",
+ "note": "final: after the full pytest run (169 passed) and reports/STAGE_02_REPORT.md"
+}

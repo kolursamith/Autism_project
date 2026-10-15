@@ -1,0 +1,668 @@
+{
+ "dataset_id": "D05_toddler_screening",
+ "folder": "Autism_dataset",
+ "path": "/home/score/Documents/AI_project/dataset/Autism_dataset",
+ "audited_at": "2026-10-12T17:59:58",
+ "seed": 42,
+ "tree": {
+  "n_files": 3,
+  "files_by_extension": {
+   ".csv": 2,
+   ".docx": 1
+  },
+  "total_size_bytes": 331646,
+  "total_size_mb": 0.32,
+  "max_depth": 1,
+  "tree_first_3_levels": [
+   {
+    "dir": ".",
+    "depth": 0,
+    "n_files": 3,
+    "n_subdirs": 0
+   }
+  ]
+ },
+ "data_type": "tabular",
+ "archives": [],
+ "licence": {
+  "files": [
+   "Toddler data description.docx"
+  ],
+  "copied_to": "data_registry/D05_toddler_screening_licence_citation.txt",
+  "licence_file_present": false
+ },
+ "tabular": {
+  "files": [
+   {
+    "file": "Autism_Screening_Data_Combined.csv",
+    "shape": [
+     6075,
+     15
+    ],
+    "columns": [
+     "A1",
+     "A2",
+     "A3",
+     "A4",
+     "A5",
+     "A6",
+     "A7",
+     "A8",
+     "A9",
+     "A10",
+     "Age",
+     "Sex",
+     "Jauundice",
+     "Family_ASD",
+     "Class"
+    ],
+    "dtypes": {
+     "A1": "int64",
+     "A2": "int64",
+     "A3": "int64",
+     "A4": "int64",
+     "A5": "int64",
+     "A6": "int64",
+     "A7": "int64",
+     "A8": "int64",
+     "A9": "int64",
+     "A10": "int64",
+     "Age": "int64",
+     "Sex": "str",
+     "Jauundice": "str",
+     "Family_ASD": "str",
+     "Class": "str"
+    },
+    "missing_per_column": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "A5": 0,
+     "A6": 0,
+     "A7": 0,
+     "A8": 0,
+     "A9": 0,
+     "A10": 0,
+     "Age": 0,
+     "Sex": 0,
+     "Jauundice": 0,
+     "Family_ASD": 0,
+     "Class": 0
+    },
+    "question_mark_values_per_column": {},
+    "fully_empty_columns": [],
+    "id_columns": [],
+    "id_columns_unique": {},
+    "duplicate_rows_full": 847,
+    "duplicate_rows_excluding_id": 847,
+    "categorical_unique_values": {
+     "A1": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A2": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A3": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A4": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A5": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A6": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A7": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A8": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A9": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A10": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "Sex": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "f",
+       "m"
+      ]
+     },
+     "Jauundice": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "Family_ASD": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "Class": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "NO",
+       "YES"
+      ]
+     }
+    },
+    "label_columns": [
+     "Class"
+    ],
+    "class_counts": {
+     "NO": 4271,
+     "YES": 1804
+    },
+    "positive_class_mapping": "Class in ['1', 'asd', 'autistic', 'true', 'yes'] (case-insensitive) -> 1 (ASD)",
+    "class_balance_pos_fraction": 0.297,
+    "leakage_check": {
+     "item_columns": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10"
+     ],
+     "rules": [
+      {
+       "feature": "sum(A1..A10)",
+       "rule": "ASD if sum(A1..A10) >= 7",
+       "accuracy": 0.933827,
+       "n": 6075,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         3869,
+         402
+        ],
+        [
+         0,
+         1804
+        ]
+       ]
+      },
+      {
+       "feature": "Age",
+       "rule": "ASD if Age >= 80",
+       "accuracy": 0.70321,
+       "n": 6075,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         4271,
+         0
+        ],
+        [
+         1803,
+         1
+        ]
+       ]
+      }
+     ],
+     "majority_class_baseline_accuracy": 0.703045,
+     "item_sum_rule_by_age_band": {
+      "Age 0-3": {
+       "feature": "item_sum",
+       "rule": "ASD if item_sum <= 0",
+       "accuracy": 0.948767,
+       "n": 1054,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         1000,
+         54
+        ],
+        [
+         0,
+         0
+        ]
+       ],
+       "n_pos": 0
+      },
+      "Age 4-11": {
+       "feature": "item_sum",
+       "rule": "ASD if item_sum >= 7",
+       "accuracy": 1.0,
+       "n": 1105,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         576,
+         0
+        ],
+        [
+         0,
+         529
+        ]
+       ],
+       "n_pos": 529
+      },
+      "Age 12-17": {
+       "feature": "item_sum",
+       "rule": "ASD if item_sum >= 7",
+       "accuracy": 1.0,
+       "n": 711,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         353,
+         0
+        ],
+        [
+         0,
+         358
+        ]
+       ],
+       "n_pos": 358
+      },
+      "Age 18-200": {
+       "feature": "item_sum",
+       "rule": "ASD if item_sum >= 7",
+       "accuracy": 1.0,
+       "n": 3205,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         2288,
+         0
+        ],
+        [
+         0,
+         917
+        ]
+       ],
+       "n_pos": 917
+      }
+     },
+     "rows_in_age_bands_with_exact_rule": 5021,
+     "exact_leakage_found": false,
+     "summary": "No exact single-feature rule over the whole file; best is 'ASD if sum(A1..A10) >= 7' accuracy 0.933827 (majority baseline 0.703045); PARTIAL LEAKAGE: within age bands the item-sum rule is exact for 5021 of 6075 rows"
+    }
+   },
+   {
+    "file": "Toddler Autism dataset July 2018.csv",
+    "shape": [
+     1054,
+     19
+    ],
+    "columns": [
+     "Case_No",
+     "A1",
+     "A2",
+     "A3",
+     "A4",
+     "A5",
+     "A6",
+     "A7",
+     "A8",
+     "A9",
+     "A10",
+     "Age_Mons",
+     "Qchat-10-Score",
+     "Sex",
+     "Ethnicity",
+     "Jaundice",
+     "Family_mem_with_ASD",
+     "Who completed the test",
+     "Class/ASD Traits "
+    ],
+    "dtypes": {
+     "Case_No": "int64",
+     "A1": "int64",
+     "A2": "int64",
+     "A3": "int64",
+     "A4": "int64",
+     "A5": "int64",
+     "A6": "int64",
+     "A7": "int64",
+     "A8": "int64",
+     "A9": "int64",
+     "A10": "int64",
+     "Age_Mons": "int64",
+     "Qchat-10-Score": "int64",
+     "Sex": "str",
+     "Ethnicity": "str",
+     "Jaundice": "str",
+     "Family_mem_with_ASD": "str",
+     "Who completed the test": "str",
+     "Class/ASD Traits ": "str"
+    },
+    "missing_per_column": {
+     "Case_No": 0,
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "A5": 0,
+     "A6": 0,
+     "A7": 0,
+     "A8": 0,
+     "A9": 0,
+     "A10": 0,
+     "Age_Mons": 0,
+     "Qchat-10-Score": 0,
+     "Sex": 0,
+     "Ethnicity": 0,
+     "Jaundice": 0,
+     "Family_mem_with_ASD": 0,
+     "Who completed the test": 0,
+     "Class/ASD Traits ": 0
+    },
+    "question_mark_values_per_column": {},
+    "fully_empty_columns": [],
+    "id_columns": [
+     "Case_No"
+    ],
+    "id_columns_unique": {
+     "Case_No": true
+    },
+    "duplicate_rows_full": 0,
+    "duplicate_rows_excluding_id": 79,
+    "categorical_unique_values": {
+     "A1": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A2": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A3": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A4": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A5": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A6": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A7": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A8": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A9": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A10": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "Qchat-10-Score": {
+      "n_unique": 11,
+      "values(first 20)": [
+       "0",
+       "1",
+       "10",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ]
+     },
+     "Sex": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "f",
+       "m"
+      ]
+     },
+     "Ethnicity": {
+      "n_unique": 11,
+      "values(first 20)": [
+       "Hispanic",
+       "Latino",
+       "Native Indian",
+       "Others",
+       "Pacifica",
+       "White European",
+       "asian",
+       "black",
+       "middle eastern",
+       "mixed",
+       "south asian"
+      ]
+     },
+     "Jaundice": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "Family_mem_with_ASD": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "Who completed the test": {
+      "n_unique": 5,
+      "values(first 20)": [
+       "Health Care Professional",
+       "Health care professional",
+       "Others",
+       "Self",
+       "family member"
+      ]
+     },
+     "Class/ASD Traits ": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "No",
+       "Yes"
+      ]
+     }
+    },
+    "label_columns": [
+     "Class/ASD Traits "
+    ],
+    "class_counts": {
+     "Yes": 728,
+     "No": 326
+    },
+    "positive_class_mapping": "Class/ASD Traits  in ['1', 'asd', 'autistic', 'true', 'yes'] (case-insensitive) -> 1 (ASD)",
+    "class_balance_pos_fraction": 0.6907,
+    "leakage_check": {
+     "item_columns": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10"
+     ],
+     "rules": [
+      {
+       "feature": "sum(A1..A10)",
+       "rule": "ASD if sum(A1..A10) >= 4",
+       "accuracy": 1.0,
+       "n": 1054,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         326,
+         0
+        ],
+        [
+         0,
+         728
+        ]
+       ]
+      },
+      {
+       "feature": "Qchat-10-Score",
+       "rule": "ASD if Qchat-10-Score >= 4",
+       "accuracy": 1.0,
+       "n": 1054,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         326,
+         0
+        ],
+        [
+         0,
+         728
+        ]
+       ]
+      },
+      {
+       "feature": "Age_Mons",
+       "rule": "ASD if Age_Mons >= 14",
+       "accuracy": 0.699241,
+       "n": 1054,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         47,
+         279
+        ],
+        [
+         38,
+         690
+        ]
+       ]
+      }
+     ],
+     "item_sum_equals_Qchat-10-Score": {
+      "rows_equal": 1054,
+      "n": 1054,
+      "max_abs_diff": 0.0
+     },
+     "majority_class_baseline_accuracy": 0.690702,
+     "exact_leakage_found": true,
+     "summary": "LEAKAGE: label reproduced exactly by 'ASD if sum(A1..A10) >= 4' (accuracy 1.0)"
+    }
+   }
+  ],
+  "cross_file_embedded_blocks": [
+   {
+    "container": "Autism_Screening_Data_Combined.csv",
+    "contained": "Toddler Autism dataset July 2018.csv",
+    "compared_on": [
+     "A1",
+     "A2",
+     "A3",
+     "A4",
+     "A5",
+     "A6",
+     "A7",
+     "A8",
+     "A9",
+     "A10",
+     "Sex"
+    ],
+    "container_rows": [
+     5021,
+     6074
+    ],
+    "label_container_counts": {
+     "no": 1054
+    },
+    "label_contained_counts": {
+     "no": 326,
+     "yes": 728
+    },
+    "rows_with_different_label": 728
+   }
+  ]
+ },
+ "n_samples": 7129
+}

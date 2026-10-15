@@ -1,0 +1,575 @@
+{
+ "dataset_id": "D04_autism_prediction",
+ "folder": "Autism_prediction dataset",
+ "path": "/home/score/Documents/AI_project/dataset/Autism_prediction dataset",
+ "audited_at": "2026-10-12T17:59:58",
+ "seed": 42,
+ "tree": {
+  "n_files": 2,
+  "files_by_extension": {
+   ".csv": 2
+  },
+  "total_size_bytes": 99173,
+  "total_size_mb": 0.09,
+  "max_depth": 1,
+  "tree_first_3_levels": [
+   {
+    "dir": ".",
+    "depth": 0,
+    "n_files": 2,
+    "n_subdirs": 0
+   }
+  ]
+ },
+ "data_type": "tabular",
+ "archives": [],
+ "licence": {
+  "files": [],
+  "copied_to": "data_registry/D04_autism_prediction_licence_citation.txt",
+  "licence_file_present": false
+ },
+ "tabular": {
+  "files": [
+   {
+    "file": "test.csv",
+    "shape": [
+     200,
+     21
+    ],
+    "columns": [
+     "ID",
+     "A1_Score",
+     "A2_Score",
+     "A3_Score",
+     "A4_Score",
+     "A5_Score",
+     "A6_Score",
+     "A7_Score",
+     "A8_Score",
+     "A9_Score",
+     "A10_Score",
+     "age",
+     "gender",
+     "ethnicity",
+     "jaundice",
+     "austim",
+     "contry_of_res",
+     "used_app_before",
+     "result",
+     "age_desc",
+     "relation"
+    ],
+    "dtypes": {
+     "ID": "int64",
+     "A1_Score": "int64",
+     "A2_Score": "int64",
+     "A3_Score": "int64",
+     "A4_Score": "int64",
+     "A5_Score": "int64",
+     "A6_Score": "int64",
+     "A7_Score": "int64",
+     "A8_Score": "int64",
+     "A9_Score": "int64",
+     "A10_Score": "int64",
+     "age": "float64",
+     "gender": "str",
+     "ethnicity": "str",
+     "jaundice": "str",
+     "austim": "str",
+     "contry_of_res": "str",
+     "used_app_before": "str",
+     "result": "float64",
+     "age_desc": "str",
+     "relation": "str"
+    },
+    "missing_per_column": {
+     "ID": 0,
+     "A1_Score": 0,
+     "A2_Score": 0,
+     "A3_Score": 0,
+     "A4_Score": 0,
+     "A5_Score": 0,
+     "A6_Score": 0,
+     "A7_Score": 0,
+     "A8_Score": 0,
+     "A9_Score": 0,
+     "A10_Score": 0,
+     "age": 0,
+     "gender": 0,
+     "ethnicity": 0,
+     "jaundice": 0,
+     "austim": 0,
+     "contry_of_res": 0,
+     "used_app_before": 0,
+     "result": 0,
+     "age_desc": 0,
+     "relation": 0
+    },
+    "question_mark_values_per_column": {
+     "ethnicity": 54,
+     "relation": 6
+    },
+    "fully_empty_columns": [],
+    "id_columns": [
+     "ID"
+    ],
+    "id_columns_unique": {
+     "ID": true
+    },
+    "duplicate_rows_full": 0,
+    "duplicate_rows_excluding_id": 0,
+    "categorical_unique_values": {
+     "A1_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A2_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A3_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A4_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A5_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A6_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A7_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A8_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A9_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A10_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "gender": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "f",
+       "m"
+      ]
+     },
+     "ethnicity": {
+      "n_unique": 11,
+      "values(first 20)": [
+       "?",
+       "Asian",
+       "Black",
+       "Hispanic",
+       "Latino",
+       "Middle Eastern ",
+       "Others",
+       "Pasifika",
+       "South Asian",
+       "Turkish",
+       "White-European"
+      ]
+     },
+     "jaundice": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "austim": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "used_app_before": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "age_desc": {
+      "n_unique": 1,
+      "values(first 20)": [
+       "18 and more"
+      ]
+     },
+     "relation": {
+      "n_unique": 6,
+      "values(first 20)": [
+       "?",
+       "Health care professional",
+       "Others",
+       "Parent",
+       "Relative",
+       "Self"
+      ]
+     }
+    },
+    "label_columns": [],
+    "label_note": "NO label column in this file (unlabelled)."
+   },
+   {
+    "file": "train.csv",
+    "shape": [
+     800,
+     22
+    ],
+    "columns": [
+     "ID",
+     "A1_Score",
+     "A2_Score",
+     "A3_Score",
+     "A4_Score",
+     "A5_Score",
+     "A6_Score",
+     "A7_Score",
+     "A8_Score",
+     "A9_Score",
+     "A10_Score",
+     "age",
+     "gender",
+     "ethnicity",
+     "jaundice",
+     "austim",
+     "contry_of_res",
+     "used_app_before",
+     "result",
+     "age_desc",
+     "relation",
+     "Class/ASD"
+    ],
+    "dtypes": {
+     "ID": "int64",
+     "A1_Score": "int64",
+     "A2_Score": "int64",
+     "A3_Score": "int64",
+     "A4_Score": "int64",
+     "A5_Score": "int64",
+     "A6_Score": "int64",
+     "A7_Score": "int64",
+     "A8_Score": "int64",
+     "A9_Score": "int64",
+     "A10_Score": "int64",
+     "age": "float64",
+     "gender": "str",
+     "ethnicity": "str",
+     "jaundice": "str",
+     "austim": "str",
+     "contry_of_res": "str",
+     "used_app_before": "str",
+     "result": "float64",
+     "age_desc": "str",
+     "relation": "str",
+     "Class/ASD": "int64"
+    },
+    "missing_per_column": {
+     "ID": 0,
+     "A1_Score": 0,
+     "A2_Score": 0,
+     "A3_Score": 0,
+     "A4_Score": 0,
+     "A5_Score": 0,
+     "A6_Score": 0,
+     "A7_Score": 0,
+     "A8_Score": 0,
+     "A9_Score": 0,
+     "A10_Score": 0,
+     "age": 0,
+     "gender": 0,
+     "ethnicity": 0,
+     "jaundice": 0,
+     "austim": 0,
+     "contry_of_res": 0,
+     "used_app_before": 0,
+     "result": 0,
+     "age_desc": 0,
+     "relation": 0,
+     "Class/ASD": 0
+    },
+    "question_mark_values_per_column": {
+     "ethnicity": 203,
+     "relation": 40
+    },
+    "fully_empty_columns": [],
+    "id_columns": [
+     "ID"
+    ],
+    "id_columns_unique": {
+     "ID": true
+    },
+    "duplicate_rows_full": 0,
+    "duplicate_rows_excluding_id": 0,
+    "categorical_unique_values": {
+     "A1_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A2_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A3_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A4_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A5_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A6_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A7_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A8_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A9_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "A10_Score": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     },
+     "gender": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "f",
+       "m"
+      ]
+     },
+     "ethnicity": {
+      "n_unique": 12,
+      "values(first 20)": [
+       "?",
+       "Asian",
+       "Black",
+       "Hispanic",
+       "Latino",
+       "Middle Eastern ",
+       "Others",
+       "Pasifika",
+       "South Asian",
+       "Turkish",
+       "White-European",
+       "others"
+      ]
+     },
+     "jaundice": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "austim": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "used_app_before": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "no",
+       "yes"
+      ]
+     },
+     "age_desc": {
+      "n_unique": 1,
+      "values(first 20)": [
+       "18 and more"
+      ]
+     },
+     "relation": {
+      "n_unique": 6,
+      "values(first 20)": [
+       "?",
+       "Health care professional",
+       "Others",
+       "Parent",
+       "Relative",
+       "Self"
+      ]
+     },
+     "Class/ASD": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "0",
+       "1"
+      ]
+     }
+    },
+    "label_columns": [
+     "Class/ASD"
+    ],
+    "class_counts": {
+     "0": 639,
+     "1": 161
+    },
+    "positive_class_mapping": "Class/ASD in ['1', 'asd', 'autistic', 'true', 'yes'] (case-insensitive) -> 1 (ASD)",
+    "class_balance_pos_fraction": 0.2013,
+    "leakage_check": {
+     "item_columns": [
+      "A1_Score",
+      "A2_Score",
+      "A3_Score",
+      "A4_Score",
+      "A5_Score",
+      "A6_Score",
+      "A7_Score",
+      "A8_Score",
+      "A9_Score",
+      "A10_Score"
+     ],
+     "rules": [
+      {
+       "feature": "sum(A1_Score..A10_Score)",
+       "rule": "ASD if sum(A1_Score..A10_Score) >= 10",
+       "accuracy": 0.8625,
+       "n": 800,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         613,
+         26
+        ],
+        [
+         84,
+         77
+        ]
+       ]
+      },
+      {
+       "feature": "age",
+       "rule": "ASD if age >= 80.5441",
+       "accuracy": 0.8,
+       "n": 800,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         637,
+         2
+        ],
+        [
+         158,
+         3
+        ]
+       ]
+      },
+      {
+       "feature": "result",
+       "rule": "ASD if result >= 15.0786",
+       "accuracy": 0.8,
+       "n": 800,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         631,
+         8
+        ],
+        [
+         152,
+         9
+        ]
+       ]
+      }
+     ],
+     "item_sum_equals_result": {
+      "rows_equal": 0,
+      "n": 800,
+      "max_abs_diff": 15.49142133
+     },
+     "majority_class_baseline_accuracy": 0.79875,
+     "exact_leakage_found": false,
+     "summary": "No exact single-feature rule over the whole file; best is 'ASD if sum(A1_Score..A10_Score) >= 10' accuracy 0.8625 (majority baseline 0.79875)"
+    }
+   }
+  ],
+  "cross_file_embedded_blocks": []
+ },
+ "n_samples": 1000
+}

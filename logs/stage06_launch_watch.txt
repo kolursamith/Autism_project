@@ -1,0 +1,1 @@
+steady-state GPU utilisation over 20 s (80 samples): mean 57.1%, median 97%, samples >= 50%: 57%

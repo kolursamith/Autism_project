@@ -1,0 +1,13 @@
+2026-10-14 13:46:39 [D02_facial_images_A M08 fold 9] START (new) input=images policy=last_stage n_train=2268 n_val=378 n_test=294 pos_weight=1.0000 bs=64 max_epochs=40
+2026-10-14 13:46:42 [D02_facial_images_A M08 fold 9] epoch 1/40 train_loss 0.5404 val_loss 0.4809 val_auc 0.8863 lr 2.57e-04 3.2s peak 0.52GB *best*
+2026-10-14 13:46:45 [D02_facial_images_A M08 fold 9] epoch 2/40 train_loss 0.3972 val_loss 0.4756 val_auc 0.8921 lr 5.00e-04 3.2s peak 0.52GB *best*
+2026-10-14 13:46:49 [D02_facial_images_A M08 fold 9] epoch 3/40 train_loss 0.3624 val_loss 0.4708 val_auc 0.8982 lr 4.99e-04 3.4s peak 0.52GB *best*
+2026-10-14 13:46:53 [D02_facial_images_A M08 fold 9] epoch 4/40 train_loss 0.2681 val_loss 0.5444 val_auc 0.8822 lr 4.97e-04 3.6s peak 0.52GB (no improvement 1/8)
+2026-10-14 13:46:56 [D02_facial_images_A M08 fold 9] epoch 5/40 train_loss 0.2188 val_loss 0.6514 val_auc 0.8818 lr 4.92e-04 3.2s peak 0.52GB (no improvement 2/8)
+2026-10-14 13:46:59 [D02_facial_images_A M08 fold 9] epoch 6/40 train_loss 0.1499 val_loss 0.6578 val_auc 0.8863 lr 4.86e-04 3.2s peak 0.52GB (no improvement 3/8)
+2026-10-14 13:47:03 [D02_facial_images_A M08 fold 9] epoch 7/40 train_loss 0.1427 val_loss 0.5948 val_auc 0.8882 lr 4.79e-04 3.2s peak 0.52GB (no improvement 4/8)
+2026-10-14 13:47:06 [D02_facial_images_A M08 fold 9] epoch 8/40 train_loss 0.1269 val_loss 0.7539 val_auc 0.8846 lr 4.70e-04 3.2s peak 0.52GB (no improvement 5/8)
+2026-10-14 13:47:09 [D02_facial_images_A M08 fold 9] epoch 9/40 train_loss 0.0990 val_loss 0.8058 val_auc 0.8905 lr 4.59e-04 3.2s peak 0.52GB (no improvement 6/8)
+2026-10-14 13:47:12 [D02_facial_images_A M08 fold 9] epoch 10/40 train_loss 0.0982 val_loss 0.8098 val_auc 0.8811 lr 4.47e-04 3.2s peak 0.52GB (no improvement 7/8)
+2026-10-14 13:47:16 [D02_facial_images_A M08 fold 9] epoch 11/40 train_loss 0.0745 val_loss 0.9162 val_auc 0.8840 lr 4.34e-04 3.2s peak 0.52GB (no improvement 8/8) -> early stop
+2026-10-14 13:47:17 [D02_facial_images_A M08 fold 9] DONE epochs 11 best_epoch 3 val_auc 0.8982 test_auc 0.8931 peak 0.52GB 38s batches {'train': 396, 'val': 72, 'test': 5} test ids in train/val batches: 0

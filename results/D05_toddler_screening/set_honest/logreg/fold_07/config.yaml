@@ -1,0 +1,51 @@
+stage: 7
+dataset: D05_toddler_screening
+experiment: set_honest
+experiment_note: A1-A10 and Qchat-10-Score removed (age, sex, ethnicity, jaundice,
+  family history, respondent)
+model_id: logreg
+fold: 7
+seed: 49
+feature_set: set_honest
+numeric_features:
+- Age_Mons
+categorical_features:
+- Sex
+- Ethnicity
+- Jaundice
+- Family_mem_with_ASD
+- Who completed the test
+model:
+  class: LogisticRegression
+  params:
+    C: 1.0
+    class_weight: balanced
+    max_iter: 5000
+  note: L2 (default)
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  C: 1.0
+  class_weight: balanced
+  dual: false
+  fit_intercept: true
+  intercept_scaling: 1
+  l1_ratio: 0.0
+  max_iter: 5000
+  n_jobs: null
+  penalty: deprecated
+  random_state: 49
+  solver: lbfgs
+  tol: 0.0001
+  verbose: 0
+  warm_start: false

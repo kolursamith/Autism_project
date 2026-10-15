@@ -1,0 +1,48 @@
+# D01 eye-tracking - Stage 2 data preparation parameters (DD-01..DD-04). Used by src/data/d01_eye.py, scripts/02a_prepare_d01.py
+dataset_id: D01_eye_tracking
+seed: 42
+label: {ASD: 1, TD: 0}           # from Metadata_Participants.csv "Class"; CARS Score is never read (DD-03)
+report_only_columns: [age, gender]   # participants.csv only, never features
+
+dedupe:                          # DD-02, applied BEFORE any windowing
+  key: [participant_id, t_ms, trial, x_right, y_right]   # numeric: t_ms rounded to 3 dp, x/y to 4 dp, '-' = missing
+  keep: first                    # file order 1..25, then row order
+  # b2: rows with the same (participant_id, t_ms, trial) whose right-eye gaze differs by <= this many px are the same
+  # sample exported at a coarser precision (found: 233 pairs, 7.csv vs 8.csv, |dx|,|dy| <= 0.05 px)
+  coordinate_tolerance_px: 0.05
+
+screen:
+  width: 1280
+  height: 1024
+  percentile: 99.9
+  standard_resolutions: [[1024, 768], [1280, 720], [1280, 800], [1280, 1024], [1366, 768], [1440, 900],
+                         [1600, 900], [1680, 1050], [1920, 1080], [1920, 1200]]
+  evidence: >-
+    (1) 99.9th percentile of valid gaze after cleaning steps a-d: x = 1352.7 px, y = 1111.5 px; nearest standard
+    resolution = 1280 x 1024. (2) The tracker clamps gaze at x in [-126.8, 1407.1] and y in [-101.9, 1126.2]; the
+    centres of these ranges are (640.2, 512.2) = the centre of a 1280 x 1024 frame. (3) No documentation of the
+    screen exists in the folder (only Citation.txt, a reference to Cilia et al. 2022; no Fulltext.pdf).
+    The median gaze is (627.9, 377.7), i.e. stimuli may not fill the whole frame; the exact on-screen layout is
+    UNKNOWN. Values are recomputed by scripts/02a_prepare_d01.py, which stops if they disagree with this block.
+
+invalid_gaze:
+  margin_px: 50                  # invalid if missing, outside [-50, W+50] x [-50, H+50], or a (0, 0) artefact; rows kept
+  # (0, 0) artefact = within this radius of (0, 0). The tracker writes "lost" samples as (0, 0) AND as points scattered
+  # around it, e.g. (0.001, 0), (0, 12.4), (4.2, 7.3). Evidence (Stage 2, valid samples before this rule): within 30 px
+  # of the top-left corner 9,363 samples vs 8 / 53 / 213 at the other three corners; samples with exactly one
+  # coordinate == 0 have the other within [-32.6, 32.1] px. Without the rule, rendered scan paths jump to the corner.
+  origin_artifact_radius_px: 35
+
+clips:
+  window_ms: 1000
+  windows_per_clip: 8            # 8 s per clip, non-overlapping
+  gap_max_ms: 500                # recordings are split into continuous segments at gaps > 500 ms; no clip contains one
+  min_valid_ratio: 0.5
+  max_clips_per_child: 40        # random cap, numpy default_rng(seed), children in id order; uncapped index also saved
+
+render:
+  size: 224
+  line_thickness: 1              # ch0 scan path, cv2.LINE_8 (no anti-aliasing -> deterministic)
+  fixation_sigma_px: 3           # ch1 Gaussian blur sigma, in 224-px image coordinates
+  time_brightness_min: 64        # ch2 brightness at the start of the second
+  time_brightness_max: 255       # ... at the end

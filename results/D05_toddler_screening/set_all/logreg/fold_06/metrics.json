@@ -1,0 +1,89 @@
+{
+ "dataset": "D05_toddler_screening",
+ "experiment": "set_all",
+ "fold": 6,
+ "model_id": "logreg",
+ "test": {
+  "threshold_0.5": {
+   "accuracy": 1.0,
+   "balanced_accuracy": 1.0,
+   "brier": 0.004625235112278453,
+   "confusion_matrix": [
+    [
+     33,
+     0
+    ],
+    [
+     0,
+     73
+    ]
+   ],
+   "f1": 1.0,
+   "n": 106,
+   "n_neg": 33,
+   "n_pos": 73,
+   "pr_auc": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "roc_auc": 0.9999999999999999,
+   "sensitivity": 1.0,
+   "specificity": 1.0,
+   "threshold": 0.5
+  },
+  "threshold_val_youden": {
+   "accuracy": 0.9811320754716981,
+   "balanced_accuracy": 0.9863013698630136,
+   "brier": 0.004625235112278453,
+   "confusion_matrix": [
+    [
+     33,
+     0
+    ],
+    [
+     2,
+     71
+    ]
+   ],
+   "f1": 0.9861111111111112,
+   "n": 106,
+   "n_neg": 33,
+   "n_pos": 73,
+   "pr_auc": 1.0,
+   "precision": 1.0,
+   "recall": 0.9726027397260274,
+   "roc_auc": 0.9999999999999999,
+   "sensitivity": 0.9726027397260274,
+   "specificity": 1.0,
+   "threshold": 0.7796577730589341
+  }
+ },
+ "val": {
+  "threshold_0.5": {
+   "accuracy": 1.0,
+   "balanced_accuracy": 1.0,
+   "brier": 0.0031579393853944844,
+   "confusion_matrix": [
+    [
+     42,
+     0
+    ],
+    [
+     0,
+     94
+    ]
+   ],
+   "f1": 1.0,
+   "n": 136,
+   "n_neg": 42,
+   "n_pos": 94,
+   "pr_auc": 0.9999999999999998,
+   "precision": 1.0,
+   "recall": 1.0,
+   "roc_auc": 1.0,
+   "sensitivity": 1.0,
+   "specificity": 1.0,
+   "threshold": 0.5
+  }
+ },
+ "val_threshold_youden": 0.7796577730589341
+}

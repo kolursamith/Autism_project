@@ -1,0 +1,221 @@
+{
+ "dataset": "set_all",
+ "folds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "model_id": "logreg",
+ "n_folds": 10,
+ "per_fold_metrics": {
+  "test/threshold_0.5/accuracy": {
+   "max": 0.9,
+   "mean": 0.82875,
+   "min": 0.75,
+   "n_folds": 10,
+   "std": 0.053375634266332926
+  },
+  "test/threshold_0.5/balanced_accuracy": {
+   "max": 0.890625,
+   "mean": 0.8324959150326798,
+   "min": 0.765625,
+   "n_folds": 10,
+   "std": 0.03735796976155764
+  },
+  "test/threshold_0.5/brier": {
+   "max": 0.17391929493894037,
+   "mean": 0.12323700366416072,
+   "min": 0.0660053996142772,
+   "n_folds": 10,
+   "std": 0.036336977955047714
+  },
+  "test/threshold_0.5/f1": {
+   "max": 0.7777777777777777,
+   "mean": 0.6694801955870068,
+   "min": 0.5714285714285714,
+   "n_folds": 10,
+   "std": 0.07318933778013295
+  },
+  "test/threshold_0.5/pr_auc": {
+   "max": 0.8466823752746171,
+   "mean": 0.717318317829151,
+   "min": 0.580460721167958,
+   "n_folds": 10,
+   "std": 0.08224522846830438
+  },
+  "test/threshold_0.5/precision": {
+   "max": 0.7222222222222222,
+   "mean": 0.5646894741731698,
+   "min": 0.4375,
+   "n_folds": 10,
+   "std": 0.10252868393450618
+  },
+  "test/threshold_0.5/recall": {
+   "max": 0.9375,
+   "mean": 0.8386029411764706,
+   "min": 0.75,
+   "n_folds": 10,
+   "std": 0.052236654375652725
+  },
+  "test/threshold_0.5/roc_auc": {
+   "max": 0.9560546875,
+   "mean": 0.9048384067168534,
+   "min": 0.8203125,
+   "n_folds": 10,
+   "std": 0.039825483454096186
+  },
+  "test/threshold_0.5/sensitivity": {
+   "max": 0.9375,
+   "mean": 0.8386029411764706,
+   "min": 0.75,
+   "n_folds": 10,
+   "std": 0.052236654375652725
+  },
+  "test/threshold_0.5/specificity": {
+   "max": 0.921875,
+   "mean": 0.826388888888889,
+   "min": 0.71875,
+   "n_folds": 10,
+   "std": 0.06909634979907082
+  },
+  "test/threshold_val_youden/accuracy": {
+   "max": 0.9,
+   "mean": 0.81375,
+   "min": 0.725,
+   "n_folds": 10,
+   "std": 0.06331414182910132
+  },
+  "test/threshold_val_youden/balanced_accuracy": {
+   "max": 0.921875,
+   "mean": 0.833109389589169,
+   "min": 0.734375,
+   "n_folds": 10,
+   "std": 0.05271709711292971
+  },
+  "test/threshold_val_youden/brier": {
+   "max": 0.17391929493894037,
+   "mean": 0.12323700366416072,
+   "min": 0.0660053996142772,
+   "n_folds": 10,
+   "std": 0.036336977955047714
+  },
+  "test/threshold_val_youden/f1": {
+   "max": 0.7777777777777777,
+   "mean": 0.6584617331360543,
+   "min": 0.5217391304347827,
+   "n_folds": 10,
+   "std": 0.08163687892220481
+  },
+  "test/threshold_val_youden/pr_auc": {
+   "max": 0.8466823752746171,
+   "mean": 0.717318317829151,
+   "min": 0.580460721167958,
+   "n_folds": 10,
+   "std": 0.08224522846830438
+  },
+  "test/threshold_val_youden/precision": {
+   "max": 0.8461538461538461,
+   "mean": 0.5505163806345676,
+   "min": 0.4,
+   "n_folds": 10,
+   "std": 0.13711876830404546
+  },
+  "test/threshold_val_youden/recall": {
+   "max": 1.0,
+   "mean": 0.8647058823529411,
+   "min": 0.6470588235294118,
+   "n_folds": 10,
+   "std": 0.1083128141334066
+  },
+  "test/threshold_val_youden/roc_auc": {
+   "max": 0.9560546875,
+   "mean": 0.9048384067168534,
+   "min": 0.8203125,
+   "n_folds": 10,
+   "std": 0.039825483454096186
+  },
+  "test/threshold_val_youden/sensitivity": {
+   "max": 1.0,
+   "mean": 0.8647058823529411,
+   "min": 0.6470588235294118,
+   "n_folds": 10,
+   "std": 0.1083128141334066
+  },
+  "test/threshold_val_youden/specificity": {
+   "max": 0.9682539682539683,
+   "mean": 0.8015128968253968,
+   "min": 0.703125,
+   "n_folds": 10,
+   "std": 0.08799178853113031
+  },
+  "val_threshold_youden": {
+   "max": 0.8451572051374636,
+   "mean": 0.3826541738704682,
+   "min": 0.1292142809865313,
+   "n_folds": 10,
+   "std": 0.19656327237306911
+  }
+ },
+ "pooled_out_of_fold": {
+  "threshold_0.5": {
+   "accuracy": 0.82875,
+   "balanced_accuracy": 0.8324001982911965,
+   "brier": 0.12323700366416074,
+   "confusion_matrix": [
+    [
+     528,
+     111
+    ],
+    [
+     26,
+     135
+    ]
+   ],
+   "f1": 0.6633906633906635,
+   "n": 800,
+   "n_neg": 639,
+   "n_pos": 161,
+   "pr_auc": 0.6551020392274656,
+   "precision": 0.5487804878048781,
+   "recall": 0.8385093167701864,
+   "roc_auc": 0.8989006502784824,
+   "sensitivity": 0.8385093167701864,
+   "specificity": 0.8262910798122066,
+   "threshold": 0.5
+  },
+  "threshold_val_youden_per_fold": {
+   "accuracy": 0.81375,
+   "balanced_accuracy": 0.8323029967243072,
+   "brier": 0.12323700366416074,
+   "confusion_matrix": [
+    [
+     512,
+     127
+    ],
+    [
+     22,
+     139
+    ]
+   ],
+   "f1": 0.6510538641686183,
+   "n": 800,
+   "n_neg": 639,
+   "n_pos": 161,
+   "pr_auc": 0.6551020392274656,
+   "precision": 0.5225563909774437,
+   "recall": 0.8633540372670807,
+   "roc_auc": 0.8989006502784824,
+   "sensitivity": 0.8633540372670807,
+   "specificity": 0.8012519561815337,
+   "threshold": null
+  }
+ },
+ "std_definition": "sample standard deviation over folds (ddof=1)"
+}

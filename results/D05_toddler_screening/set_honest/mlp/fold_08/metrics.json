@@ -1,0 +1,90 @@
+{
+ "best_epoch": 3,
+ "dataset": "D05_toddler_screening",
+ "experiment": "set_honest",
+ "fold": 8,
+ "model_id": "mlp",
+ "test": {
+  "threshold_0.5": {
+   "accuracy": 0.6857142857142857,
+   "balanced_accuracy": 0.5,
+   "brier": 0.21626304203089808,
+   "confusion_matrix": [
+    [
+     0,
+     33
+    ],
+    [
+     0,
+     72
+    ]
+   ],
+   "f1": 0.8135593220338984,
+   "n": 105,
+   "n_neg": 33,
+   "n_pos": 72,
+   "pr_auc": 0.7602780062833864,
+   "precision": 0.6857142857142857,
+   "recall": 1.0,
+   "roc_auc": 0.5519781144781145,
+   "sensitivity": 1.0,
+   "specificity": 0.0,
+   "threshold": 0.5
+  },
+  "threshold_val_youden": {
+   "accuracy": 0.5619047619047619,
+   "balanced_accuracy": 0.5574494949494949,
+   "brier": 0.21626304203089808,
+   "confusion_matrix": [
+    [
+     18,
+     15
+    ],
+    [
+     31,
+     41
+    ]
+   ],
+   "f1": 0.640625,
+   "n": 105,
+   "n_neg": 33,
+   "n_pos": 72,
+   "pr_auc": 0.7602780062833864,
+   "precision": 0.7321428571428571,
+   "recall": 0.5694444444444444,
+   "roc_auc": 0.5519781144781145,
+   "sensitivity": 0.5694444444444444,
+   "specificity": 0.5454545454545454,
+   "threshold": 0.7203576824707227
+  }
+ },
+ "val": {
+  "threshold_0.5": {
+   "accuracy": 0.6911764705882353,
+   "balanced_accuracy": 0.5,
+   "brier": 0.20980179016792969,
+   "confusion_matrix": [
+    [
+     0,
+     42
+    ],
+    [
+     0,
+     94
+    ]
+   ],
+   "f1": 0.817391304347826,
+   "n": 136,
+   "n_neg": 42,
+   "n_pos": 94,
+   "pr_auc": 0.7950059757904374,
+   "precision": 0.6911764705882353,
+   "recall": 1.0,
+   "roc_auc": 0.6256332320162107,
+   "sensitivity": 1.0,
+   "specificity": 0.0,
+   "threshold": 0.5
+  }
+ },
+ "val_threshold_youden": 0.7203576824707227
+}

@@ -1,0 +1,10 @@
+2026-10-14T09:36:38 QUEUE D01_eye_tracking models ['M01', 'M09'] folds [1, 2] -> results_smoke/
+2026-10-14T09:36:38 M01: start /home/score/Documents/AI_project/asd_hybrid_10fold/scripts/train.py --dataset D01_eye_tracking --model M01 --folds 1-2 --out results_smoke --max-epochs 2
+[D01_eye_tracking M01 fold 1] skip: DONE (use --force to re-run)
+[D01_eye_tracking M01 fold 2] skip: DONE (use --force to re-run)
+2026-10-14T09:36:41 M01: train.py exit 0; validate_model_results: PASS
+2026-10-14T09:36:41 M09: start /home/score/Documents/AI_project/asd_hybrid_10fold/scripts/train.py --dataset D01_eye_tracking --model M09 --folds 1-2 --out results_smoke --max-epochs 2
+[D01_eye_tracking M09 fold 1] skip: DONE (use --force to re-run)
+[D01_eye_tracking M09 fold 2] skip: DONE (use --force to re-run)
+2026-10-14T09:36:44 M09: train.py exit 0; validate_model_results: PASS
+2026-10-14T09:36:44 QUEUE DONE D01_eye_tracking: ['M01', 'M09']

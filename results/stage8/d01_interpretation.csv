@@ -1,0 +1,11 @@
+model,rule1_diff_ci_excludes_0_for_model,rule2_matched_ci_excludes_0.5,adds_information_beyond_tracking_quality,secondary_vs_1mvr_ci_lo
+M01,False,False,False,-0.28148148148148155
+M02,False,False,False,-0.4345679012345679
+M03,False,False,False,-0.24197530864197536
+M04,False,False,False,-0.2099074074074074
+M05,False,False,False,-0.41604938271604935
+M06,False,False,False,-0.16425925925925913
+M07,False,True,True,-0.11114197530864187
+M08,False,False,False,-0.18765432098765433
+M09,False,False,False,-0.4246913580246913
+M10,False,False,False,-0.3148148148148148

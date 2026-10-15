@@ -1,0 +1,84 @@
+{
+ "batch_counts": {
+  "test": 5,
+  "train": 504,
+  "val": 90
+ },
+ "batch_size": 64,
+ "best_epoch": 6,
+ "best_val_auc": 0.9344923154446964,
+ "code_hash_src": "958ab0a7a008e83028186e67d0b9b014a9633ecc3aba0430ef6e0a1ee094b06a",
+ "config_sha256": "bc60fddaaf264ec1ae7f70f5f79c163c33f35efc0d0a1444a0c470dcb6c1b0e4",
+ "cuda": "13.0",
+ "cudnn": 92400,
+ "cudnn_benchmark": true,
+ "cudnn_deterministic": false,
+ "dataset": "D02_facial_images_A",
+ "driver": "580.178.04",
+ "end_time": "2026-10-14T13:35:11",
+ "epochs_run": 14,
+ "fold": 9,
+ "gpu_name": "NVIDIA RTX A2000 12GB",
+ "hf_hub_offline": "1",
+ "max_epochs": 40,
+ "model_id": "M07",
+ "n_ids_seen": {
+  "train": 2268,
+  "val": 378
+ },
+ "n_used": {
+  "test": 294,
+  "train": 2268,
+  "val": 378
+ },
+ "nondeterminism_note": "cudnn.benchmark=True: cuDNN may pick different algorithms between processes, so results can differ in the last digits between runs",
+ "num_workers": 8,
+ "peak_gpu_gb": 1.040974848,
+ "pos_weight": 1.0,
+ "python": "3.12.3",
+ "resumed": false,
+ "seconds": 126.69799375534058,
+ "seed": 51,
+ "sessions": [
+  {
+   "end": "2026-10-14T13:35:11",
+   "end_epoch": 14,
+   "seconds": 126.69799375534058,
+   "start": "2026-10-14T13:33:05",
+   "start_epoch": 1
+  }
+ ],
+ "split_counts": {
+  "test": {
+   "n_groups": 292,
+   "n_samples": 294
+  },
+  "train": {
+   "n_groups": 2261,
+   "n_samples": 2268
+  },
+  "val": {
+   "n_groups": 376,
+   "n_samples": 378
+  }
+ },
+ "split_files": {
+  "splits/D02_facial_images_A/fold_09.json": "a9f85d82a3f8a42bcb247e5c93ac53f62c51db44a5b7d891d527d270eb8cebf1",
+  "splits/D02_facial_images_A/folds.csv": "d2c9d877256174736b6ec416b75b115595da7e25a670db632ceca2ce8ff96ebb",
+  "splits/SPLITS_MANIFEST.json": "538c0d4d402e532d78b578f2a5fc1a24d17574e256215df7463ba812d59c4efc"
+ },
+ "start_time": "2026-10-14T13:33:05",
+ "status": "DONE",
+ "stopped_early": true,
+ "subset_per_class": null,
+ "test_ids_in_train_or_val_batches": 0,
+ "test_ids_sha256": "cacb4855b6645e243cb5484643d27a3a04bae24e5ed1e1b70d99b5bcb13d3b74",
+ "test_seconds": 2.434490203857422,
+ "timm": "1.0.30",
+ "torch": "2.14.1+cu130",
+ "weights": {
+  "sha256": "32aa17d6e17b43500f531d5f6dc9bc93e56ed8841b8a75682e1bb295d722405b",
+  "timm_name": "vit_base_patch16_224.augreg2_in21k_ft_in1k",
+  "verified_against": "reports/stage03_weights.csv"
+ }
+}

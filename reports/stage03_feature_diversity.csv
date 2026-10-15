@@ -1,0 +1,7 @@
+timm_name,real_D01_cos_between_clips,real_D01_cos_between_frames,random_noise_cos_between_clips,random_noise_cos_between_frames
+efficientnet_b3.ra2_in1k,0.6947,0.3479,0.9956,0.9645
+resnet50.a1_in1k,0.8774,0.6427,0.9956,0.9662
+convnext_tiny.in12k_ft_in1k,0.875,0.6792,0.9994,0.9959
+densenet121.ra_in1k,0.8323,0.5632,0.9998,0.9987
+vit_base_patch16_224.augreg2_in21k_ft_in1k,0.8645,0.6348,0.9946,0.9679
+efficientnet_b0.ra_in1k,0.8491,0.6272,0.9984,0.9882

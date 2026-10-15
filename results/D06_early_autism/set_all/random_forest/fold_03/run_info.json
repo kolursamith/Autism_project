@@ -1,0 +1,37 @@
+{
+ "code_hash_tabular": "c596bc9d855a1450ed313bf436c85c339ce6099f4f1b1bc3a29cb244bf40900d",
+ "config_sha256": "a29807f74133c34cdd857462859f37bf5c34d82487f0587e5434d57753989ab0",
+ "data_file": {
+  "cache/D06_early_autism/clean.csv": "c56a29b54a142e47739e42c1f0939191eaea5841deca2f54680c18c3468cff66"
+ },
+ "dataset": "D06_early_autism",
+ "device": "cpu (CUDA_VISIBLE_DEVICES='')",
+ "end_time": "2026-10-14T10:14:40",
+ "experiment": "set_all",
+ "fold": 3,
+ "model_id": "random_forest",
+ "n": {
+  "test": 100,
+  "train": 771,
+  "val": 129
+ },
+ "n_features_after_preprocessing": 12,
+ "n_jobs": 2,
+ "numpy": "1.26.4",
+ "pandas": "3.0.6",
+ "python": "3.12.3",
+ "seconds": 0.8660109043121338,
+ "seed": 45,
+ "sklearn": "1.9.1",
+ "split_files": {
+  "splits/D06_early_autism/fold_03.json": "50793eb03bde372700c93c5e159553dc4afa3fa35c24e60982fa68eb5f77079d",
+  "splits/D06_early_autism/folds.csv": "696ef81d58ae55200cc2b711b0c5b629c25f73c50af7ae81a5118dfb82c7d5d1"
+ },
+ "stage": 7,
+ "status": "DONE",
+ "thread_env": {
+  "MKL_NUM_THREADS": "2",
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+ }
+}

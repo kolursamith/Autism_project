@@ -1,0 +1,41 @@
+===== D04_autism_prediction (train.csv): 800 raw rows -> 800 clean rows; labels {0: 639, 1: 161}
+changes:
+| column | change | rows_affected |
+|---|---|---|
+| age_desc | column dropped: constant ('18 and more' in all rows) - carries no information | 800 |
+| ethnicity | trimmed surrounding whitespace | 97 |
+| ethnicity | missing token ['?'] -> missing | 203 |
+| ethnicity | lower-cased values {'White-European': 'white-european', 'Middle Eastern': 'middle eastern', 'Pasifika': 'pasifika', 'Black': 'black', 'Others': 'others', 'Hispanic': 'hispanic', 'Asian': 'asian', 'Turkish': 'turkish', 'South Asian': 'south asian', 'Latino': 'latino'} | 594 |
+| contry_of_res | lower-cased values {'Austria': 'austria', 'India': 'india', 'United States': 'united states', 'South Africa': 'south africa', 'Jordan': 'jordan', 'United Kingdom': 'united kingdom', 'Brazil': 'brazil', 'New Zealand': 'new zealand', 'Canada': 'canada', 'Kazakhstan': 'kazakhstan', 'United Arab Emirates': 'united arab emirates', 'Australia': 'australia', 'Ukraine': 'ukraine', 'Iraq': 'iraq', 'France': 'france', 'Malaysia': 'malaysia', 'Viet Nam': 'viet nam', 'Egypt': 'egypt', 'Netherlands': 'netherlands', 'Afghanistan': 'afghanistan', 'Oman': 'oman', 'Italy': 'italy', 'AmericanSamoa': 'americansamoa', 'Bahamas': 'bahamas', 'Saudi Arabia': 'saudi arabia', 'Ireland': 'ireland', 'Aruba': 'aruba', 'Sri Lanka': 'sri lanka', 'Russia': 'russia', 'Bolivia': 'bolivia', 'Azerbaijan': 'azerbaijan', 'Armenia': 'armenia', 'Serbia': 'serbia', 'Ethiopia': 'ethiopia', 'Sweden': 'sweden', 'Iceland': 'iceland', 'Hong Kong': 'hong kong', 'Angola': 'angola', 'China': 'china', 'Germany': 'germany', 'Spain': 'spain', 'Tonga': 'tonga', 'Pakistan': 'pakistan', 'Iran': 'iran', 'Argentina': 'argentina', 'Japan': 'japan', 'Mexico': 'mexico', 'Nicaragua': 'nicaragua', 'Sierra Leone': 'sierra leone', 'Czech Republic': 'czech republic', 'Niger': 'niger', 'Romania': 'romania', 'Cyprus': 'cyprus', 'Belgium': 'belgium', 'Burundi': 'burundi', 'Bangladesh': 'bangladesh'} | 800 |
+| relation | missing token ['?'] -> missing | 40 |
+| relation | lower-cased values {'Self': 'self', 'Relative': 'relative', 'Parent': 'parent', 'Others': 'others', 'Health care professional': 'health care professional'} | 760 |
+| Class/ASD | label ['1'] -> 1, ['0'] -> 0, stored as 'label' | 800 |
+duplicates: full rows (id ignored) = 0; rows in identical-feature groups = 0 in 0 groups (0 with mixed labels); all members of a group share group_id -> same fold. n_groups = 800
+missing values per feature column: {'A1_Score': 0, 'A2_Score': 0, 'A3_Score': 0, 'A4_Score': 0, 'A5_Score': 0, 'A6_Score': 0, 'A7_Score': 0, 'A8_Score': 0, 'A9_Score': 0, 'A10_Score': 0, 'age': 0, 'result': 0, 'gender': 0, 'ethnicity': 203, 'jaundice': 0, 'austim': 0, 'contry_of_res': 0, 'used_app_before': 0, 'relation': 40}
+'result' function-of-items test: {'equals_item_sum_fraction': 0.0, 'n_distinct_item_vectors': 270, 'max_distinct_values_per_item_vector': 103, 'item_vectors_with_more_than_one_value': 93, 'linear_r2_on_items': 0.2749, 'is_function_of_items': False, 'decision': 'kept as a feature (NOT a direct function of A1-A10)'}
+feature set set_all (19): ['A1_Score', 'A2_Score', 'A3_Score', 'A4_Score', 'A5_Score', 'A6_Score', 'A7_Score', 'A8_Score', 'A9_Score', 'A10_Score', 'age', 'result', 'gender', 'ethnicity', 'jaundice', 'austim', 'contry_of_res', 'used_app_before', 'relation']
+===== D05_toddler_screening (Toddler Autism dataset July 2018.csv): 1054 raw rows -> 1054 clean rows; labels {0: 326, 1: 728}
+changes:
+| column | change | rows_affected |
+|---|---|---|
+| Ethnicity | lower-cased values {'White European': 'white european', 'Hispanic': 'hispanic', 'Native Indian': 'native indian', 'Others': 'others', 'Latino': 'latino', 'Pacifica': 'pacifica'} | 446 |
+| Who completed the test | lower-cased values {'Health Care Professional': 'health care professional', 'Health care professional': 'health care professional', 'Self': 'self', 'Others': 'others'} | 36 |
+| Class/ASD Traits  | label ['yes'] -> 1, ['no'] -> 0, stored as 'label' | 1054 |
+duplicates: full rows (id ignored) = 79; rows in identical-feature groups = 138 in 59 groups (0 with mixed labels); all members of a group share group_id -> same fold. n_groups = 975
+missing values per feature column: {'A1': 0, 'A2': 0, 'A3': 0, 'A4': 0, 'A5': 0, 'A6': 0, 'A7': 0, 'A8': 0, 'A9': 0, 'A10': 0, 'Age_Mons': 0, 'Qchat-10-Score': 0, 'Sex': 0, 'Ethnicity': 0, 'Jaundice': 0, 'Family_mem_with_ASD': 0, 'Who completed the test': 0}
+label rule re-check on clean data: {'rule': 'label == (sum(A1..A10) >= 4)', 'accuracy': 1.0, 'confusion_matrix[[TN,FP],[FN,TP]]': [[326, 0], [0, 728]]}
+feature set set_all (17): ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'Age_Mons', 'Qchat-10-Score', 'Sex', 'Ethnicity', 'Jaundice', 'Family_mem_with_ASD', 'Who completed the test']
+feature set set_honest (6): ['Age_Mons', 'Sex', 'Ethnicity', 'Jaundice', 'Family_mem_with_ASD', 'Who completed the test']
+===== D06_early_autism (asd.csv): 1000 raw rows -> 1000 clean rows; labels {0: 589, 1: 411}
+changes:
+| column | change | rows_affected |
+|---|---|---|
+| Unnamed: 10 | column dropped: fully empty column (missing in all 1000 rows) | 1000 |
+| Gender | lower-cased values {'Male': 'male', 'Female': 'female'} | 1000 |
+| Jaundice | lower-cased values {'No': 'no', 'Yes': 'yes'} | 1000 |
+| Family_ASD_History | lower-cased values {'No': 'no', 'Yes': 'yes'} | 1000 |
+| Language_Delay | lower-cased values {'No': 'no', 'Yes': 'yes'} | 1000 |
+| Diagnosed_ASD | label ['yes'] -> 1, ['no'] -> 0, stored as 'label' | 1000 |
+duplicates: full rows (id ignored) = 0; rows in identical-feature groups = 0 in 0 groups (0 with mixed labels); all members of a group share group_id -> same fold. n_groups = 1000
+missing values per feature column: {'Age': 0, 'Social_Interaction_Score': 0, 'Communication_Score': 0, 'Repetitive_Behavior_Score': 0, 'Gender': 0, 'Jaundice': 0, 'Family_ASD_History': 0, 'Language_Delay': 0}
+feature set set_all (8): ['Age', 'Social_Interaction_Score', 'Communication_Score', 'Repetitive_Behavior_Score', 'Gender', 'Jaundice', 'Family_ASD_History', 'Language_Delay']

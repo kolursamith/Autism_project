@@ -1,0 +1,96 @@
+model_id: M02
+name: CNN + BiLSTM + Attention
+seed: 43
+encoder:
+  type: custom_cnn
+  channels:
+  - 32
+  - 64
+  - 128
+  - 256
+  input_size:
+    sequence: 112
+    tokens: 224
+projection:
+  d: 256
+  dropout: 0.3
+temporal:
+  type: bilstm
+  hidden: 128
+pooling: attention
+head:
+  type: linear
+  dropout: 0.3
+  attention_hidden: 128
+  mlp_hidden: 128
+policy:
+  sequence: full
+  tokens: full
+lr:
+  head_lr: 0.001
+  backbone_lr: 0.001
+batch_size:
+  sequence: 64
+  tokens: 64
+training:
+  protocol_version: 1
+  seed_base: 42
+  optimizer:
+    name: AdamW
+    weight_decay: 0.01
+  lr:
+    head_lr_pretrained: 0.0005
+    head_lr_custom_cnn: 0.001
+    backbone_lr_factor_last_stage: 0.1
+    backbone_lr_factor_full: 1.0
+  schedule:
+    name: cosine
+    warmup_epochs: 2
+  max_epochs: 40
+  early_stopping:
+    monitor: val_roc_auc
+    mode: max
+    patience: 8
+    min_delta: 0.0001
+  checkpoint:
+    keep: best_val_auc
+    last: every_epoch
+    delete_last_when_done: true
+  loss:
+    name: BCEWithLogits
+    pos_weight: n_neg_over_n_pos_train
+  grad_clip_norm: 1.0
+  amp: true
+  cudnn_benchmark: true
+  deterministic: false
+  batch_size: from_model_config
+  num_workers: auto
+  pin_memory: true
+  thresholds:
+    primary: 0.5
+    secondary: youden_j_on_validation
+data:
+  D02_facial_images_A:
+    mode: tokens
+    train_transform:
+      random_resized_crop:
+        size: 224
+        scale:
+        - 0.8
+        - 1.0
+      horizontal_flip_p: 0.5
+      color_jitter:
+        brightness: 0.1
+        contrast: 0.1
+        saturation: 0.1
+    eval_transform:
+      resize_shorter_side: 224
+      center_crop: 224
+run:
+  dataset: D02_facial_images_A
+  model_id: M02
+  fold: 1
+  mode: tokens
+  policy: full
+  batch_size: 64
+  input: images

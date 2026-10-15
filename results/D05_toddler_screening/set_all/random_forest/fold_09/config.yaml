@@ -1,0 +1,65 @@
+stage: 7
+dataset: D05_toddler_screening
+experiment: set_all
+experiment_note: 'LABEL-DEFINITIONAL UPPER BOUND: label == (A1..A10 sum >= 4); does
+  NOT measure autism prediction'
+model_id: random_forest
+fold: 9
+seed: 51
+feature_set: set_all
+numeric_features:
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- Age_Mons
+- Qchat-10-Score
+categorical_features:
+- Sex
+- Ethnicity
+- Jaundice
+- Family_mem_with_ASD
+- Who completed the test
+model:
+  class: RandomForestClassifier
+  params:
+    n_estimators: 500
+    class_weight: balanced_subsample
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  bootstrap: true
+  ccp_alpha: 0.0
+  class_weight: balanced_subsample
+  criterion: gini
+  max_depth: null
+  max_features: sqrt
+  max_leaf_nodes: null
+  max_samples: null
+  min_impurity_decrease: 0.0
+  min_samples_leaf: 1
+  min_samples_split: 2
+  min_weight_fraction_leaf: 0.0
+  monotonic_cst: null
+  n_estimators: 500
+  n_jobs: 2
+  oob_score: false
+  random_state: 51
+  verbose: 0
+  warm_start: false

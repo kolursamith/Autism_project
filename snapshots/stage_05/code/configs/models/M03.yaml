@@ -1,0 +1,32 @@
+# M03 ResNet50 + LSTM + Attention - Stage 3 model config (policy confirmed and lr mirrored from configs/training.yaml in Stage 4; batch_size set by scripts/03_profile_models.py)
+model_id: M03
+name: ResNet50 + LSTM + Attention
+seed: 42
+encoder:
+  type: timm
+  timm_name: resnet50.a1_in1k
+  family: resnet
+  input_size:
+    sequence: 224
+    tokens: 224
+projection:
+  d: 256
+  dropout: 0.3
+temporal:
+  type: lstm
+  hidden: 128
+pooling: attention
+head:
+  type: linear
+  dropout: 0.3
+  attention_hidden: 128
+  mlp_hidden: 128
+policy:
+  sequence: frozen
+  tokens: last_stage
+lr:
+  head_lr: 0.0005
+  backbone_lr: 5.0e-05
+batch_size:
+  sequence: 64
+  tokens: 64

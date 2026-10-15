@@ -1,0 +1,13 @@
+D01 M01: PASS  reasons=[]  flags=[]
+D01 M02: PASS  reasons=[]  flags=[]
+D01 M03: PASS  reasons=[]  flags=[]
+D01 M04: PASS  reasons=[]  flags=[]
+D01 M05: PASS  reasons=[]  flags=[]
+D01 M06: PASS  reasons=[]  flags=[]
+D01 M07: PASS  reasons=[]  flags=[]
+D01 M08: PASS  reasons=[]  flags=[]
+D01 M09: PASS  reasons=[]  flags=[]
+D01 M10: PASS  reasons=[]  flags=[]
+ALL PASS
+16 passed in 8.08s
+RESULT FILES IDENTICAL: all 630 sha256 match

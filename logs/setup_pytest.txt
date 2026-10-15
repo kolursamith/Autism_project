@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+rootdir: /home/score/Documents/AI_project/asd_hybrid_10fold
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 37 items
+
+tests/test_setup.py::test_project_dir_and_symlink PASSED                 [  2%]
+tests/test_setup.py::test_paths_yaml_every_path_exists PASSED            [  5%]
+tests/test_setup.py::test_datasets_dir_outside_project PASSED            [  8%]
+tests/test_setup.py::test_no_absolute_paths_outside_paths_yaml PASSED    [ 10%]
+tests/test_setup.py::test_venv_imports PASSED                            [ 13%]
+tests/test_setup.py::test_cuda_available PASSED                          [ 16%]
+tests/test_setup.py::test_check_gpu_script_exits_zero PASSED             [ 18%]
+tests/test_setup.py::test_claude_md_sections PASSED                      [ 21%]
+tests/test_setup.py::test_raw_data_snapshot_matches PASSED               [ 24%]
+tests/test_setup.py::test_gitignore[.venv/] PASSED                       [ 27%]
+tests/test_setup.py::test_gitignore[cache/] PASSED                       [ 29%]
+tests/test_setup.py::test_gitignore[*.pt] PASSED                         [ 32%]
+tests/test_setup.py::test_gitignore[logs/*.log] PASSED                   [ 35%]
+tests/test_stage01.py::test_skeleton_dir_exists[configs] PASSED          [ 37%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/data] PASSED         [ 40%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/models] PASSED       [ 43%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/training] PASSED     [ 45%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/evaluation] PASSED   [ 48%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/utils] PASSED        [ 51%]
+tests/test_stage01.py::test_skeleton_dir_exists[scripts] PASSED          [ 54%]
+tests/test_stage01.py::test_skeleton_dir_exists[tests] PASSED            [ 56%]
+tests/test_stage01.py::test_skeleton_dir_exists[data_registry] PASSED    [ 59%]
+tests/test_stage01.py::test_skeleton_dir_exists[splits] PASSED           [ 62%]
+tests/test_stage01.py::test_skeleton_dir_exists[cache] PASSED            [ 64%]
+tests/test_stage01.py::test_skeleton_dir_exists[results] PASSED          [ 67%]
+tests/test_stage01.py::test_skeleton_dir_exists[reports] PASSED          [ 70%]
+tests/test_stage01.py::test_skeleton_dir_exists[logs] PASSED             [ 72%]
+tests/test_stage01.py::test_results_readme_and_gitignore PASSED          [ 75%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D01_eye_tracking] PASSED [ 78%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D02_facial_images_A] PASSED [ 81%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D03_facial_images_B] PASSED [ 83%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D04_autism_prediction] PASSED [ 86%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D05_toddler_screening] PASSED [ 89%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D06_early_autism] PASSED [ 91%]
+tests/test_stage01.py::test_registry_exists PASSED                       [ 94%]
+tests/test_stage01.py::test_raw_data_unmodified PASSED                   [ 97%]
+tests/test_stage01.py::test_cuda_available PASSED                        [100%]
+
+============================== 37 passed in 5.32s ==============================

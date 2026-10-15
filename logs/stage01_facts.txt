@@ -1,0 +1,53 @@
+== D01
+total_gaze_rows: 2252943
+non_numeric_participant_values_rows: {'Unidentified(Neg)': 878362, 'Unidentified(Pos)': 23424} sum: 901786
+metadata_n_participants: 59 | metadata_class_counts: {'TD': 30, 'ASD': 29}
+participants_with_metadata_and_gaze: 57 {'ASD': 27, 'TD': 30}
+participants_metadata_but_no_gaze: [12, 16] | gaze IDs without metadata: []
+cars_missing_by_class: {'ASD': {'cars_missing': 0, 'n': 29}, 'TD': {'cars_missing': 30, 'n': 30}}
+dd02 key: (Participant, RecordingTime [ms], Trial, Point of Regard Right X [px], Point of Regard Right Y [px]) hashed with pandas.util.hash_pandas_object (64-bit)
+dd02 rows_total: 2252943
+dd02 distinct_keys_all_rows: 1969116
+dd02 rows_identified_participant: 1351157
+dd02 distinct_keys_identified_rows(=rows after drop Unidentified + dedupe): 1145882
+dd02 within_file_duplicate_rows: {'17.csv': 9483, '20.csv': 2950, '21.csv': 19, '23.csv': 3109, '25.csv': 2948}
+dd02 duplicated rows (all): 283827 | identified rows removed by dedupe: 205275
+file pairs sharing keys: 10
+   {'files': ['8.csv', '11.csv'], 'shared_keys': 114285, 'rows_a': 114285, 'rows_b': 114285}
+   {'files': ['10.csv', '25.csv'], 'shared_keys': 51828, 'rows_a': 51829, 'rows_b': 119064}
+   {'files': ['1.csv', '16.csv'], 'shared_keys': 34630, 'rows_a': 34630, 'rows_b': 110967}
+   {'files': ['21.csv', '22.csv'], 'shared_keys': 24266, 'rows_a': 284931, 'rows_b': 56929}
+   {'files': ['21.csv', '24.csv'], 'shared_keys': 19822, 'rows_a': 284931, 'rows_b': 38663}
+   {'files': ['14.csv', '21.csv'], 'shared_keys': 10469, 'rows_a': 28374, 'rows_b': 284931}
+   {'files': ['4.csv', '21.csv'], 'shared_keys': 9728, 'rows_a': 23136, 'rows_b': 284931}
+   {'files': ['5.csv', '21.csv'], 'shared_keys': 104, 'rows_a': 17769, 'rows_b': 284931}
+   {'files': ['9.csv', '21.csv'], 'shared_keys': 93, 'rows_a': 74479, 'rows_b': 284931}
+   {'files': ['18.csv', '21.csv'], 'shared_keys': 93, 'rows_a': 70797, 'rows_b': 284931}
+byte-identical files: []
+sampling: {'method': 'median of positive RecordingTime differences between consecutive rows with the same Participant and Trial, in file order', 'median_dt_ms': 16.700000000186265, 'implied_rate_hz': 59.88, 'p05_dt_ms': 16.68500000005588, 'p95_dt_ms': 44.0, 'n_diffs': 2247987}
+tracking ratio column in files: 25 of 25
+== D02 vs D03
+D02 counts: {'train': {'autistic': 1193, 'nonautistic': 1193}, 'valid': {'autistic': 127, 'nonautistic': 127}, 'test': {'nonautistic': 150, 'autistic': 150}} total 2940
+byte-identical (unique md5 shared): 2541
+re-saved (non-byte-identical) D03 images: 399 nearest dist hist {'0': 398, '2': 1} nearest D02 split {'valid': 99, 'test': 300} same size 399
+D03 with phash<=4 match in D02: 2940 same class: 2940
+D02 near-dup pairs: 11 within split: 6 across splits: 5 {'train|valid': 2, 'test|train': 3} cross-class: 0 groups: 11 | exact md5 groups: 0
+D02 class folder names: {'train': ['Autistic', 'Non_Autistic'], 'valid': ['Autistic', 'Non_Autistic'], 'test': ['Autistic', 'Non-Autistic']} | non-sample files: ['CF.png', 'c1.png', 'cmdense2.png', 'f1.png', 'lossnew.png', 'reportdense.png', 'resnextacc.png', 'resnextloss.png', 'roc.png', 'roc_resnext.png']
+== D04
+test.csv shape [200, 21] label cols [] counts None leak: None
+train.csv shape [800, 22] label cols ['Class/ASD'] counts {'0': 639, '1': 161} leak: No exact single-feature rule over the whole file; best is 'ASD if sum(A1_Score..A10_Score) >= 10' accuracy 0.8625 (majority baseline 0.79875)
+== D05
+Autism_Screening_Data_Combined.csv shape [6075, 15] counts {'NO': 4271, 'YES': 1804} dup full 847 dup excl id 847
+   top rule: {'feature': 'sum(A1..A10)', 'rule': 'ASD if sum(A1..A10) >= 7', 'accuracy': 0.933827, 'n': 6075, 'confusion_matrix[[TN,FP],[FN,TP]]': [[3869, 402], [0, 1804]]}
+   summary: No exact single-feature rule over the whole file; best is 'ASD if sum(A1..A10) >= 7' accuracy 0.933827 (majority baseline 0.703045); PARTIAL LEAKAGE: within age bands the item-sum rule is exact for 5021 of 6075 rows
+    Age 0-3 ASD if item_sum <= 0 0.948767 n 1054
+    Age 4-11 ASD if item_sum >= 7 1.0 n 1105
+    Age 12-17 ASD if item_sum >= 7 1.0 n 711
+    Age 18-200 ASD if item_sum >= 7 1.0 n 3205
+Toddler Autism dataset July 2018.csv shape [1054, 19] counts {'Yes': 728, 'No': 326} dup full 0 dup excl id 79
+   top rule: {'feature': 'sum(A1..A10)', 'rule': 'ASD if sum(A1..A10) >= 4', 'accuracy': 1.0, 'n': 1054, 'confusion_matrix[[TN,FP],[FN,TP]]': [[326, 0], [0, 728]]}
+   summary: LEAKAGE: label reproduced exactly by 'ASD if sum(A1..A10) >= 4' (accuracy 1.0)
+   item_sum_equals_Qchat-10-Score {'rows_equal': 1054, 'n': 1054, 'max_abs_diff': 0.0}
+embedded: [{'container': 'Autism_Screening_Data_Combined.csv', 'contained': 'Toddler Autism dataset July 2018.csv', 'compared_on': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'Sex'], 'container_rows': [5021, 6074], 'label_container_counts': {'no': 1054}, 'label_contained_counts': {'no': 326, 'yes': 728}, 'rows_with_different_label': 728}]
+== D06
+shape [1000, 11] counts {'No': 589, 'Yes': 411} empty cols ['Unnamed: 10'] best ASD if Age >= 35 0.601 majority 0.589

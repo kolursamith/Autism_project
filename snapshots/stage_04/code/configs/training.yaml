@@ -1,0 +1,60 @@
+# Stage 4 - FIXED training protocol for S5 (D01) and S6 (D02). Written 2026-10-14, BEFORE any real result exists.
+# These values must not be tuned on test folds later. src/training/engine.py merges this file over
+# configs/models/Mxx.yaml (the merged config is saved as config.yaml in every fold folder).
+protocol_version: 1
+seed_base: 42                       # seed = seed_base + fold (python, numpy, torch, cuda, data-loader generators)
+
+optimizer:
+  name: AdamW
+  weight_decay: 0.01
+lr:
+  head_lr_pretrained: 0.0005        # M01 M03 M04 M06 M07 M08 M10
+  head_lr_custom_cnn: 0.001         # M02 M05 M09
+  backbone_lr_factor_last_stage: 0.1  # backbone_lr = head_lr / 10 when the backbone policy is last_stage
+  backbone_lr_factor_full: 1.0        # custom CNN (policy full): backbone trained at head_lr
+schedule:
+  name: cosine                      # per optimizer step, decays to 0 at max_epochs
+  warmup_epochs: 2                  # linear warm-up from head_lr/warmup_steps to head_lr
+max_epochs: 40
+early_stopping:
+  monitor: val_roc_auc              # sample-level (D01: clip-level) ROC-AUC on the validation part of the fold
+  mode: max
+  patience: 8
+  min_delta: 0.0001
+checkpoint:
+  keep: best_val_auc                # best_model.pt = full model state_dict at the best validation AUC
+  last: every_epoch                 # last.pt (model, optimizer, scheduler, scaler, epoch, best, patience, RNG states)
+  delete_last_when_done: true       # last.pt is only needed for resume
+loss:
+  name: BCEWithLogits
+  pos_weight: n_neg_over_n_pos_train   # computed on the TRAIN part of each fold only
+grad_clip_norm: 1.0
+amp: true                           # torch.autocast("cuda", float16) + torch.amp.GradScaler
+cudnn_benchmark: true               # golden rule 10; a source of nondeterminism (recorded in run_info.json)
+deterministic: false                # tests set true (cudnn.deterministic, benchmark off) for the exact-resume check
+batch_size: from_model_config       # configs/models/Mxx.yaml batch_size.<mode>
+num_workers: auto                   # min(8, os.cpu_count())
+pin_memory: true
+
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation  # threshold maximising TPR - FPR on the validation predictions of the best
+                                     # checkpoint; never chosen on test. D01 child level: chosen on validation
+                                     # child probabilities.
+
+data:
+  D01_eye_tracking:
+    mode: sequence
+    augmentation: none
+    frozen_backbone_input: cached_features   # cache/features/<timm_name>_D01.npy (src/models/feature_cache.py)
+    trainable_backbone_input: clips          # M02 M05 M09: uint8 clips (B, 8, 3, 224, 224) end to end
+    child_level: mean_clip_probability
+  D02_facial_images_A:
+    mode: tokens
+    train_transform:                # applied to the PIL RGB image, output uint8 (3, 224, 224)
+      random_resized_crop: {size: 224, scale: [0.8, 1.0]}
+      horizontal_flip_p: 0.5
+      color_jitter: {brightness: 0.1, contrast: 0.1, saturation: 0.1}
+    eval_transform:
+      resize_shorter_side: 224
+      center_crop: 224

@@ -1,0 +1,60 @@
+stage: 7
+dataset: D05_toddler_screening
+experiment: set_all
+experiment_note: 'LABEL-DEFINITIONAL UPPER BOUND: label == (A1..A10 sum >= 4); does
+  NOT measure autism prediction'
+model_id: mlp
+fold: 1
+seed: 43
+feature_set: set_all
+numeric_features:
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- Age_Mons
+- Qchat-10-Score
+categorical_features:
+- Sex
+- Ethnicity
+- Jaundice
+- Family_mem_with_ASD
+- Who completed the test
+model:
+  class: MLPClassifier
+  params:
+    hidden_layer_sizes:
+    - 64
+    - 32
+  early_stopping:
+    monitor: val_roc_auc
+    data: fold VALIDATION part only
+    patience: 10
+    min_delta: 0.0001
+    max_epochs: 200
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  hidden_layer_sizes:
+  - 64
+  - 32
+  max_epochs: 200
+  min_delta: 0.0001
+  patience: 10
+  random_state: 43

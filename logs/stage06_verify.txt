@@ -1,0 +1,34 @@
+1a queue: last run_stage6.sh end line ('2026-10-14T14:31:58+05:30', '0'); 'QUEUE DONE D02_facial_images_A' in log: True; PID 225660 alive: False; pid file renamed to logs/stage6.pid.finished: True
+1b registry: 100 D02 rows, status counts {'DONE': 100}, models ['M01', 'M02', 'M03', 'M04', 'M05', 'M06', 'M07', 'M08', 'M09', 'M10'], folds per model [10]
+1b last.pt files left under results/D02_facial_images_A: 0
+1c split hashes vs SPLITS_MANIFEST.json: OK
+1c fold  1: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  2: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  3: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  4: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  5: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  6: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  7: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  8: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold  9: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c fold 10: 294 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True; test_ids_sha256 identical: True
+1c identical test ids per fold across models: True
+1d validate_model_results M01: PASS; reasons 0; flags 0
+1d validate_model_results M02: PASS; reasons 0; flags 0
+1d validate_model_results M03: PASS; reasons 0; flags 0
+1d validate_model_results M04: PASS; reasons 0; flags 0
+1d validate_model_results M05: PASS; reasons 0; flags 0
+1d validate_model_results M06: PASS; reasons 0; flags 0
+1d validate_model_results M07: PASS; reasons 0; flags 0
+1d validate_model_results M08: PASS; reasons 0; flags 0
+1d validate_model_results M09: PASS; reasons 0; flags 0
+1d validate_model_results M10: PASS; reasons 0; flags 0
+1e groups: 2929 groups (11 with > 1 image); groups spanning > 1 outer fold: 0
+1e byte-identical images (same md5): 0 md5 values with > 1 image; spanning > 1 outer fold: 0
+1e pHash pairs recomputed from manifest.csv over all 4,320,330 image pairs (group rule: Hamming <= 4):
+     Hamming 0-4: 11 pairs, of which in different outer folds: 0
+     Hamming 5-8: 38 pairs, of which in different outer folds: 34
+     Hamming 9-10: 146 pairs, of which in different outer folds: 128
+2 summarize: summary.json for 10 models + results/D02_facial_images_A/leaderboard.csv written
+3 original-split subsets: logs/stage06_original_split_auc.csv written (10 models; original 'test' images per model [300], rest [2640])
+D02 result files (metrics/predictions/run_info/summary/leaderboard, 311 files) unchanged by 06b_verify.py (summaries re-written byte-identically)

@@ -1,0 +1,50 @@
+stage: 7
+dataset: D06_early_autism
+experiment: set_all
+experiment_note: features per columns.yaml
+model_id: mlp
+fold: 10
+seed: 52
+feature_set: set_all
+numeric_features:
+- Age
+- Social_Interaction_Score
+- Communication_Score
+- Repetitive_Behavior_Score
+categorical_features:
+- Gender
+- Jaundice
+- Family_ASD_History
+- Language_Delay
+model:
+  class: MLPClassifier
+  params:
+    hidden_layer_sizes:
+    - 64
+    - 32
+  early_stopping:
+    monitor: val_roc_auc
+    data: fold VALIDATION part only
+    patience: 10
+    min_delta: 0.0001
+    max_epochs: 200
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  hidden_layer_sizes:
+  - 64
+  - 32
+  max_epochs: 200
+  min_delta: 0.0001
+  patience: 10
+  random_state: 52

@@ -1,0 +1,17 @@
+D1 bootstrap CIs: 54 rows (2000 resamples, seed 42) -> stats_bootstrap_ci.csv
+D1 top D01_eye_tracking [clip]: M08 pooled AUC 0.689 [0.594, 0.781]
+D1 top D01_eye_tracking [child]: M07 pooled AUC 0.832 [0.722, 0.927]
+D1 top D02_facial_images_A [image]: M07 pooled AUC 0.898 [0.887, 0.909]
+D1 top D04_autism_prediction/set_all [row]: mlp pooled AUC 0.905 [0.882, 0.926]
+D1 top D05_toddler_screening/set_all [row]: logreg pooled AUC 1.000 [1.000, 1.000]
+D1 top D05_toddler_screening/set_honest [row]: hist_gb pooled AUC 0.610 [0.570, 0.652]
+D1 top D06_early_autism/set_all [row]: logreg pooled AUC 0.482 [0.446, 0.519]
+D2 Friedman D01_clip: chi2 21.19, p 0.012 (folds 10); Nemenyi CD 4.28; significant Nemenyi pairs 0; best M08; Nadeau-Bengio Holm p < 0.05 vs: []
+D2 Friedman D01_child: chi2 7.69, p 0.57 (folds 10); Nemenyi CD 4.28; significant Nemenyi pairs 0; best M04; Nadeau-Bengio Holm p < 0.05 vs: []
+D2 Friedman D02_image: chi2 62.92, p 3.7e-10 (folds 10); Nemenyi CD 4.28; significant Nemenyi pairs 11; best M04; Nadeau-Bengio Holm p < 0.05 vs: ['M01', 'M03', 'M05', 'M06', 'M08', 'M09', 'M10']
+D4 D01 clip  pretrained (: mean fold-mean AUC 0.658 (0.635-0.686)
+D4 D01 clip  from scratch: mean fold-mean AUC 0.619 (0.595-0.657)
+D4 D01 child pretrained (: mean fold-mean AUC 0.790 (0.744-0.856)
+D4 D01 child from scratch: mean fold-mean AUC 0.717 (0.678-0.767)
+D4 D02 image pretrained (: mean fold-mean AUC 0.905 (0.885-0.931)
+D4 D02 image from scratch: mean fold-mean AUC 0.874 (0.867-0.881)

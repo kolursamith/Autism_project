@@ -1,0 +1,1 @@
+{"start_time": "2026-10-14T10:01:09+05:30", "pid": 119087, "pgid": 119087, "sid": 119087, "command": "setsid nohup bash scripts/run_stage5.sh >> logs/stage5_nohup.out 2>&1 < /dev/null &", "cwd": "/home/score/Documents/AI_project/asd_hybrid_10fold", "host": "SJT806SCORE011", "queue_log": "logs/stage5_queue.log", "nohup_out": "logs/stage5_nohup.out"}

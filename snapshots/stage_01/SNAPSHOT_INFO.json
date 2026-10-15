@@ -1,0 +1,28 @@
+{
+ "datetime": "2026-10-13T16:56:45",
+ "stage": 1,
+ "decision": "PASS",
+ "python": "3.12.3",
+ "torch": "2.14.1+cu130",
+ "torch_cuda": "13.0",
+ "gpu": "NVIDIA RTX A2000 12GB",
+ "n_files_checksummed": 33,
+ "hashed_dirs": [
+  "src",
+  "scripts",
+  "configs",
+  "tests",
+  "splits",
+  "reports",
+  "cache"
+ ],
+ "copied_dirs": [
+  "src",
+  "scripts",
+  "configs",
+  "tests",
+  "CLAUDE.md"
+ ],
+ "code_hash": "f95ff85e25bde174059f7a5354f62ddecb6cc40b5cf20e365541cf3ca7f78267",
+ "note": "Stage 1 + Setup state after the no-git override (2026-10-13). Not the original 2026-10-12 code: scripts were path-refactored in the setup session."
+}

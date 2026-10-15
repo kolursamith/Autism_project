@@ -1,0 +1,75 @@
+### date
+Mon 12 Oct 2026 05:52:25 PM IST
+
+### nvidia-smi
+Mon Oct 12 17:52:25 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A2000 12GB          Off |   00000000:01:00.0  On |                  Off |
+| 30%   38C    P8              9W /   70W |     536MiB /  12282MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            4358      G   /usr/lib/xorg/Xorg                      190MiB |
+|    0   N/A  N/A            4641      G   /usr/bin/gnome-shell                    202MiB |
+|    0   N/A  N/A           28226      G   ...rack-uuid=3190708988185955192        107MiB |
++-----------------------------------------------------------------------------------------+
+
+### system python --version
+Python 3.12.3
+### system python: packages present BEFORE Stage 1 installs
+  torch MISSING: ModuleNotFoundError: No module named 'torch'
+  torchvision MISSING: ModuleNotFoundError: No module named 'torchvision'
+  timm MISSING: ModuleNotFoundError: No module named 'timm'
+  numpy OK 1.26.4
+  pandas MISSING: ModuleNotFoundError: No module named 'pandas'
+  sklearn MISSING: ModuleNotFoundError: No module named 'sklearn'
+  matplotlib OK 3.6.3
+  PIL OK 10.2.0
+  cv2 MISSING: ModuleNotFoundError: No module named 'cv2'
+  yaml OK 6.0.1
+  pytest MISSING: ModuleNotFoundError: No module named 'pytest'
+  scipy OK 1.11.4
+  imagehash MISSING: ModuleNotFoundError: No module named 'imagehash'
+
+### venv: .venv (python3 -m venv --system-site-packages); installed only the missing packages with constraints:
+numpy==1.26.4
+scipy==1.11.4
+matplotlib==3.6.3
+pillow==10.2.0
+pyyaml==6.0.1
+
+### .venv/bin/python scripts/01_check_environment.py
+python 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0] | executable /home/score/asd_hybrid_10fold/.venv/bin/python
+torch.__version__ = 2.14.1+cu130
+torch.version.cuda = 13.0
+torch.cuda.is_available() = True
+cudnn = 92400
+torch.cuda.get_device_name(0) = NVIDIA RTX A2000 12GB
+total GPU memory (GiB) = 11.618
+4096x4096 fp32 matmul on GPU: 29.83 ms (4.61 TFLOP/s), checksum -26075.1875
+
+package versions (import name -> version, module file)
+  torch          OK   2.14.1+cu130 /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/torch/__init__.py
+  torchvision    OK   0.29.1+cu130 /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/torchvision/__init__.py
+  timm           OK   1.0.30       /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/timm/__init__.py
+  numpy          OK   1.26.4       /usr/lib/python3/dist-packages/numpy/__init__.py
+  pandas         OK   3.0.6        /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/pandas/__init__.py
+  scikit-learn   OK   1.9.1        /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/sklearn/__init__.py
+  matplotlib     OK   3.6.3        /usr/lib/python3/dist-packages/matplotlib/__init__.py
+  pillow         OK   10.2.0       /usr/lib/python3/dist-packages/PIL/__init__.py
+  opencv-python  OK   4.11.0       /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/cv2/__init__.py
+  pyyaml         OK   6.0.1        /usr/lib/python3/dist-packages/yaml/__init__.py
+  pytest         OK   9.1.1        /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/pytest/__init__.py
+  scipy          OK   1.11.4       /usr/lib/python3/dist-packages/scipy/__init__.py
+  imagehash      OK   4.3.2        /home/score/asd_hybrid_10fold/.venv/lib/python3.12/site-packages/imagehash/__init__.py

@@ -1,0 +1,32 @@
+# M04 ConvNeXt + BiLSTM + Attention - Stage 3 model config (policy defaults are confirmed in Stage 4; batch_size set by scripts/03_profile_models.py)
+model_id: M04
+name: ConvNeXt + BiLSTM + Attention
+seed: 42
+encoder:
+  type: timm
+  timm_name: convnext_tiny.in12k_ft_in1k
+  family: convnext
+  input_size:
+    sequence: 224
+    tokens: 224
+projection:
+  d: 256
+  dropout: 0.3
+temporal:
+  type: bilstm
+  hidden: 128
+pooling: attention
+head:
+  type: linear
+  dropout: 0.3
+  attention_hidden: 128
+  mlp_hidden: 128
+policy:
+  sequence: frozen
+  tokens: last_stage
+lr:
+  head_lr: 0.001
+  backbone_lr: 0.0001
+batch_size:
+  sequence: 64
+  tokens: 64

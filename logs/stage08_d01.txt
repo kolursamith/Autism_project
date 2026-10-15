@@ -1,0 +1,40 @@
+B0 children with clips: 57 (27 ASD / 30 TD); clips 1241; quality features ['mean_valid_ratio', 'mean_blink_ratio', 'tracking_ratio_before_filtering']
+B1 quality_LR3                  child pooled AUC 0.823; per-fold 0.850 ± 0.216
+B1 quality_LR_valid_ratio       child pooled AUC 0.828; per-fold 0.850 ± 0.216
+B1 one_minus_valid_ratio        child pooled AUC 0.842; per-fold 0.850 ± 0.216
+B1 clip_one_minus_valid_ratio   clip  pooled AUC 0.678; per-fold 0.670 ± 0.131
+B1 clip_LR_valid_blink          clip  pooled AUC 0.651; per-fold 0.665 ± 0.140
+B2 M01 child AUC 0.714 vs quality_LR3 0.823: diff -0.110 [-0.265, +0.046], DeLong p 0.161
+B2 M02 child AUC 0.578 vs quality_LR3 0.823: diff -0.246 [-0.417, -0.084], DeLong p 0.003
+B2 M03 child AUC 0.735 vs quality_LR3 0.823: diff -0.089 [-0.233, +0.054], DeLong p 0.230
+B2 M04 child AUC 0.762 vs quality_LR3 0.823: diff -0.062 [-0.196, +0.069], DeLong p 0.351
+B2 M05 child AUC 0.605 vs quality_LR3 0.823: diff -0.219 [-0.398, -0.058], DeLong p 0.008
+B2 M06 child AUC 0.784 vs quality_LR3 0.823: diff -0.040 [-0.151, +0.065], DeLong p 0.478
+B2 M07 child AUC 0.832 vs quality_LR3 0.823: diff +0.009 [-0.098, +0.120], DeLong p 0.876
+B2 M08 child AUC 0.786 vs quality_LR3 0.823: diff -0.037 [-0.174, +0.107], DeLong p 0.590
+B2 M09 child AUC 0.574 vs quality_LR3 0.823: diff -0.249 [-0.410, -0.090], DeLong p 0.002
+B2 M10 child AUC 0.673 vs quality_LR3 0.823: diff -0.151 [-0.295, -0.007], DeLong p 0.036
+B4b matching (caliper 0.05): 14 pairs of 27 ASD / 30 TD; SMD valid_ratio -1.33 -> -0.16
+B4b M01                        matched AUC 0.556 [0.337, 0.765]
+B4b M02                        matched AUC 0.469 [0.281, 0.663]
+B4b M03                        matched AUC 0.587 [0.362, 0.796]
+B4b M04                        matched AUC 0.592 [0.337, 0.816]
+B4b M05                        matched AUC 0.515 [0.311, 0.709]
+B4b M06                        matched AUC 0.597 [0.367, 0.781]
+B4b M07                        matched AUC 0.724 [0.551, 0.883]
+B4b M08                        matched AUC 0.679 [0.469, 0.842]
+B4b M09                        matched AUC 0.536 [0.316, 0.755]
+B4b M10                        matched AUC 0.551 [0.347, 0.750]
+B4b quality: 1 - valid_ratio   matched AUC 0.571 [0.454, 0.684]
+B4b quality_LR3                matched AUC 0.561 [0.449, 0.684]
+B5 M01 pooled AUC quality 0.823 -> +score 0.823 (+0.000); per-fold mean diff +0.006
+B5 M02 pooled AUC quality 0.823 -> +score 0.814 (-0.010); per-fold mean diff +0.000
+B5 M03 pooled AUC quality 0.823 -> +score 0.812 (-0.011); per-fold mean diff -0.006
+B5 M04 pooled AUC quality 0.823 -> +score 0.825 (+0.001); per-fold mean diff +0.011
+B5 M05 pooled AUC quality 0.823 -> +score 0.817 (-0.006); per-fold mean diff +0.000
+B5 M06 pooled AUC quality 0.823 -> +score 0.820 (-0.004); per-fold mean diff +0.011
+B5 M07 pooled AUC quality 0.823 -> +score 0.836 (+0.012); per-fold mean diff -0.006
+B5 M08 pooled AUC quality 0.823 -> +score 0.821 (-0.002); per-fold mean diff +0.006
+B5 M09 pooled AUC quality 0.823 -> +score 0.820 (-0.004); per-fold mean diff +0.000
+B5 M10 pooled AUC quality 0.823 -> +score 0.807 (-0.016); per-fold mean diff +0.000
+B6 models that add information beyond tracking quality (rule): ['M07']

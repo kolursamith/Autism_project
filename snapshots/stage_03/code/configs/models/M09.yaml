@@ -1,0 +1,35 @@
+# M09 CNN + GRU + Attention - Stage 3 model config (policy defaults are confirmed in Stage 4; batch_size set by scripts/03_profile_models.py)
+model_id: M09
+name: CNN + GRU + Attention
+seed: 42
+encoder:
+  type: custom_cnn
+  channels:
+  - 32
+  - 64
+  - 128
+  - 256
+  input_size:
+    sequence: 112
+    tokens: 224
+projection:
+  d: 256
+  dropout: 0.3
+temporal:
+  type: gru
+  hidden: 128
+pooling: attention
+head:
+  type: linear
+  dropout: 0.3
+  attention_hidden: 128
+  mlp_hidden: 128
+policy:
+  sequence: full
+  tokens: full
+lr:
+  head_lr: 0.001
+  backbone_lr: 0.001
+batch_size:
+  sequence: 64
+  tokens: 64

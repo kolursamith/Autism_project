@@ -1,0 +1,14 @@
+== validate_model_results adapted to the smoke folds
+D01 M01 [1, 2] PASS []
+D01 M09 [1, 2] PASS []
+D02 M07 [1, 2] PASS []
+D02 M03 [1] PASS []
+leaderboard D01_eye_tracking [{'model_id': 'M01', 'n_folds': 2, 'roc_auc_mean': 0.6044259551021088, 'pooled_oof_roc_auc': 0.612168659043659}, {'model_id': 'M09', 'n_folds': 2, 'roc_auc_mean': 0.5210401046394442, 'pooled_oof_roc_auc': 0.541774948024948}]
+leaderboard D02_facial_images_A [{'model_id': 'M07', 'n_folds': 2, 'roc_auc_mean': 0.9035587023925216, 'pooled_oof_roc_auc': 0.8977104447221065}, {'model_id': 'M03', 'n_folds': 1, 'roc_auc_mean': 0.8502244435189042, 'pooled_oof_roc_auc': 0.8502244435189042}]
+== resume vs straight reference (cudnn.benchmark=True), D02 M03 fold 1, 3 epochs
+  max |diff| train_loss: 3.03e-04
+  max |diff| val_loss: 3.27e-04
+  max |diff| val_auc: 5.60e-05
+  max |diff| lr: 0.00e+00
+  max |diff| test y_prob: 2.93e-03; test AUC 0.850224 vs 0.850224
+  resumed run_info: resumed True sessions [(1, 1, True), (2, 3, False)]

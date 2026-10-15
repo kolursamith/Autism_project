@@ -1,0 +1,18 @@
+# D05 toddler screening - Stage 2 cleaning (DD-09). Tabular baselines only. Toddler file only.
+dataset_id: D05_toddler_screening
+seed: 42
+file: Toddler Autism dataset July 2018.csv   # the only file read for D05 (the other CSV in the folder is excluded, DD-09)
+id_column: Case_No
+sample_prefix: "D05_"
+label: {column: "Class/ASD Traits ", positive: ["Yes"], negative: ["No"]}
+missing_tokens: ["?"]
+numeric: [A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, Age_Mons, Qchat-10-Score]
+categorical: [Sex, Ethnicity, Jaundice, Family_mem_with_ASD, Who completed the test]
+excluded: {}
+feature_sets:
+  # (a) label-definitional upper bound: the label is a formula of A1-A10 (DD-09)
+  set_all: [A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, Age_Mons, Qchat-10-Score, Sex, Ethnicity, Jaundice,
+            Family_mem_with_ASD, Who completed the test]
+  # (b) honest experiment: A1-A10 and the score removed
+  set_honest: [Age_Mons, Sex, Ethnicity, Jaundice, Family_mem_with_ASD, Who completed the test]
+label_rule_check: {items: [A1, A2, A3, A4, A5, A6, A7, A8, A9, A10], threshold: 4}

@@ -1,0 +1,221 @@
+{
+ "dataset": "set_all",
+ "folds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "model_id": "dummy_majority",
+ "n_folds": 10,
+ "per_fold_metrics": {
+  "test/threshold_0.5/accuracy": {
+   "max": 0.6952380952380952,
+   "mean": 0.6907097933513028,
+   "min": 0.6857142857142857,
+   "n_folds": 10,
+   "std": 0.004060990120718371
+  },
+  "test/threshold_0.5/balanced_accuracy": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/brier": {
+   "max": 0.3142857142857143,
+   "mean": 0.3092902066486972,
+   "min": 0.3047619047619048,
+   "n_folds": 10,
+   "std": 0.0040609901207183585
+  },
+  "test/threshold_0.5/f1": {
+   "max": 0.8202247191011236,
+   "mean": 0.8170587352874525,
+   "min": 0.8135593220338984,
+   "n_folds": 10,
+   "std": 0.002840363133131534
+  },
+  "test/threshold_0.5/pr_auc": {
+   "max": 0.6952380952380952,
+   "mean": 0.6907097933513028,
+   "min": 0.6857142857142857,
+   "n_folds": 10,
+   "std": 0.004060990120718371
+  },
+  "test/threshold_0.5/precision": {
+   "max": 0.6952380952380952,
+   "mean": 0.6907097933513028,
+   "min": 0.6857142857142857,
+   "n_folds": 10,
+   "std": 0.004060990120718371
+  },
+  "test/threshold_0.5/recall": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/roc_auc": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/sensitivity": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/specificity": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/accuracy": {
+   "max": 0.6952380952380952,
+   "mean": 0.6907097933513028,
+   "min": 0.6857142857142857,
+   "n_folds": 10,
+   "std": 0.004060990120718371
+  },
+  "test/threshold_val_youden/balanced_accuracy": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/brier": {
+   "max": 0.3142857142857143,
+   "mean": 0.3092902066486972,
+   "min": 0.3047619047619048,
+   "n_folds": 10,
+   "std": 0.0040609901207183585
+  },
+  "test/threshold_val_youden/f1": {
+   "max": 0.8202247191011236,
+   "mean": 0.8170587352874525,
+   "min": 0.8135593220338984,
+   "n_folds": 10,
+   "std": 0.002840363133131534
+  },
+  "test/threshold_val_youden/pr_auc": {
+   "max": 0.6952380952380952,
+   "mean": 0.6907097933513028,
+   "min": 0.6857142857142857,
+   "n_folds": 10,
+   "std": 0.004060990120718371
+  },
+  "test/threshold_val_youden/precision": {
+   "max": 0.6952380952380952,
+   "mean": 0.6907097933513028,
+   "min": 0.6857142857142857,
+   "n_folds": 10,
+   "std": 0.004060990120718371
+  },
+  "test/threshold_val_youden/recall": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/roc_auc": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/sensitivity": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/specificity": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "val_threshold_youden": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  }
+ },
+ "pooled_out_of_fold": {
+  "threshold_0.5": {
+   "accuracy": 0.6907020872865275,
+   "balanced_accuracy": 0.5,
+   "brier": 0.3092979127134725,
+   "confusion_matrix": [
+    [
+     0,
+     326
+    ],
+    [
+     0,
+     728
+    ]
+   ],
+   "f1": 0.8170594837261503,
+   "n": 1054,
+   "n_neg": 326,
+   "n_pos": 728,
+   "pr_auc": 0.6907020872865275,
+   "precision": 0.6907020872865275,
+   "recall": 1.0,
+   "roc_auc": 0.5,
+   "sensitivity": 1.0,
+   "specificity": 0.0,
+   "threshold": 0.5
+  },
+  "threshold_val_youden_per_fold": {
+   "accuracy": 0.6907020872865275,
+   "balanced_accuracy": 0.5,
+   "brier": 0.3092979127134725,
+   "confusion_matrix": [
+    [
+     0,
+     326
+    ],
+    [
+     0,
+     728
+    ]
+   ],
+   "f1": 0.8170594837261503,
+   "n": 1054,
+   "n_neg": 326,
+   "n_pos": 728,
+   "pr_auc": 0.6907020872865275,
+   "precision": 0.6907020872865275,
+   "recall": 1.0,
+   "roc_auc": 0.5,
+   "sensitivity": 1.0,
+   "specificity": 0.0,
+   "threshold": null
+  }
+ },
+ "std_definition": "sample standard deviation over folds (ddof=1)"
+}

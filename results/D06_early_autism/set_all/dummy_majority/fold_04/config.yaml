@@ -1,0 +1,38 @@
+stage: 7
+dataset: D06_early_autism
+experiment: set_all
+experiment_note: features per columns.yaml
+model_id: dummy_majority
+fold: 4
+seed: 46
+feature_set: set_all
+numeric_features:
+- Age
+- Social_Interaction_Score
+- Communication_Score
+- Repetitive_Behavior_Score
+categorical_features:
+- Gender
+- Jaundice
+- Family_ASD_History
+- Language_Delay
+model:
+  class: DummyClassifier
+  params:
+    strategy: most_frequent
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  constant: null
+  random_state: null
+  strategy: most_frequent

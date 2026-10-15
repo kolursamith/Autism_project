@@ -1,0 +1,14 @@
+# The ONLY file in this project that may contain absolute paths.
+# Load it with src/utils/paths.py (load_paths / dataset_dir); never hard-code a path elsewhere.
+project_dir: /home/score/Documents/AI_project/asd_hybrid_10fold
+datasets_dir: /home/score/Documents/AI_project/dataset   # raw data, READ-ONLY, never copied into project_dir
+legacy_symlink: /home/score/asd_hybrid_10fold           # symlink -> project_dir (old Stage 1 path)
+
+# dataset_id -> real folder name inside datasets_dir
+datasets:
+  D01_eye_tracking: "Eye-Tracking Dataset"
+  D02_facial_images_A: "Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for Enhanced Classification Accuracy"
+  D03_facial_images_B: "AutismDataset"
+  D04_autism_prediction: "Autism_prediction dataset"
+  D05_toddler_screening: "Autism_dataset"
+  D06_early_autism: "early_autism"

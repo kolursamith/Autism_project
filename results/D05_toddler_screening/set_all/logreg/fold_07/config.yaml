@@ -1,0 +1,62 @@
+stage: 7
+dataset: D05_toddler_screening
+experiment: set_all
+experiment_note: 'LABEL-DEFINITIONAL UPPER BOUND: label == (A1..A10 sum >= 4); does
+  NOT measure autism prediction'
+model_id: logreg
+fold: 7
+seed: 49
+feature_set: set_all
+numeric_features:
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- Age_Mons
+- Qchat-10-Score
+categorical_features:
+- Sex
+- Ethnicity
+- Jaundice
+- Family_mem_with_ASD
+- Who completed the test
+model:
+  class: LogisticRegression
+  params:
+    C: 1.0
+    class_weight: balanced
+    max_iter: 5000
+  note: L2 (default)
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  C: 1.0
+  class_weight: balanced
+  dual: false
+  fit_intercept: true
+  intercept_scaling: 1
+  l1_ratio: 0.0
+  max_iter: 5000
+  n_jobs: null
+  penalty: deprecated
+  random_state: 49
+  solver: lbfgs
+  tol: 0.0001
+  verbose: 0
+  warm_start: false

@@ -1,0 +1,5 @@
+line,number,category,context
+319,97.5,protocol constant: one-sided bound level (multiplicity note),"y, the chance that at least one of 10 independent one-sided 97.5% bounds lies above 0.5 is 1 - 0.975^10 "
+319,0.975,protocol constant: one-sided bound level (multiplicity note),"10 independent one-sided 97.5% bounds lies above 0.5 is 1 - 0.975^10 = 22%; the models are correlated, so"
+368,43.8,derived (GPU time from reproducibility_table seconds),"Total GPU training time: 43.8 min (D01, 100 runs) + 208.5 min (D02, 1"
+368,208.5,derived (GPU time from reproducibility_table seconds),"Total GPU training time: 43.8 min (D01, 100 runs) + 208.5 min (D02, 100 runs) = 4.20 h on one RTX"

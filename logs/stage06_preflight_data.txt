@@ -1,0 +1,5 @@
+D02 folder: 'Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for Enhanced Classification Accuracy'
+D03 folder (excluded): 'AutismDataset'
+rows 2940; top-level folder == D02 folder for all rows: True; rows whose top-level folder is the D03 folder: 0
+missing files: 0; files that fail to open/decode: 0; image modes: {'RGB': 2940}
+D02 DATA CHECK: OK

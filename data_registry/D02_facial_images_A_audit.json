@@ -1,0 +1,317 @@
+{
+ "dataset_id": "D02_facial_images_A",
+ "folder": "Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for Enhanced Classification Accuracy",
+ "path": "/home/score/Documents/AI_project/dataset/Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for Enhanced Classification Accuracy",
+ "audited_at": "2026-10-12T17:59:58",
+ "seed": 42,
+ "tree": {
+  "n_files": 2950,
+  "files_by_extension": {
+   ".jpg": 2940,
+   ".png": 10
+  },
+  "total_size_bytes": 123047588,
+  "total_size_mb": 117.35,
+  "max_depth": 5,
+  "tree_first_3_levels": [
+   {
+    "dir": ".",
+    "depth": 0,
+    "n_files": 10,
+    "n_subdirs": 1
+   },
+   {
+    "dir": "AutismDataset",
+    "depth": 1,
+    "n_files": 0,
+    "n_subdirs": 1
+   },
+   {
+    "dir": "AutismDataset/AutismDataset",
+    "depth": 2,
+    "n_files": 0,
+    "n_subdirs": 3
+   },
+   {
+    "dir": "AutismDataset/AutismDataset/test",
+    "depth": 3,
+    "n_files": 0,
+    "n_subdirs": 2
+   },
+   {
+    "dir": "AutismDataset/AutismDataset/train",
+    "depth": 3,
+    "n_files": 0,
+    "n_subdirs": 2
+   },
+   {
+    "dir": "AutismDataset/AutismDataset/valid",
+    "depth": 3,
+    "n_files": 0,
+    "n_subdirs": 2
+   }
+  ]
+ },
+ "data_type": "images",
+ "archives": [],
+ "licence": {
+  "files": [],
+  "copied_to": "data_registry/D02_facial_images_A_licence_citation.txt",
+  "licence_file_present": false
+ },
+ "images": {
+  "image_files_used_as_samples": 2940,
+  "image_files_outside_class_folders(not samples)": [
+   "CF.png",
+   "c1.png",
+   "cmdense2.png",
+   "f1.png",
+   "lossnew.png",
+   "reportdense.png",
+   "resnextacc.png",
+   "resnextloss.png",
+   "roc.png",
+   "roc_resnext.png"
+  ],
+  "splits": [
+   "test",
+   "train",
+   "valid"
+  ],
+  "class_folder_names_per_split(raw)": {
+   "train": [
+    "Autistic",
+    "Non_Autistic"
+   ],
+   "valid": [
+    "Autistic",
+    "Non_Autistic"
+   ],
+   "test": [
+    "Autistic",
+    "Non-Autistic"
+   ]
+  },
+  "class_label_normalisation": "lowercase, non-letters removed (e.g. 'Non-Autistic' and 'Non_Autistic' -> 'nonautistic')",
+  "count_per_split_x_class": {
+   "train": {
+    "autistic": 1193,
+    "nonautistic": 1193
+   },
+   "valid": {
+    "autistic": 127,
+    "nonautistic": 127
+   },
+   "test": {
+    "nonautistic": 150,
+    "autistic": 150
+   }
+  },
+  "class_totals": {
+   "autistic": 1470,
+   "nonautistic": 1470
+  },
+  "width": {
+   "min": 114,
+   "median": 267.0,
+   "max": 2471
+  },
+  "height": {
+   "min": 126,
+   "median": 309.0,
+   "max": 2872
+  },
+  "n_distinct_sizes": 2557,
+  "colour_modes": {
+   "RGB": 2940
+  },
+  "n_unreadable": 0,
+  "unreadable_files": [],
+  "exact_duplicates_md5": {
+   "n_groups": 0,
+   "n_images_in_groups": 0,
+   "n_redundant_copies": 0,
+   "groups_within_one_split": 0,
+   "groups_across_splits": 0,
+   "groups_split_combinations": {},
+   "groups_with_label_conflict": 0,
+   "examples": []
+  },
+  "near_duplicates_phash": {
+   "threshold_hamming_le": 4,
+   "pairs_total": 11,
+   "within_same_split": 6,
+   "across_splits": 5,
+   "same_class": 11,
+   "different_class(label conflict)": 0,
+   "across_split_matrix": {
+    "train|valid": 2,
+    "test|train": 3
+   },
+   "pairs_not_exact_md5": 11,
+   "n_groups(connected components)": 11,
+   "examples": [
+    [
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.1120.jpg",
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.859.jpg",
+     0
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.159.jpg",
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.264.jpg",
+     4
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.332.jpg",
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.693.jpg",
+     4
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.35.jpg",
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.682.jpg",
+     4
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.761.jpg",
+     "AutismDataset/AutismDataset/valid/Autistic/32.jpg",
+     2
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Autistic/Autistic.873.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.93.jpg",
+     4
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.1048.jpg",
+     "AutismDataset/AutismDataset/valid/Non_Autistic/127.jpg",
+     0
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.1098.jpg",
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.1107.jpg",
+     2
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.124.jpg",
+     "AutismDataset/AutismDataset/test/Non-Autistic/Non_Autistic.28.jpg",
+     4
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.286.jpg",
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.526.jpg",
+     4
+    ],
+    [
+     "AutismDataset/AutismDataset/train/Non_Autistic/Non_Autistic.828.jpg",
+     "AutismDataset/AutismDataset/test/Non-Autistic/Non_Autistic.66.jpg",
+     2
+    ]
+   ]
+  },
+  "subject_ids": {
+   "filename_patterns": {
+    "Autistic.<n>.jpg": 1343,
+    "Non_Autistic.<n>.jpg": 1343,
+    "<n>.jpg": 254
+   },
+   "metadata_or_csv_files_in_folder": [],
+   "finding": "NO subject/participant ID exists: filenames are only <class>.<index>.jpg or <index>.jpg and the folder contains no CSV/metadata. The same child may appear in several images and cannot be grouped."
+  },
+  "contact_sheet": "data_registry/D02_facial_images_A_samples.png"
+ },
+ "n_samples": 2940,
+ "cross_dataset_duplicates": {
+  "datasets": [
+   "D03_facial_images_B",
+   "D02_facial_images_A"
+  ],
+  "exact_md5": {
+   "D03_facial_images_B_images_with_exact_copy_in_D02_facial_images_A": 2541,
+   "D03_facial_images_B_images_total": 2940,
+   "D02_facial_images_A_unique_md5_total": 2940,
+   "unique_md5_shared": 2541,
+   "unique_md5_only_in_D03_facial_images_B": 399,
+   "unique_md5_only_in_D02_facial_images_A": 399,
+   "matched_D03_facial_images_B_images_by_split": {
+    "none": 2541
+   },
+   "matched_images_with_same_class_label": 2541
+  },
+  "near_phash_cross_dataset_pairs(hamming<=4)": 2962,
+  "D03_facial_images_B_images_with_near_or_exact_match_in_D02_facial_images_A(nearest hamming<=4)": 2940,
+  "D03_facial_images_B_nearest_match_split_in_D02_facial_images_A": {
+   "train": 2387,
+   "valid": 253,
+   "test": 300
+  },
+  "nearest_match_same_class": 2940,
+  "nearest_distance_histogram": {
+   "0": 2939,
+   "2": 1
+  },
+  "D03_facial_images_B_non_byte_identical_images": {
+   "n": 399,
+   "nearest_distance_histogram": {
+    "0": 398,
+    "2": 1
+   },
+   "nearest_match_split": {
+    "valid": 99,
+    "test": 300
+   },
+   "same_pixel_size_as_nearest": 399,
+   "examples(a, nearest_b, dist)": [
+    [
+     "consolidated/Autistic/0005.jpg",
+     "AutismDataset/AutismDataset/valid/Autistic/01.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0006.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.0.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0018.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.1.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0050.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.2.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0062.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.3.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0074.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.4.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0083.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.5.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0110.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.6.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0129.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.7.jpg",
+     0
+    ],
+    [
+     "consolidated/Autistic/0147.jpg",
+     "AutismDataset/AutismDataset/test/Autistic/Autistic.8.jpg",
+     0
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,12 @@
+2026-10-14 10:11:03 [D01_eye_tracking M02 fold 10] START (new) input=clips policy=full n_train=1000 n_val=123 n_test=118 pos_weight=1.6882 bs=64 max_epochs=40
+2026-10-14 10:11:10 [D01_eye_tracking M02 fold 10] epoch 1/40 train_loss 0.8590 val_loss 0.9086 val_auc 0.5094 val_auc_child 0.6875 lr 5.31e-04 7.2s peak 2.73GB *best*
+2026-10-14 10:11:13 [D01_eye_tracking M02 fold 10] epoch 2/40 train_loss 0.8026 val_loss 0.7960 val_auc 0.7326 val_auc_child 0.9375 lr 1.00e-03 3.6s peak 2.73GB *best*
+2026-10-14 10:11:17 [D01_eye_tracking M02 fold 10] epoch 3/40 train_loss 0.7827 val_loss 0.8038 val_auc 0.6458 val_auc_child 0.5000 lr 9.98e-04 3.7s peak 2.73GB (no improvement 1/8)
+2026-10-14 10:11:21 [D01_eye_tracking M02 fold 10] epoch 4/40 train_loss 0.7336 val_loss 0.6773 val_auc 0.7128 val_auc_child 0.8125 lr 9.93e-04 3.7s peak 2.73GB (no improvement 2/8)
+2026-10-14 10:11:25 [D01_eye_tracking M02 fold 10] epoch 5/40 train_loss 0.7113 val_loss 1.2499 val_auc 0.6379 val_auc_child 0.6250 lr 9.85e-04 3.7s peak 2.73GB (no improvement 3/8)
+2026-10-14 10:11:29 [D01_eye_tracking M02 fold 10] epoch 6/40 train_loss 0.7127 val_loss 0.7798 val_auc 0.5644 val_auc_child 0.5000 lr 9.73e-04 3.7s peak 2.73GB (no improvement 4/8)
+2026-10-14 10:11:32 [D01_eye_tracking M02 fold 10] epoch 7/40 train_loss 0.6669 val_loss 0.7876 val_auc 0.6957 val_auc_child 0.8125 lr 9.58e-04 3.7s peak 2.73GB (no improvement 5/8)
+2026-10-14 10:11:36 [D01_eye_tracking M02 fold 10] epoch 8/40 train_loss 0.6282 val_loss 1.1064 val_auc 0.7241 val_auc_child 0.8750 lr 9.40e-04 3.6s peak 2.73GB (no improvement 6/8)
+2026-10-14 10:11:40 [D01_eye_tracking M02 fold 10] epoch 9/40 train_loss 0.5809 val_loss 1.5345 val_auc 0.5119 val_auc_child 0.4375 lr 9.19e-04 3.6s peak 2.73GB (no improvement 7/8)
+2026-10-14 10:11:43 [D01_eye_tracking M02 fold 10] epoch 10/40 train_loss 0.5235 val_loss 0.7873 val_auc 0.7201 val_auc_child 0.8125 lr 8.95e-04 3.7s peak 2.73GB (no improvement 8/8) -> early stop
+2026-10-14 10:11:45 [D01_eye_tracking M02 fold 10] DONE epochs 10 best_epoch 2 val_auc 0.7326 test_auc 0.3577 peak 2.73GB 42s batches {'train': 160, 'val': 22, 'test': 2} test ids in train/val batches: 0

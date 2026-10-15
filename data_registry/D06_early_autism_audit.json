@@ -1,0 +1,262 @@
+{
+ "dataset_id": "D06_early_autism",
+ "folder": "early_autism",
+ "path": "/home/score/Documents/AI_project/dataset/early_autism",
+ "audited_at": "2026-10-12T17:59:58",
+ "seed": 42,
+ "tree": {
+  "n_files": 1,
+  "files_by_extension": {
+   ".csv": 1
+  },
+  "total_size_bytes": 68192,
+  "total_size_mb": 0.07,
+  "max_depth": 1,
+  "tree_first_3_levels": [
+   {
+    "dir": ".",
+    "depth": 0,
+    "n_files": 1,
+    "n_subdirs": 0
+   }
+  ]
+ },
+ "data_type": "tabular",
+ "archives": [],
+ "licence": {
+  "files": [],
+  "copied_to": "data_registry/D06_early_autism_licence_citation.txt",
+  "licence_file_present": false
+ },
+ "tabular": {
+  "files": [
+   {
+    "file": "asd.csv",
+    "shape": [
+     1000,
+     11
+    ],
+    "columns": [
+     "Child_ID",
+     "Age",
+     "Gender",
+     "Jaundice",
+     "Family_ASD_History",
+     "Language_Delay",
+     "Social_Interaction_Score",
+     "Communication_Score",
+     "Repetitive_Behavior_Score",
+     "Diagnosed_ASD",
+     "Unnamed: 10"
+    ],
+    "dtypes": {
+     "Child_ID": "str",
+     "Age": "int64",
+     "Gender": "str",
+     "Jaundice": "str",
+     "Family_ASD_History": "str",
+     "Language_Delay": "str",
+     "Social_Interaction_Score": "int64",
+     "Communication_Score": "int64",
+     "Repetitive_Behavior_Score": "int64",
+     "Diagnosed_ASD": "str",
+     "Unnamed: 10": "float64"
+    },
+    "missing_per_column": {
+     "Child_ID": 0,
+     "Age": 0,
+     "Gender": 0,
+     "Jaundice": 0,
+     "Family_ASD_History": 0,
+     "Language_Delay": 0,
+     "Social_Interaction_Score": 0,
+     "Communication_Score": 0,
+     "Repetitive_Behavior_Score": 0,
+     "Diagnosed_ASD": 0,
+     "Unnamed: 10": 1000
+    },
+    "question_mark_values_per_column": {},
+    "fully_empty_columns": [
+     "Unnamed: 10"
+    ],
+    "id_columns": [
+     "Child_ID"
+    ],
+    "id_columns_unique": {
+     "Child_ID": true
+    },
+    "duplicate_rows_full": 0,
+    "duplicate_rows_excluding_id": 0,
+    "categorical_unique_values": {
+     "Gender": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "Female",
+       "Male"
+      ]
+     },
+     "Jaundice": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "No",
+       "Yes"
+      ]
+     },
+     "Family_ASD_History": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "No",
+       "Yes"
+      ]
+     },
+     "Language_Delay": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "No",
+       "Yes"
+      ]
+     },
+     "Social_Interaction_Score": {
+      "n_unique": 10,
+      "values(first 20)": [
+       "1",
+       "10",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ]
+     },
+     "Communication_Score": {
+      "n_unique": 10,
+      "values(first 20)": [
+       "1",
+       "10",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ]
+     },
+     "Repetitive_Behavior_Score": {
+      "n_unique": 10,
+      "values(first 20)": [
+       "1",
+       "10",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9"
+      ]
+     },
+     "Diagnosed_ASD": {
+      "n_unique": 2,
+      "values(first 20)": [
+       "No",
+       "Yes"
+      ]
+     },
+     "Unnamed: 10": {
+      "n_unique": 0,
+      "values(first 20)": []
+     }
+    },
+    "label_columns": [
+     "Diagnosed_ASD"
+    ],
+    "class_counts": {
+     "No": 589,
+     "Yes": 411
+    },
+    "positive_class_mapping": "Diagnosed_ASD in ['1', 'asd', 'autistic', 'true', 'yes'] (case-insensitive) -> 1 (ASD)",
+    "class_balance_pos_fraction": 0.411,
+    "leakage_check": {
+     "item_columns": [],
+     "rules": [
+      {
+       "feature": "Age",
+       "rule": "ASD if Age >= 35",
+       "accuracy": 0.601,
+       "n": 1000,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         553,
+         36
+        ],
+        [
+         363,
+         48
+        ]
+       ]
+      },
+      {
+       "feature": "Communication_Score",
+       "rule": "ASD if Communication_Score <= 1",
+       "accuracy": 0.591,
+       "n": 1000,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         538,
+         51
+        ],
+        [
+         358,
+         53
+        ]
+       ]
+      },
+      {
+       "feature": "Repetitive_Behavior_Score",
+       "rule": "ASD if Repetitive_Behavior_Score >= 10",
+       "accuracy": 0.586,
+       "n": 1000,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         557,
+         32
+        ],
+        [
+         382,
+         29
+        ]
+       ]
+      },
+      {
+       "feature": "Social_Interaction_Score",
+       "rule": "ASD if Social_Interaction_Score <= 1",
+       "accuracy": 0.581,
+       "n": 1000,
+       "confusion_matrix[[TN,FP],[FN,TP]]": [
+        [
+         541,
+         48
+        ],
+        [
+         371,
+         40
+        ]
+       ]
+      }
+     ],
+     "majority_class_baseline_accuracy": 0.589,
+     "exact_leakage_found": false,
+     "summary": "No exact single-feature rule over the whole file; best is 'ASD if Age >= 35' accuracy 0.601 (majority baseline 0.589)"
+    }
+   }
+  ],
+  "cross_file_embedded_blocks": []
+ },
+ "n_samples": 1000
+}

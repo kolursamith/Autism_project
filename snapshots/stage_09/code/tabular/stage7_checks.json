@@ -1,0 +1,82 @@
+{
+ "D04_autism_prediction/set_all/dummy_majority": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D04_autism_prediction/set_all/hist_gb": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D04_autism_prediction/set_all/logreg": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D04_autism_prediction/set_all/mlp": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D04_autism_prediction/set_all/random_forest": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_all/dummy_majority": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_all/hist_gb": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_all/logreg": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_all/mlp": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_all/random_forest": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_honest/dummy_majority": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_honest/hist_gb": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_honest/logreg": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_honest/mlp": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D05_toddler_screening/set_honest/random_forest": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D06_early_autism/set_all/dummy_majority": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D06_early_autism/set_all/hist_gb": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D06_early_autism/set_all/logreg": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D06_early_autism/set_all/mlp": {
+  "reasons": [],
+  "verdict": "PASS"
+ },
+ "D06_early_autism/set_all/random_forest": {
+  "reasons": [],
+  "verdict": "PASS"
+ }
+}

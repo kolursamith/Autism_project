@@ -1,0 +1,23 @@
+B1 400 runs (200 deep, 200 tabular): 4000 metric checks (ROC-AUC, balanced accuracy, sensitivity, specificity at threshold 0.5 and at the stored validation threshold; D01 also child level) recomputed with sklearn from predictions.csv vs metrics.json, tol 1e-06: mismatches 0
+B2 master_table.csv: 50 rows; 800 values recomputed from predictions.csv (7 metrics x mean/std over 10 folds, ddof=1; pooled AUC; ECE 10 bins), tol 1e-06: mismatches 0 (bootstrap CIs not recomputed)
+B3 leakage: predictions == fold test ids for all 400 runs: True; every sample predicted exactly once per model: 40/40 models; train/val/test disjoint by sample AND group in all 50 dataset-folds: True
+B3 groups in more than one test fold: {'D01_eye_tracking': 0, 'D02_facial_images_A': 0, 'D04_autism_prediction': 0, 'D05_toddler_screening': 0, 'D06_early_autism': 0} (D01 = children, D02 = near-duplicate groups)
+B3 D02 pHash <= 4 pairs recomputed (fresh popcount): 11 pairs, across folds: 0
+B3 D03: cache cells starting with the D03 folder 'AutismDataset/': 0; all D02 manifest paths under the D02 folder: True
+B3 CARS: columns named *cars* in D01 caches / tabular feature definitions: none; training/model code referencing participants.csv or CARS: none
+B3 D05 set_honest: forbidden (A1-A10, Qchat score) in feature set: none; in the 50 run configs: none; features used ['Age_Mons', 'Ethnicity', 'Family_mem_with_ASD', 'Jaundice', 'Sex', 'Who completed the test']
+B3 D04: clean.csv rows = raw train.csv rows (ID + A1-A10, age, result identical): True; clean rows identical to a test.csv row with the same ID: 0; data file of all D04 runs: [['cache/D04_autism_prediction/clean.csv']]
+B4 snapshots (recomputed sha256 of every recorded file; changes explained by the later snapshot that recorded the current version) -> logs/stage10_snapshot_changes.csv
+   stage_01 (2026-10-13T16:56:45): integrity True; recorded 33, unchanged 32, changed 1, added 245, deleted 0; not recorded by any later snapshot: 0
+   stage_02 (2026-10-13T17:18:53): integrity True; recorded 150, unchanged 148, changed 2, added 128, deleted 0; not recorded by any later snapshot: 0
+   stage_03 (2026-10-14T09:10:29): integrity True; recorded 186, unchanged 174, changed 12, added 92, deleted 0; not recorded by any later snapshot: 0
+   stage_04 (2026-10-14T09:43:34): integrity True; recorded 207, unchanged 202, changed 5, added 71, deleted 0; not recorded by any later snapshot: 0
+   stage_05 (2026-10-14T10:57:13): integrity True; recorded 425, unchanged 423, changed 2, added 64, deleted 0; not recorded by any later snapshot: 0
+   stage_07 (2026-10-14T10:57:15): integrity True; recorded 647, unchanged 645, changed 2, added 64, deleted 0; not recorded by any later snapshot: 0
+   stage_06 (2026-10-14T15:51:44): integrity True; recorded 1075, unchanged 1074, changed 1, added 58, deleted 0; not recorded by any later snapshot: 0
+   stage_08 (2026-10-14T16:10:41): integrity True; recorded 1126, unchanged 1125, changed 1, added 39, deleted 0; not recorded by any later snapshot: 0
+   stage_09 (2026-10-14T16:25:26): integrity True; recorded 1178, unchanged 1172, changed 6, added 4, deleted 0; not recorded by any later snapshot: 0
+   stage_10 (2026-10-14T16:44:42): integrity True; recorded 1183, unchanged 1183, changed 0, added 0, deleted 0; not recorded by any later snapshot: 0
+B4 files whose current version is in no snapshot (Stage 10 edits): []
+B4 deleted files: 0
+B5 FINAL_RESULTS_REPORT.md: 1977 decimal numbers scanned (21 section numbers / cross-references skipped); 1973 match a value in results/final/*.csv (rounded as printed); not matched: 4 -> {'protocol constant: one-sided bound level (multiplicity note)': 2, 'derived (GPU time from reproducibility_table seconds)': 2}

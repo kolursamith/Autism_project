@@ -1,0 +1,104 @@
+--- /tmp/claude-1001/-home-score-Documents-AI-project/4f92d53a-edd7-465a-9ad4-b89e6fdbac58/scratchpad/metrics.py.orig	2026-10-14 10:47:34.162156484 +0530
++++ src/training/metrics.py	2026-10-14 10:47:55.407254965 +0530
+@@ -62,17 +62,37 @@
+     return agg.index.to_numpy(), agg["y"].to_numpy(), agg["p"].to_numpy()
+ 
+ 
+-def is_valid_metric_block(m):
+-    """Every rate in [0, 1] (NaN allowed only for AUCs), confusion matrix sums to n."""
++RANGE_TOL = 1e-9  # absorbs floating-point results such as average precision = 1.0000000000000002
++UNDEFINED_IF_SINGLE_CLASS = {"roc_auc", "pr_auc"}
++
++
++def is_valid_metric_block(m, flags=None, tol=RANGE_TOL):
++    """Validation only (no metric is recomputed). Returns a list of errors for one metrics block:
++    - every rate / AUC / PR-AUC / Brier must be a number with 0 - tol <= value <= 1 + tol (inclusive);
++    - NaN is accepted ONLY for ROC-AUC / PR-AUC when the block genuinely has a single class (n_pos == 0 or n_neg == 0).
++      Such a case is never passed silently: it is appended to `flags` (a list supplied by the caller) or, when no
++      list is supplied, returned as an error;
++    - a missing value, NaN anywhere else, or a non-numeric value is an error;
++    - the confusion matrix must sum to n."""
+     errs = []
++    single = m.get("n_pos") == 0 or m.get("n_neg") == 0
+     for k in METRIC_KEYS:
+         v = m.get(k)
+-        if v is None or (isinstance(v, float) and math.isnan(v)):
+-            if k not in {"roc_auc", "pr_auc"}:
+-                errs.append(f"{k} missing/NaN")
++        if v is None:
++            errs.append(f"{k} missing")
++            continue
++        if isinstance(v, bool) or not isinstance(v, (int, float)):
++            errs.append(f"{k}={v!r} is not a number")
++            continue
++        if math.isnan(v):
++            if k in UNDEFINED_IF_SINGLE_CLASS and single:
++                msg = f"{k} undefined (NaN): single class in this block (n_pos={m.get('n_pos')}, n_neg={m.get('n_neg')})"
++                (flags.append(msg) if flags is not None else errs.append(msg + " [not accepted without flags=]"))
++            else:
++                errs.append(f"{k} is NaN although it is defined (n_pos={m.get('n_pos')}, n_neg={m.get('n_neg')})")
+             continue
+-        if not 0.0 <= v <= 1.0:
+-            errs.append(f"{k}={v} outside [0, 1]")
++        if not (-tol <= v <= 1.0 + tol):
++            errs.append(f"{k}={v!r} outside [0, 1]")
+     cm = np.asarray(m.get("confusion_matrix", [[0, 0], [0, 0]]))
+     if cm.sum() != m.get("n"):
+         errs.append(f"confusion matrix sums to {cm.sum()} != n {m.get('n')}")
+--- /tmp/claude-1001/-home-score-Documents-AI-project/4f92d53a-edd7-465a-9ad4-b89e6fdbac58/scratchpad/checks.py.orig	2026-10-14 10:47:34.164046681 +0530
++++ src/training/checks.py	2026-10-14 10:47:56.457668872 +0530
+@@ -14,17 +14,18 @@
+ from src.models.factory import load_model_cfg
+ from src.training import registry
+ from src.training.data import ALIASES
+-from src.training.metrics import is_valid_metric_block
++from src.training.metrics import RANGE_TOL, is_valid_metric_block
+ 
+ REQUIRED = ["config.yaml", "metrics.json", "predictions.csv", "val_predictions.csv", "history.csv", "best_model.pt",
+             "run_info.json"]
+ 
+ 
+-def validate_model_results(ds, model, out_root, folds=range(1, 11)):
+-    """Returns ("PASS" | "FAIL", [reasons])."""
++def validate_model_results(ds, model, out_root, folds=range(1, 11), return_flags=False):
++    """Returns ("PASS" | "FAIL", [reasons]); with return_flags=True also [flags] (explicitly reported, non-failing
++    conditions such as an AUC that is undefined because a block has a single class)."""
+     ds = ALIASES[ds]
+     folds = [int(k) for k in folds]
+-    reasons = []
++    reasons, flags = [], []
+     reg = registry.read_registry(out_root)
+     has_attn = load_model_cfg(model)["pooling"] == "attention"
+     folds_csv = pd.read_csv(os.path.join(SPLITS_DIR, ds, "folds.csv")).set_index("sample_id")
+@@ -48,11 +49,13 @@
+             reasons.append(f"{tag}: test-id leakage counter not 0")
+         with open(os.path.join(d, "metrics.json")) as fh:
+             m = json.load(fh)
+-        if not 0.0 <= m["val_threshold_youden"] <= 1.0:
++        if not -RANGE_TOL <= m["val_threshold_youden"] <= 1.0 + RANGE_TOL:
+             reasons.append(f"{tag}: Youden threshold {m['val_threshold_youden']} outside [0, 1]")
+         for b in ["test", "test_child"]:
+             for thr, block in m.get(b, {}).items():
+-                reasons += [f"{tag}: {b}/{thr}: {e}" for e in is_valid_metric_block(block)]
++                fl = []
++                reasons += [f"{tag}: {b}/{thr}: {e}" for e in is_valid_metric_block(block, flags=fl)]
++                flags += [f"{tag}: {b}/{thr}: {f}" for f in fl]
+         h = pd.read_csv(os.path.join(d, "history.csv"))
+         if h.empty or not np.isfinite(h[["train_loss", "val_loss"]].to_numpy()).all():
+             reasons.append(f"{tag}: history empty or non-finite losses")
+@@ -70,7 +73,7 @@
+         if (ref["label"].to_numpy() != p.y_true.to_numpy()).any() or \
+                 (ref["group_id"].astype(str).to_numpy() != p.group_id.astype(str).to_numpy()).any():
+             reasons.append(f"{tag}: y_true / group_id do not match folds.csv")
+-        if not (np.isfinite(p.y_prob).all() and p.y_prob.between(0, 1).all()) or (p.fold != k).any():
++        if not (np.isfinite(p.y_prob).all() and p.y_prob.between(-RANGE_TOL, 1.0 + RANGE_TOL).all()) or (p.fold != k).any():
+             reasons.append(f"{tag}: y_prob not finite in [0, 1] or wrong fold column")
+         if has_attn:
+             a = np.load(os.path.join(d, "attention.npy"))
+@@ -85,4 +88,5 @@
+                            f"{folds} exactly once")
+         if sorted(folds) == list(range(1, 11)) and len(expected_all) != len(folds_csv):
+             reasons.append("10 folds do not cover the whole dataset")
+-    return ("PASS" if not reasons else "FAIL"), reasons
++    verdict = "PASS" if not reasons else "FAIL"
++    return (verdict, reasons, flags) if return_flags else (verdict, reasons)

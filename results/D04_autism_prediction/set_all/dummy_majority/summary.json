@@ -1,0 +1,221 @@
+{
+ "dataset": "set_all",
+ "folds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "model_id": "dummy_majority",
+ "n_folds": 10,
+ "per_fold_metrics": {
+  "test/threshold_0.5/accuracy": {
+   "max": 0.8,
+   "mean": 0.79875,
+   "min": 0.7875,
+   "n_folds": 10,
+   "std": 0.003952847075210496
+  },
+  "test/threshold_0.5/balanced_accuracy": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/brier": {
+   "max": 0.2125,
+   "mean": 0.20125,
+   "min": 0.2,
+   "n_folds": 10,
+   "std": 0.003952847075210469
+  },
+  "test/threshold_0.5/f1": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/pr_auc": {
+   "max": 0.2125,
+   "mean": 0.20125,
+   "min": 0.2,
+   "n_folds": 10,
+   "std": 0.003952847075210469
+  },
+  "test/threshold_0.5/precision": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/recall": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/roc_auc": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/sensitivity": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_0.5/specificity": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/accuracy": {
+   "max": 0.2125,
+   "mean": 0.20125,
+   "min": 0.2,
+   "n_folds": 10,
+   "std": 0.003952847075210469
+  },
+  "test/threshold_val_youden/balanced_accuracy": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/brier": {
+   "max": 0.2125,
+   "mean": 0.20125,
+   "min": 0.2,
+   "n_folds": 10,
+   "std": 0.003952847075210469
+  },
+  "test/threshold_val_youden/f1": {
+   "max": 0.3505154639175258,
+   "mean": 0.3350515463917526,
+   "min": 0.33333333333333337,
+   "n_folds": 10,
+   "std": 0.0054334667700487605
+  },
+  "test/threshold_val_youden/pr_auc": {
+   "max": 0.2125,
+   "mean": 0.20125,
+   "min": 0.2,
+   "n_folds": 10,
+   "std": 0.003952847075210469
+  },
+  "test/threshold_val_youden/precision": {
+   "max": 0.2125,
+   "mean": 0.20125,
+   "min": 0.2,
+   "n_folds": 10,
+   "std": 0.003952847075210469
+  },
+  "test/threshold_val_youden/recall": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/roc_auc": {
+   "max": 0.5,
+   "mean": 0.5,
+   "min": 0.5,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/sensitivity": {
+   "max": 1.0,
+   "mean": 1.0,
+   "min": 1.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "test/threshold_val_youden/specificity": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  },
+  "val_threshold_youden": {
+   "max": 0.0,
+   "mean": 0.0,
+   "min": 0.0,
+   "n_folds": 10,
+   "std": 0.0
+  }
+ },
+ "pooled_out_of_fold": {
+  "threshold_0.5": {
+   "accuracy": 0.79875,
+   "balanced_accuracy": 0.5,
+   "brier": 0.20125,
+   "confusion_matrix": [
+    [
+     639,
+     0
+    ],
+    [
+     161,
+     0
+    ]
+   ],
+   "f1": 0.0,
+   "n": 800,
+   "n_neg": 639,
+   "n_pos": 161,
+   "pr_auc": 0.20125,
+   "precision": 0.0,
+   "recall": 0.0,
+   "roc_auc": 0.5,
+   "sensitivity": 0.0,
+   "specificity": 1.0,
+   "threshold": 0.5
+  },
+  "threshold_val_youden_per_fold": {
+   "accuracy": 0.20125,
+   "balanced_accuracy": 0.5,
+   "brier": 0.20125,
+   "confusion_matrix": [
+    [
+     0,
+     639
+    ],
+    [
+     0,
+     161
+    ]
+   ],
+   "f1": 0.3350676378772113,
+   "n": 800,
+   "n_neg": 639,
+   "n_pos": 161,
+   "pr_auc": 0.20125,
+   "precision": 0.20125,
+   "recall": 1.0,
+   "roc_auc": 0.5,
+   "sensitivity": 1.0,
+   "specificity": 0.0,
+   "threshold": null
+  }
+ },
+ "std_definition": "sample standard deviation over folds (ddof=1)"
+}

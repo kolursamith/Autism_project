@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+rootdir: /home/score/Documents/AI_project/asd_hybrid_10fold
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 15 items
+
+tests/test_stage02_snapshot.py::test_latest_snapshot_checksums_match_current_files PASSED [  6%]
+tests/test_stage02_snapshot.py::test_latest_snapshot_info_and_code_copy PASSED [ 13%]
+tests/test_setup.py::test_project_dir_and_symlink PASSED                 [ 20%]
+tests/test_setup.py::test_paths_yaml_every_path_exists PASSED            [ 26%]
+tests/test_setup.py::test_datasets_dir_outside_project PASSED            [ 33%]
+tests/test_setup.py::test_no_absolute_paths_outside_paths_yaml PASSED    [ 40%]
+tests/test_setup.py::test_venv_imports PASSED                            [ 46%]
+tests/test_setup.py::test_cuda_available PASSED                          [ 53%]
+tests/test_setup.py::test_check_gpu_script_exits_zero PASSED             [ 60%]
+tests/test_setup.py::test_claude_md_sections PASSED                      [ 66%]
+tests/test_setup.py::test_raw_data_snapshot_matches PASSED               [ 73%]
+tests/test_setup.py::test_gitignore[.venv/] PASSED                       [ 80%]
+tests/test_setup.py::test_gitignore[cache/] PASSED                       [ 86%]
+tests/test_setup.py::test_gitignore[*.pt] PASSED                         [ 93%]
+tests/test_setup.py::test_gitignore[logs/*.log] PASSED                   [100%]
+
+============================== 15 passed in 6.37s ==============================

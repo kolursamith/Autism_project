@@ -1,0 +1,130 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+rootdir: /home/score/Documents/AI_project/asd_hybrid_10fold
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 100 items
+
+tests/test_stage03_models.py::test_config_mapping[M01] PASSED            [  1%]
+tests/test_stage03_models.py::test_config_mapping[M02] PASSED            [  2%]
+tests/test_stage03_models.py::test_config_mapping[M03] PASSED            [  3%]
+tests/test_stage03_models.py::test_config_mapping[M04] PASSED            [  4%]
+tests/test_stage03_models.py::test_config_mapping[M05] PASSED            [  5%]
+tests/test_stage03_models.py::test_config_mapping[M06] PASSED            [  6%]
+tests/test_stage03_models.py::test_config_mapping[M07] PASSED            [  7%]
+tests/test_stage03_models.py::test_config_mapping[M08] PASSED            [  8%]
+tests/test_stage03_models.py::test_config_mapping[M09] PASSED            [  9%]
+tests/test_stage03_models.py::test_config_mapping[M10] PASSED            [ 10%]
+tests/test_stage03_models.py::test_factory_rejects_unknown PASSED        [ 11%]
+tests/test_stage03_models.py::test_forward[M01-sequence] PASSED          [ 12%]
+tests/test_stage03_models.py::test_forward[M01-tokens] PASSED            [ 13%]
+tests/test_stage03_models.py::test_forward[M02-sequence] PASSED          [ 14%]
+tests/test_stage03_models.py::test_forward[M02-tokens] PASSED            [ 15%]
+tests/test_stage03_models.py::test_forward[M03-sequence] PASSED          [ 16%]
+tests/test_stage03_models.py::test_forward[M03-tokens] PASSED            [ 17%]
+tests/test_stage03_models.py::test_forward[M04-sequence] PASSED          [ 18%]
+tests/test_stage03_models.py::test_forward[M04-tokens] PASSED            [ 19%]
+tests/test_stage03_models.py::test_forward[M05-sequence] PASSED          [ 20%]
+tests/test_stage03_models.py::test_forward[M05-tokens] PASSED            [ 21%]
+tests/test_stage03_models.py::test_forward[M06-sequence] PASSED          [ 22%]
+tests/test_stage03_models.py::test_forward[M06-tokens] PASSED            [ 23%]
+tests/test_stage03_models.py::test_forward[M07-sequence] PASSED          [ 24%]
+tests/test_stage03_models.py::test_forward[M07-tokens] PASSED            [ 25%]
+tests/test_stage03_models.py::test_forward[M08-sequence] PASSED          [ 26%]
+tests/test_stage03_models.py::test_forward[M08-tokens] PASSED            [ 27%]
+tests/test_stage03_models.py::test_forward[M09-sequence] PASSED          [ 28%]
+tests/test_stage03_models.py::test_forward[M09-tokens] PASSED            [ 29%]
+tests/test_stage03_models.py::test_forward[M10-sequence] PASSED          [ 30%]
+tests/test_stage03_models.py::test_forward[M10-tokens] PASSED            [ 31%]
+tests/test_stage03_models.py::test_backward_and_step[M01-sequence] PASSED [ 32%]
+tests/test_stage03_models.py::test_backward_and_step[M01-tokens] PASSED  [ 33%]
+tests/test_stage03_models.py::test_backward_and_step[M02-sequence] PASSED [ 34%]
+tests/test_stage03_models.py::test_backward_and_step[M02-tokens] PASSED  [ 35%]
+tests/test_stage03_models.py::test_backward_and_step[M03-sequence] PASSED [ 36%]
+tests/test_stage03_models.py::test_backward_and_step[M03-tokens] PASSED  [ 37%]
+tests/test_stage03_models.py::test_backward_and_step[M04-sequence] PASSED [ 38%]
+tests/test_stage03_models.py::test_backward_and_step[M04-tokens] PASSED  [ 39%]
+tests/test_stage03_models.py::test_backward_and_step[M05-sequence] PASSED [ 40%]
+tests/test_stage03_models.py::test_backward_and_step[M05-tokens] PASSED  [ 41%]
+tests/test_stage03_models.py::test_backward_and_step[M06-sequence] PASSED [ 42%]
+tests/test_stage03_models.py::test_backward_and_step[M06-tokens] PASSED  [ 43%]
+tests/test_stage03_models.py::test_backward_and_step[M07-sequence] PASSED [ 44%]
+tests/test_stage03_models.py::test_backward_and_step[M07-tokens] PASSED  [ 45%]
+tests/test_stage03_models.py::test_backward_and_step[M08-sequence] PASSED [ 46%]
+tests/test_stage03_models.py::test_backward_and_step[M08-tokens] PASSED  [ 47%]
+tests/test_stage03_models.py::test_backward_and_step[M09-sequence] PASSED [ 48%]
+tests/test_stage03_models.py::test_backward_and_step[M09-tokens] PASSED  [ 49%]
+tests/test_stage03_models.py::test_backward_and_step[M10-sequence] PASSED [ 50%]
+tests/test_stage03_models.py::test_backward_and_step[M10-tokens] PASSED  [ 51%]
+tests/test_stage03_models.py::test_determinism_eval[M01-sequence] PASSED [ 52%]
+tests/test_stage03_models.py::test_determinism_eval[M01-tokens] PASSED   [ 53%]
+tests/test_stage03_models.py::test_determinism_eval[M02-sequence] PASSED [ 54%]
+tests/test_stage03_models.py::test_determinism_eval[M02-tokens] PASSED   [ 55%]
+tests/test_stage03_models.py::test_determinism_eval[M03-sequence] PASSED [ 56%]
+tests/test_stage03_models.py::test_determinism_eval[M03-tokens] PASSED   [ 57%]
+tests/test_stage03_models.py::test_determinism_eval[M04-sequence] PASSED [ 58%]
+tests/test_stage03_models.py::test_determinism_eval[M04-tokens] PASSED   [ 59%]
+tests/test_stage03_models.py::test_determinism_eval[M05-sequence] PASSED [ 60%]
+tests/test_stage03_models.py::test_determinism_eval[M05-tokens] PASSED   [ 61%]
+tests/test_stage03_models.py::test_determinism_eval[M06-sequence] PASSED [ 62%]
+tests/test_stage03_models.py::test_determinism_eval[M06-tokens] PASSED   [ 63%]
+tests/test_stage03_models.py::test_determinism_eval[M07-sequence] PASSED [ 64%]
+tests/test_stage03_models.py::test_determinism_eval[M07-tokens] PASSED   [ 65%]
+tests/test_stage03_models.py::test_determinism_eval[M08-sequence] PASSED [ 66%]
+tests/test_stage03_models.py::test_determinism_eval[M08-tokens] PASSED   [ 67%]
+tests/test_stage03_models.py::test_determinism_eval[M09-sequence] PASSED [ 68%]
+tests/test_stage03_models.py::test_determinism_eval[M09-tokens] PASSED   [ 69%]
+tests/test_stage03_models.py::test_determinism_eval[M10-sequence] PASSED [ 70%]
+tests/test_stage03_models.py::test_determinism_eval[M10-tokens] PASSED   [ 71%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M01-sequence] PASSED [ 72%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M01-tokens] PASSED [ 73%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M02-sequence] PASSED [ 74%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M02-tokens] PASSED [ 75%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M03-sequence] PASSED [ 76%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M03-tokens] PASSED [ 77%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M04-sequence] PASSED [ 78%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M04-tokens] PASSED [ 79%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M05-sequence] PASSED [ 80%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M05-tokens] PASSED [ 81%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M06-sequence] PASSED [ 82%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M06-tokens] PASSED [ 83%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M07-sequence] PASSED [ 84%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M07-tokens] PASSED [ 85%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M08-sequence] PASSED [ 86%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M08-tokens] PASSED [ 87%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M09-sequence] PASSED [ 88%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M09-tokens] PASSED [ 89%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M10-sequence] PASSED [ 90%]
+tests/test_stage03_models.py::test_tiny_overfit_random_data[M10-tokens] PASSED [ 91%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M01] PASSED [ 92%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M03] PASSED [ 93%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M04] PASSED [ 94%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M06] PASSED [ 95%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M07] PASSED [ 96%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M08] PASSED [ 97%]
+tests/test_stage03_models.py::test_feature_cache_equivalence[M10] PASSED [ 98%]
+tests/test_stage03_models.py::test_last_stage_trains_part_of_backbone PASSED [ 99%]
+tests/test_stage03_models.py::test_model_configs_have_batch_sizes FAILED [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_model_configs_have_batch_sizes ______________________
+
+    def test_model_configs_have_batch_sizes():
+        for mid in MODEL_IDS:
+            with open(os.path.join(PROJECT_DIR, "configs", "models", f"{mid}.yaml")) as fh:
+                bs = yaml.safe_load(fh)["batch_size"]
+>           assert all(bs[mode] in {64, 32, 16, 8, 4} for mode in MODES), (mid, bs)
+E           AssertionError: ('M01', {'sequence': None, 'tokens': None})
+E           assert False
+E            +  where False = all(<generator object test_model_configs_have_batch_sizes.<locals>.<genexpr> at 0x7d20b655ab50>)
+
+tests/test_stage03_models.py:213: AssertionError
+=============================== warnings summary ===============================
+tests/test_stage03_models.py::test_feature_cache_equivalence[M01]
+  /home/score/Documents/AI_project/asd_hybrid_10fold/src/models/feature_cache.py:33: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+    x = torch.from_numpy(np.ascontiguousarray(clips[s:s + batch_clips])).to(device, non_blocking=True)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_stage03_models.py::test_model_configs_have_batch_sizes - As...
+============== 1 failed, 99 passed, 1 warning in 79.61s (0:01:19) ==============

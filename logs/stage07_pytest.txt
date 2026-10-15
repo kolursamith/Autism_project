@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+rootdir: /home/score/Documents/AI_project/asd_hybrid_10fold
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 16 items
+
+tabular/tests/test_stage07.py::test_split_hashes_match_manifest PASSED   [  6%]
+tabular/tests/test_stage07.py::test_train_val_test_disjoint_every_fold[D04_autism_prediction] PASSED [ 12%]
+tabular/tests/test_stage07.py::test_train_val_test_disjoint_every_fold[D05_toddler_screening] PASSED [ 18%]
+tabular/tests/test_stage07.py::test_train_val_test_disjoint_every_fold[D06_early_autism] PASSED [ 25%]
+tabular/tests/test_stage07.py::test_check_fold_detects_corrupted_split PASSED [ 31%]
+tabular/tests/test_stage07.py::test_set_honest_has_no_items_or_score PASSED [ 37%]
+tabular/tests/test_stage07.py::test_set_all_d05_label_is_the_item_rule PASSED [ 43%]
+tabular/tests/test_stage07.py::test_raw_files_never_read PASSED          [ 50%]
+tabular/tests/test_stage07.py::test_preprocessing_fitted_on_train_part_only[D04_autism_prediction-set_all] PASSED [ 56%]
+tabular/tests/test_stage07.py::test_preprocessing_fitted_on_train_part_only[D05_toddler_screening-set_all] PASSED [ 62%]
+tabular/tests/test_stage07.py::test_preprocessing_fitted_on_train_part_only[D05_toddler_screening-set_honest] PASSED [ 68%]
+tabular/tests/test_stage07.py::test_preprocessing_fitted_on_train_part_only[D06_early_autism-set_all] PASSED [ 75%]
+tabular/tests/test_stage07.py::test_mlp_early_stopping_uses_validation_part_only PASSED [ 81%]
+tabular/tests/test_stage07.py::test_saved_thresholds_come_from_validation_predictions PASSED [ 87%]
+tabular/tests/test_stage07.py::test_all_results_complete_and_valid PASSED [ 93%]
+tabular/tests/test_stage07.py::test_torch_never_imported PASSED          [100%]
+
+============================== 16 passed in 7.69s ==============================

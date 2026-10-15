@@ -1,0 +1,83 @@
+{
+ "batch_counts": {
+  "test": 2,
+  "train": 525,
+  "val": 144
+ },
+ "batch_size": 64,
+ "best_epoch": 27,
+ "best_val_auc": 0.6282,
+ "code_hash_src": "19499656a14f650c62d67fdb3f85b82352b1f514c5f77b867c080bc2f76b467d",
+ "config_sha256": "b85c7e50c112e23e436e9d4415231f170eb32b71eb56e682a75c99fdd3127fa9",
+ "cuda": "13.0",
+ "cudnn": 92400,
+ "cudnn_benchmark": true,
+ "cudnn_deterministic": false,
+ "dataset": "D01_eye_tracking",
+ "driver": "580.178.04",
+ "end_time": "2026-10-14T10:20:55",
+ "epochs_run": 35,
+ "fold": 5,
+ "gpu_name": "NVIDIA RTX A2000 12GB",
+ "hf_hub_offline": "1",
+ "max_epochs": 40,
+ "model_id": "M05",
+ "n_ids_seen": {
+  "train": 922,
+  "val": 200
+ },
+ "n_used": {
+  "test": 119,
+  "train": 922,
+  "val": 200
+ },
+ "nondeterminism_note": "cudnn.benchmark=True: cuDNN may pick different algorithms between processes, so results can differ in the last digits between runs",
+ "num_workers": 8,
+ "peak_gpu_gb": 2.742895616,
+ "pos_weight": 1.5122615803814714,
+ "python": "3.12.3",
+ "resumed": false,
+ "seconds": 133.70311331748962,
+ "seed": 47,
+ "sessions": [
+  {
+   "end": "2026-10-14T10:20:55",
+   "end_epoch": 35,
+   "seconds": 133.70311331748962,
+   "start": "2026-10-14T10:18:41",
+   "start_epoch": 1
+  }
+ ],
+ "split_counts": {
+  "test": {
+   "n_groups": 5,
+   "n_samples": 119
+  },
+  "train": {
+   "n_groups": 44,
+   "n_samples": 922
+  },
+  "val": {
+   "n_groups": 8,
+   "n_samples": 200
+  }
+ },
+ "split_files": {
+  "splits/D01_eye_tracking/fold_05.json": "3d8a3dfa4451122d7d46b0a6756191018326f56c0c65110f28037cf7595ecff7",
+  "splits/D01_eye_tracking/folds.csv": "dc8290a628db6d6bbd75c789816cf4aa4a8c6d698629f124d145f9a95197db26",
+  "splits/SPLITS_MANIFEST.json": "538c0d4d402e532d78b578f2a5fc1a24d17574e256215df7463ba812d59c4efc"
+ },
+ "start_time": "2026-10-14T10:18:41",
+ "status": "DONE",
+ "stopped_early": true,
+ "subset_per_class": null,
+ "test_ids_in_train_or_val_batches": 0,
+ "test_ids_sha256": "5a91c2df80aa45fcbe6251c8a6a2ca0d5aeca4bc933516af6480a079b5ca3a57",
+ "test_seconds": 1.1100959777832031,
+ "timm": "1.0.30",
+ "torch": "2.14.1+cu130",
+ "weights": {
+  "note": "custom CNN, random init (seeded), trained from scratch",
+  "timm_name": null
+ }
+}

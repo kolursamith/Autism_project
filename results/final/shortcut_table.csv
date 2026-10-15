@@ -1,0 +1,351 @@
+section,model,quantity,value,source
+D01,M01,child_auc,0.7135802469135802,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::model_auc
+D01,M01,child_auc_ci_lo,0.5691358024691358,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::model_auc_ci_lo
+D01,M01,child_auc_ci_hi,0.8395370370370369,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::model_auc_ci_hi
+D01,M01,diff_vs_LR3,-0.1098765432098765,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::diff
+D01,M01,diff_ci_lo_vs_LR3,-0.26546296296296285,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::diff_ci_lo
+D01,M01,diff_ci_hi_vs_LR3,0.04570987654320965,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::diff_ci_hi
+D01,M01,delong_p_vs_LR3,0.1608281111665938,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=quality_LR3::delong_p
+D01,M01,diff_vs_1mvr,-0.1283950617283951,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=one_minus_valid_ratio::diff
+D01,M01,diff_ci_lo_vs_1mvr,-0.28148148148148155,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M01,diff_ci_hi_vs_1mvr,0.017314814814814634,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M01,delong_p_vs_1mvr,0.08703862314161911,results/stage8/d01_model_vs_quality.csv::model=M01&baseline=one_minus_valid_ratio::delong_p
+D01,M01,matched_auc,0.5561224489795918,results/stage8/d01_matched_auc.csv::model=M01::auc_matched
+D01,M01,matched_ci_lo,0.336734693877551,results/stage8/d01_matched_auc.csv::model=M01::ci_lo
+D01,M01,matched_ci_hi,0.7653061224489796,results/stage8/d01_matched_auc.csv::model=M01::ci_hi
+D01,M01,spearman_valid_ratio_all,-0.4421830438164377,results/stage8/d01_spearman_valid_ratio.csv::model=M01&children=all::spearman_rho
+D01,M01,spearman_valid_ratio_ASD,-0.4768009768009768,results/stage8/d01_spearman_valid_ratio.csv::model=M01&children=ASD::spearman_rho
+D01,M01,spearman_valid_ratio_TD,-0.08743047830923248,results/stage8/d01_spearman_valid_ratio.csv::model=M01&children=TD::spearman_rho
+D01,M01,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M01::adds_information_beyond_tracking_quality
+D01,M02,child_auc,0.5777777777777777,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::model_auc
+D01,M02,child_auc_ci_lo,0.4246604938271606,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::model_auc_ci_lo
+D01,M02,child_auc_ci_hi,0.7308641975308642,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::model_auc_ci_hi
+D01,M02,diff_vs_LR3,-0.24567901234567902,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::diff
+D01,M02,diff_ci_lo_vs_LR3,-0.41731481481481475,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::diff_ci_lo
+D01,M02,diff_ci_hi_vs_LR3,-0.08395061728395059,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::diff_ci_hi
+D01,M02,delong_p_vs_LR3,0.003036361412540625,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=quality_LR3::delong_p
+D01,M02,diff_vs_1mvr,-0.2641975308641976,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=one_minus_valid_ratio::diff
+D01,M02,diff_ci_lo_vs_1mvr,-0.4345679012345679,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M02,diff_ci_hi_vs_1mvr,-0.1098765432098765,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M02,delong_p_vs_1mvr,0.0011931659998475918,results/stage8/d01_model_vs_quality.csv::model=M02&baseline=one_minus_valid_ratio::delong_p
+D01,M02,matched_auc,0.46938775510204084,results/stage8/d01_matched_auc.csv::model=M02::auc_matched
+D01,M02,matched_ci_lo,0.28061224489795916,results/stage8/d01_matched_auc.csv::model=M02::ci_lo
+D01,M02,matched_ci_hi,0.6632653061224489,results/stage8/d01_matched_auc.csv::model=M02::ci_hi
+D01,M02,spearman_valid_ratio_all,-0.29725175006481724,results/stage8/d01_spearman_valid_ratio.csv::model=M02&children=all::spearman_rho
+D01,M02,spearman_valid_ratio_ASD,-0.42124542124542125,results/stage8/d01_spearman_valid_ratio.csv::model=M02&children=ASD::spearman_rho
+D01,M02,spearman_valid_ratio_TD,-0.06740823136818688,results/stage8/d01_spearman_valid_ratio.csv::model=M02&children=TD::spearman_rho
+D01,M02,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M02::adds_information_beyond_tracking_quality
+D01,M03,child_auc,0.7345679012345679,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::model_auc
+D01,M03,child_auc_ci_lo,0.6037037037037037,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::model_auc_ci_lo
+D01,M03,child_auc_ci_hi,0.8518827160493826,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::model_auc_ci_hi
+D01,M03,diff_vs_LR3,-0.0888888888888888,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::diff
+D01,M03,diff_ci_lo_vs_LR3,-0.23333333333333328,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::diff_ci_lo
+D01,M03,diff_ci_hi_vs_LR3,0.05435185185185173,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::diff_ci_hi
+D01,M03,delong_p_vs_LR3,0.22998632180298872,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=quality_LR3::delong_p
+D01,M03,diff_vs_1mvr,-0.1074074074074074,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=one_minus_valid_ratio::diff
+D01,M03,diff_ci_lo_vs_1mvr,-0.24197530864197536,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M03,diff_ci_hi_vs_1mvr,0.02225308641975295,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M03,delong_p_vs_1mvr,0.12017061632820436,results/stage8/d01_model_vs_quality.csv::model=M03&baseline=one_minus_valid_ratio::delong_p
+D01,M03,matched_auc,0.5867346938775511,results/stage8/d01_matched_auc.csv::model=M03::auc_matched
+D01,M03,matched_ci_lo,0.3622448979591837,results/stage8/d01_matched_auc.csv::model=M03::ci_lo
+D01,M03,matched_ci_hi,0.7959183673469388,results/stage8/d01_matched_auc.csv::model=M03::ci_hi
+D01,M03,spearman_valid_ratio_all,-0.5411589318122894,results/stage8/d01_spearman_valid_ratio.csv::model=M03&children=all::spearman_rho
+D01,M03,spearman_valid_ratio_ASD,-0.49694749694749696,results/stage8/d01_spearman_valid_ratio.csv::model=M03&children=ASD::spearman_rho
+D01,M03,spearman_valid_ratio_TD,-0.31568409343715237,results/stage8/d01_spearman_valid_ratio.csv::model=M03&children=TD::spearman_rho
+D01,M03,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M03::adds_information_beyond_tracking_quality
+D01,M04,child_auc,0.7617283950617284,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::model_auc
+D01,M04,child_auc_ci_lo,0.6283950617283951,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::model_auc_ci_lo
+D01,M04,child_auc_ci_hi,0.8827160493827161,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::model_auc_ci_hi
+D01,M04,diff_vs_LR3,-0.061728395061728336,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::diff
+D01,M04,diff_ci_lo_vs_LR3,-0.1962962962962963,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::diff_ci_lo
+D01,M04,diff_ci_hi_vs_LR3,0.06916666666666645,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::diff_ci_hi
+D01,M04,delong_p_vs_LR3,0.35111214201079544,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=quality_LR3::delong_p
+D01,M04,diff_vs_1mvr,-0.08024691358024694,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=one_minus_valid_ratio::diff
+D01,M04,diff_ci_lo_vs_1mvr,-0.2099074074074074,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M04,diff_ci_hi_vs_1mvr,0.04814814814814816,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M04,delong_p_vs_1mvr,0.21553532561875588,results/stage8/d01_model_vs_quality.csv::model=M04&baseline=one_minus_valid_ratio::delong_p
+D01,M04,matched_auc,0.5918367346938775,results/stage8/d01_matched_auc.csv::model=M04::auc_matched
+D01,M04,matched_ci_lo,0.336734693877551,results/stage8/d01_matched_auc.csv::model=M04::ci_lo
+D01,M04,matched_ci_hi,0.8163265306122449,results/stage8/d01_matched_auc.csv::model=M04::ci_hi
+D01,M04,spearman_valid_ratio_all,-0.5554187192118227,results/stage8/d01_spearman_valid_ratio.csv::model=M04&children=all::spearman_rho
+D01,M04,spearman_valid_ratio_ASD,-0.5341880341880342,results/stage8/d01_spearman_valid_ratio.csv::model=M04&children=ASD::spearman_rho
+D01,M04,spearman_valid_ratio_TD,-0.14927697441601778,results/stage8/d01_spearman_valid_ratio.csv::model=M04&children=TD::spearman_rho
+D01,M04,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M04::adds_information_beyond_tracking_quality
+D01,M05,child_auc,0.6049382716049383,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::model_auc
+D01,M05,child_auc_ci_lo,0.44320987654320987,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::model_auc_ci_lo
+D01,M05,child_auc_ci_hi,0.7555864197530863,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::model_auc_ci_hi
+D01,M05,diff_vs_LR3,-0.21851851851851845,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::diff
+D01,M05,diff_ci_lo_vs_LR3,-0.3975925925925925,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::diff_ci_lo
+D01,M05,diff_ci_hi_vs_LR3,-0.05802469135802468,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::diff_ci_hi
+D01,M05,delong_p_vs_LR3,0.008221959388876973,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=quality_LR3::delong_p
+D01,M05,diff_vs_1mvr,-0.23703703703703705,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=one_minus_valid_ratio::diff
+D01,M05,diff_ci_lo_vs_1mvr,-0.41604938271604935,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M05,diff_ci_hi_vs_1mvr,-0.07777777777777772,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M05,delong_p_vs_1mvr,0.004361294530032543,results/stage8/d01_model_vs_quality.csv::model=M05&baseline=one_minus_valid_ratio::delong_p
+D01,M05,matched_auc,0.5153061224489796,results/stage8/d01_matched_auc.csv::model=M05::auc_matched
+D01,M05,matched_ci_lo,0.3112244897959184,results/stage8/d01_matched_auc.csv::model=M05::ci_lo
+D01,M05,matched_ci_hi,0.7091836734693877,results/stage8/d01_matched_auc.csv::model=M05::ci_hi
+D01,M05,spearman_valid_ratio_all,-0.31514130152968634,results/stage8/d01_spearman_valid_ratio.csv::model=M05&children=all::spearman_rho
+D01,M05,spearman_valid_ratio_ASD,-0.37606837606837606,results/stage8/d01_spearman_valid_ratio.csv::model=M05&children=ASD::spearman_rho
+D01,M05,spearman_valid_ratio_TD,-0.15550611790878754,results/stage8/d01_spearman_valid_ratio.csv::model=M05&children=TD::spearman_rho
+D01,M05,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M05::adds_information_beyond_tracking_quality
+D01,M06,child_auc,0.7839506172839507,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::model_auc
+D01,M06,child_auc_ci_lo,0.6555555555555556,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::model_auc_ci_lo
+D01,M06,child_auc_ci_hi,0.8950617283950617,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::model_auc_ci_hi
+D01,M06,diff_vs_LR3,-0.03950617283950608,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::diff
+D01,M06,diff_ci_lo_vs_LR3,-0.15061728395061724,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::diff_ci_lo
+D01,M06,diff_ci_hi_vs_LR3,0.0654320987654321,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::diff_ci_hi
+D01,M06,delong_p_vs_LR3,0.47795166627907226,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=quality_LR3::delong_p
+D01,M06,diff_vs_1mvr,-0.05802469135802468,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=one_minus_valid_ratio::diff
+D01,M06,diff_ci_lo_vs_1mvr,-0.16425925925925913,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M06,diff_ci_hi_vs_1mvr,0.03580246913580243,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M06,delong_p_vs_1mvr,0.2462193614703656,results/stage8/d01_model_vs_quality.csv::model=M06&baseline=one_minus_valid_ratio::delong_p
+D01,M06,matched_auc,0.5969387755102041,results/stage8/d01_matched_auc.csv::model=M06::auc_matched
+D01,M06,matched_ci_lo,0.3673469387755102,results/stage8/d01_matched_auc.csv::model=M06::ci_lo
+D01,M06,matched_ci_hi,0.7807397959183667,results/stage8/d01_matched_auc.csv::model=M06::ci_hi
+D01,M06,spearman_valid_ratio_all,-0.7050816696914702,results/stage8/d01_spearman_valid_ratio.csv::model=M06&children=all::spearman_rho
+D01,M06,spearman_valid_ratio_ASD,-0.7087912087912087,results/stage8/d01_spearman_valid_ratio.csv::model=M06&children=ASD::spearman_rho
+D01,M06,spearman_valid_ratio_TD,-0.364182424916574,results/stage8/d01_spearman_valid_ratio.csv::model=M06&children=TD::spearman_rho
+D01,M06,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M06::adds_information_beyond_tracking_quality
+D01,M07,child_auc,0.8320987654320988,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::model_auc
+D01,M07,child_auc_ci_lo,0.7221913580246914,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::model_auc_ci_lo
+D01,M07,child_auc_ci_hi,0.9271604938271605,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::model_auc_ci_hi
+D01,M07,diff_vs_LR3,0.00864197530864208,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::diff
+D01,M07,diff_ci_lo_vs_LR3,-0.09753086419753088,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::diff_ci_lo
+D01,M07,diff_ci_hi_vs_LR3,0.11975308641975302,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::diff_ci_hi
+D01,M07,delong_p_vs_LR3,0.8760270111806197,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=quality_LR3::delong_p
+D01,M07,diff_vs_1mvr,-0.00987654320987652,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=one_minus_valid_ratio::diff
+D01,M07,diff_ci_lo_vs_1mvr,-0.11114197530864187,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M07,diff_ci_hi_vs_1mvr,0.10123456790123453,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M07,delong_p_vs_1mvr,0.8537903067757135,results/stage8/d01_model_vs_quality.csv::model=M07&baseline=one_minus_valid_ratio::delong_p
+D01,M07,matched_auc,0.7244897959183674,results/stage8/d01_matched_auc.csv::model=M07::auc_matched
+D01,M07,matched_ci_lo,0.5510204081632653,results/stage8/d01_matched_auc.csv::model=M07::ci_lo
+D01,M07,matched_ci_hi,0.8826530612244898,results/stage8/d01_matched_auc.csv::model=M07::ci_hi
+D01,M07,spearman_valid_ratio_all,-0.6725434275343533,results/stage8/d01_spearman_valid_ratio.csv::model=M07&children=all::spearman_rho
+D01,M07,spearman_valid_ratio_ASD,-0.6648351648351648,results/stage8/d01_spearman_valid_ratio.csv::model=M07&children=ASD::spearman_rho
+D01,M07,spearman_valid_ratio_TD,-0.3130144605116796,results/stage8/d01_spearman_valid_ratio.csv::model=M07&children=TD::spearman_rho
+D01,M07,adds_information_beyond_quality,1.0,results/stage8/d01_interpretation.csv::model=M07::adds_information_beyond_tracking_quality
+D01,M08,child_auc,0.7864197530864198,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::model_auc
+D01,M08,child_auc_ci_lo,0.6580246913580247,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::model_auc_ci_lo
+D01,M08,child_auc_ci_hi,0.8950617283950617,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::model_auc_ci_hi
+D01,M08,diff_vs_LR3,-0.03703703703703698,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::diff
+D01,M08,diff_ci_lo_vs_LR3,-0.17410493827160486,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::diff_ci_lo
+D01,M08,diff_ci_hi_vs_LR3,0.1074074074074074,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::diff_ci_hi
+D01,M08,delong_p_vs_LR3,0.5903943461158266,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=quality_LR3::delong_p
+D01,M08,diff_vs_1mvr,-0.05555555555555558,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=one_minus_valid_ratio::diff
+D01,M08,diff_ci_lo_vs_1mvr,-0.18765432098765433,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M08,diff_ci_hi_vs_1mvr,0.07904320987654308,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M08,delong_p_vs_1mvr,0.3999813793483642,results/stage8/d01_model_vs_quality.csv::model=M08&baseline=one_minus_valid_ratio::delong_p
+D01,M08,matched_auc,0.6785714285714286,results/stage8/d01_matched_auc.csv::model=M08::auc_matched
+D01,M08,matched_ci_lo,0.46938775510204084,results/stage8/d01_matched_auc.csv::model=M08::ci_lo
+D01,M08,matched_ci_hi,0.8418367346938775,results/stage8/d01_matched_auc.csv::model=M08::ci_hi
+D01,M08,spearman_valid_ratio_all,-0.5946979517759917,results/stage8/d01_spearman_valid_ratio.csv::model=M08&children=all::spearman_rho
+D01,M08,spearman_valid_ratio_ASD,-0.5970695970695971,results/stage8/d01_spearman_valid_ratio.csv::model=M08&children=ASD::spearman_rho
+D01,M08,spearman_valid_ratio_TD,-0.2956618464961067,results/stage8/d01_spearman_valid_ratio.csv::model=M08&children=TD::spearman_rho
+D01,M08,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M08::adds_information_beyond_tracking_quality
+D01,M09,child_auc,0.5740740740740741,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::model_auc
+D01,M09,child_auc_ci_lo,0.4271296296296297,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::model_auc_ci_lo
+D01,M09,child_auc_ci_hi,0.724722222222222,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::model_auc_ci_hi
+D01,M09,diff_vs_LR3,-0.24938271604938267,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::diff
+D01,M09,diff_ci_lo_vs_LR3,-0.40996913580246896,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::diff_ci_lo
+D01,M09,diff_ci_hi_vs_LR3,-0.09012345679012346,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::diff_ci_hi
+D01,M09,delong_p_vs_LR3,0.0023073844850188497,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=quality_LR3::delong_p
+D01,M09,diff_vs_1mvr,-0.26790123456790127,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=one_minus_valid_ratio::diff
+D01,M09,diff_ci_lo_vs_1mvr,-0.4246913580246913,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M09,diff_ci_hi_vs_1mvr,-0.1074074074074074,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M09,delong_p_vs_1mvr,0.0010440544671073604,results/stage8/d01_model_vs_quality.csv::model=M09&baseline=one_minus_valid_ratio::delong_p
+D01,M09,matched_auc,0.5357142857142857,results/stage8/d01_matched_auc.csv::model=M09::auc_matched
+D01,M09,matched_ci_lo,0.3163265306122449,results/stage8/d01_matched_auc.csv::model=M09::ci_lo
+D01,M09,matched_ci_hi,0.7551020408163265,results/stage8/d01_matched_auc.csv::model=M09::ci_hi
+D01,M09,spearman_valid_ratio_all,-0.2743712730101115,results/stage8/d01_spearman_valid_ratio.csv::model=M09&children=all::spearman_rho
+D01,M09,spearman_valid_ratio_ASD,-0.5958485958485958,results/stage8/d01_spearman_valid_ratio.csv::model=M09&children=ASD::spearman_rho
+D01,M09,spearman_valid_ratio_TD,0.11501668520578419,results/stage8/d01_spearman_valid_ratio.csv::model=M09&children=TD::spearman_rho
+D01,M09,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M09::adds_information_beyond_tracking_quality
+D01,M10,child_auc,0.6728395061728395,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::model_auc
+D01,M10,child_auc_ci_lo,0.5209567901234569,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::model_auc_ci_lo
+D01,M10,child_auc_ci_hi,0.8086728395061727,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::model_auc_ci_hi
+D01,M10,diff_vs_LR3,-0.15061728395061724,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::diff
+D01,M10,diff_ci_lo_vs_LR3,-0.2950925925925925,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::diff_ci_lo
+D01,M10,diff_ci_hi_vs_LR3,-0.007407407407407418,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::diff_ci_hi
+D01,M10,delong_p_vs_LR3,0.03645979069636416,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=quality_LR3::delong_p
+D01,M10,diff_vs_1mvr,-0.16913580246913584,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=one_minus_valid_ratio::diff
+D01,M10,diff_ci_lo_vs_1mvr,-0.3148148148148148,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=one_minus_valid_ratio::diff_ci_lo
+D01,M10,diff_ci_hi_vs_1mvr,-0.028364197530864315,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=one_minus_valid_ratio::diff_ci_hi
+D01,M10,delong_p_vs_1mvr,0.017708230046464418,results/stage8/d01_model_vs_quality.csv::model=M10&baseline=one_minus_valid_ratio::delong_p
+D01,M10,matched_auc,0.5510204081632653,results/stage8/d01_matched_auc.csv::model=M10::auc_matched
+D01,M10,matched_ci_lo,0.3469387755102041,results/stage8/d01_matched_auc.csv::model=M10::ci_lo
+D01,M10,matched_ci_hi,0.75,results/stage8/d01_matched_auc.csv::model=M10::ci_hi
+D01,M10,spearman_valid_ratio_all,-0.45929478869587764,results/stage8/d01_spearman_valid_ratio.csv::model=M10&children=all::spearman_rho
+D01,M10,spearman_valid_ratio_ASD,-0.5702075702075702,results/stage8/d01_spearman_valid_ratio.csv::model=M10&children=ASD::spearman_rho
+D01,M10,spearman_valid_ratio_TD,-0.12124582869855395,results/stage8/d01_spearman_valid_ratio.csv::model=M10&children=TD::spearman_rho
+D01,M10,adds_information_beyond_quality,0.0,results/stage8/d01_interpretation.csv::model=M10::adds_information_beyond_tracking_quality
+D01 baseline,quality_LR3,pooled_auc,0.8234567901234567,results/stage8/d01_quality_baselines.csv::baseline=quality_LR3::pooled_auc
+D01 baseline,quality_LR3,fold_mean_auc,0.85,results/stage8/d01_quality_baselines.csv::baseline=quality_LR3::fold_mean_auc
+D01 baseline,quality_LR3,fold_std_auc,0.21604056419392417,results/stage8/d01_quality_baselines.csv::baseline=quality_LR3::fold_std_auc
+D01 baseline,quality_LR_valid_ratio,pooled_auc,0.828395061728395,results/stage8/d01_quality_baselines.csv::baseline=quality_LR_valid_ratio::pooled_auc
+D01 baseline,quality_LR_valid_ratio,fold_mean_auc,0.85,results/stage8/d01_quality_baselines.csv::baseline=quality_LR_valid_ratio::fold_mean_auc
+D01 baseline,quality_LR_valid_ratio,fold_std_auc,0.21604056419392417,results/stage8/d01_quality_baselines.csv::baseline=quality_LR_valid_ratio::fold_std_auc
+D01 baseline,one_minus_valid_ratio,pooled_auc,0.8419753086419753,results/stage8/d01_quality_baselines.csv::baseline=one_minus_valid_ratio::pooled_auc
+D01 baseline,one_minus_valid_ratio,fold_mean_auc,0.85,results/stage8/d01_quality_baselines.csv::baseline=one_minus_valid_ratio::fold_mean_auc
+D01 baseline,one_minus_valid_ratio,fold_std_auc,0.21604056419392417,results/stage8/d01_quality_baselines.csv::baseline=one_minus_valid_ratio::fold_std_auc
+D01 baseline,clip_one_minus_valid_ratio,pooled_auc,0.6777995036260346,results/stage8/d01_quality_baselines.csv::baseline=clip_one_minus_valid_ratio::pooled_auc
+D01 baseline,clip_one_minus_valid_ratio,fold_mean_auc,0.6700765152158656,results/stage8/d01_quality_baselines.csv::baseline=clip_one_minus_valid_ratio::fold_mean_auc
+D01 baseline,clip_one_minus_valid_ratio,fold_std_auc,0.13142204930233234,results/stage8/d01_quality_baselines.csv::baseline=clip_one_minus_valid_ratio::fold_std_auc
+D01 baseline,clip_LR_valid_blink,pooled_auc,0.6512375194963398,results/stage8/d01_quality_baselines.csv::baseline=clip_LR_valid_blink::pooled_auc
+D01 baseline,clip_LR_valid_blink,fold_mean_auc,0.6653981965437719,results/stage8/d01_quality_baselines.csv::baseline=clip_LR_valid_blink::fold_mean_auc
+D01 baseline,clip_LR_valid_blink,fold_std_auc,0.1397250133047247,results/stage8/d01_quality_baselines.csv::baseline=clip_LR_valid_blink::fold_std_auc
+D01 baseline,quality_LR3,pooled_auc_ci_lo,0.7012345679012346,results/stage8/stats_bootstrap_ci.csv::dataset=D01_eye_tracking&level=child&model=baseline: quality_LR3::ci_lo
+D01 baseline,quality_LR3,pooled_auc_ci_hi,0.9284567901234564,results/stage8/stats_bootstrap_ci.csv::dataset=D01_eye_tracking&level=child&model=baseline: quality_LR3::ci_hi
+D01 baseline,one_minus_valid_ratio,pooled_auc_ci_lo,0.7271296296296297,results/stage8/stats_bootstrap_ci.csv::dataset=D01_eye_tracking&level=child&model=baseline: 1 - valid_ratio::ci_lo
+D01 baseline,one_minus_valid_ratio,pooled_auc_ci_hi,0.9382716049382716,results/stage8/stats_bootstrap_ci.csv::dataset=D01_eye_tracking&level=child&model=baseline: 1 - valid_ratio::ci_hi
+D01 baseline,one_minus_valid_ratio,matched_auc,0.5714285714285714,results/stage8/d01_matched_auc.csv::model=quality: 1 - valid_ratio::auc_matched
+D01 baseline,one_minus_valid_ratio,matched_ci_lo,0.45408163265306123,results/stage8/d01_matched_auc.csv::model=quality: 1 - valid_ratio::ci_lo
+D01 baseline,one_minus_valid_ratio,matched_ci_hi,0.6836734693877551,results/stage8/d01_matched_auc.csv::model=quality: 1 - valid_ratio::ci_hi
+D01 baseline,one_minus_valid_ratio,matched_n_pairs,14.0,results/stage8/d01_matched_auc.csv::model=quality: 1 - valid_ratio::n_pairs
+D01 baseline,quality_LR3,matched_auc,0.5612244897959183,results/stage8/d01_matched_auc.csv::model=quality_LR3::auc_matched
+D01 baseline,quality_LR3,matched_ci_lo,0.4489795918367347,results/stage8/d01_matched_auc.csv::model=quality_LR3::ci_lo
+D01 baseline,quality_LR3,matched_ci_hi,0.6836734693877551,results/stage8/d01_matched_auc.csv::model=quality_LR3::ci_hi
+D01 baseline,quality_LR3,matched_n_pairs,14.0,results/stage8/d01_matched_auc.csv::model=quality_LR3::n_pairs
+D01 baseline,matching,n_pairs,14.0,results/stage8/d01_matching_balance.json::n_pairs
+D01 baseline,matching,smd_all,-1.3255083817366762,results/stage8/d01_matching_balance.json::smd_all
+D01 baseline,matching,smd_matched,-0.15598620096248375,results/stage8/d01_matching_balance.json::smd_matched
+D02,M01,pooled_auc,0.8819154056180295,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M01::pooled_auc
+D02,M01,pooled_ci_lo,0.8695849070399957,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M01::ci_lo
+D02,M01,pooled_ci_hi,0.8938976909630629,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M01::ci_hi
+D02,M01,fold_mean_auc_all,0.9014600397982322,results/stage8/d02_near_dup_sensitivity.csv::model=M01::fold_mean_auc_all
+D02,M01,fold_mean_auc_removed,0.8994259394372428,results/stage8/d02_near_dup_sensitivity.csv::model=M01::fold_mean_auc_removed
+D02,M01,fold_mean_diff,-0.002034100360989388,results/stage8/d02_near_dup_sensitivity.csv::model=M01::fold_mean_diff
+D02,M01,pooled_auc_removed,0.8796589614565277,results/stage8/d02_near_dup_sensitivity.csv::model=M01::pooled_auc_removed
+D02,M01,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M01::n_removed
+D02,M01,original_split_auc_orig_test,0.8992888888888889,results/stage8/d02_original_split.csv::model=M01::auc_orig_test
+D02,M01,original_split_auc_rest,0.8796889348025712,results/stage8/d02_original_split.csv::model=M01::auc_rest
+D02,M01,original_split_diff,0.01959995408631776,results/stage8/d02_original_split.csv::model=M01::diff
+D02,M01,original_split_diff_ci_lo,-0.02194317709858751,results/stage8/d02_original_split.csv::model=M01::diff_ci_lo
+D02,M01,original_split_diff_ci_hi,0.05436216899830645,results/stage8/d02_original_split.csv::model=M01::diff_ci_hi
+D02,M02,pooled_auc,0.8687211347123883,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M02::pooled_auc
+D02,M02,pooled_ci_lo,0.855382574772724,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M02::ci_lo
+D02,M02,pooled_ci_hi,0.8816227160190527,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M02::ci_hi
+D02,M02,fold_mean_auc_all,0.8666527835624045,results/stage8/d02_near_dup_sensitivity.csv::model=M02::fold_mean_auc_all
+D02,M02,fold_mean_auc_removed,0.8648677885841909,results/stage8/d02_near_dup_sensitivity.csv::model=M02::fold_mean_auc_removed
+D02,M02,fold_mean_diff,-0.0017849949782136054,results/stage8/d02_near_dup_sensitivity.csv::model=M02::fold_mean_diff
+D02,M02,pooled_auc_removed,0.8665527968044816,results/stage8/d02_near_dup_sensitivity.csv::model=M02::pooled_auc_removed
+D02,M02,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M02::n_removed
+D02,M02,original_split_auc_orig_test,0.9043333333333333,results/stage8/d02_original_split.csv::model=M02::auc_orig_test
+D02,M02,original_split_auc_rest,0.8644384182736455,results/stage8/d02_original_split.csv::model=M02::auc_rest
+D02,M02,original_split_diff,0.039894915059687786,results/stage8/d02_original_split.csv::model=M02::diff
+D02,M02,original_split_diff_ci_lo,0.0006604201898218333,results/stage8/d02_original_split.csv::model=M02::diff_ci_lo
+D02,M02,original_split_diff_ci_hi,0.07519034347662576,results/stage8/d02_original_split.csv::model=M02::diff_ci_hi
+D02,M03,pooled_auc,0.8819910685362581,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M03::pooled_auc
+D02,M03,pooled_ci_lo,0.870125075614309,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M03::ci_lo
+D02,M03,pooled_ci_hi,0.8940099150997174,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M03::ci_hi
+D02,M03,fold_mean_auc_all,0.8901383682724792,results/stage8/d02_near_dup_sensitivity.csv::model=M03::fold_mean_auc_all
+D02,M03,fold_mean_auc_removed,0.8885353203155726,results/stage8/d02_near_dup_sensitivity.csv::model=M03::fold_mean_auc_removed
+D02,M03,fold_mean_diff,-0.001603047956906578,results/stage8/d02_near_dup_sensitivity.csv::model=M03::fold_mean_diff
+D02,M03,pooled_auc_removed,0.8807662043153436,results/stage8/d02_near_dup_sensitivity.csv::model=M03::pooled_auc_removed
+D02,M03,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M03::n_removed
+D02,M03,original_split_auc_orig_test,0.9071333333333333,results/stage8/d02_original_split.csv::model=M03::auc_orig_test
+D02,M03,original_split_auc_rest,0.8789325068870524,results/stage8/d02_original_split.csv::model=M03::auc_rest
+D02,M03,original_split_diff,0.02820082644628097,results/stage8/d02_original_split.csv::model=M03::diff
+D02,M03,original_split_diff_ci_lo,-0.008843385132076997,results/stage8/d02_original_split.csv::model=M03::diff_ci_lo
+D02,M03,original_split_diff_ci_hi,0.06146708959347573,results/stage8/d02_original_split.csv::model=M03::diff_ci_hi
+D02,M04,pooled_auc,0.895538895830441,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M04::pooled_auc
+D02,M04,pooled_ci_lo,0.8837345013205055,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M04::ci_lo
+D02,M04,pooled_ci_hi,0.9075599546979826,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M04::ci_hi
+D02,M04,fold_mean_auc_all,0.9311814521727058,results/stage8/d02_near_dup_sensitivity.csv::model=M04::fold_mean_auc_all
+D02,M04,fold_mean_auc_removed,0.9294769490653205,results/stage8/d02_near_dup_sensitivity.csv::model=M04::fold_mean_auc_removed
+D02,M04,fold_mean_diff,-0.0017045031073852357,results/stage8/d02_near_dup_sensitivity.csv::model=M04::fold_mean_diff
+D02,M04,pooled_auc_removed,0.8940468274685273,results/stage8/d02_near_dup_sensitivity.csv::model=M04::pooled_auc_removed
+D02,M04,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M04::n_removed
+D02,M04,original_split_auc_orig_test,0.9405555555555556,results/stage8/d02_original_split.csv::model=M04::auc_orig_test
+D02,M04,original_split_auc_rest,0.8901007231404958,results/stage8/d02_original_split.csv::model=M04::auc_rest
+D02,M04,original_split_diff,0.05045483241505977,results/stage8/d02_original_split.csv::model=M04::diff
+D02,M04,original_split_diff_ci_lo,0.017580079197668175,results/stage8/d02_original_split.csv::model=M04::diff_ci_lo
+D02,M04,original_split_diff_ci_hi,0.0789650643486975,results/stage8/d02_original_split.csv::model=M04::diff_ci_hi
+D02,M05,pooled_auc,0.8742917302975612,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M05::pooled_auc
+D02,M05,pooled_ci_lo,0.8618175719678658,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M05::ci_lo
+D02,M05,pooled_ci_hi,0.8868260649979363,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M05::ci_hi
+D02,M05,fold_mean_auc_all,0.8813364801702994,results/stage8/d02_near_dup_sensitivity.csv::model=M05::fold_mean_auc_all
+D02,M05,fold_mean_auc_removed,0.8789229876149232,results/stage8/d02_near_dup_sensitivity.csv::model=M05::fold_mean_auc_removed
+D02,M05,fold_mean_diff,-0.002413492555376262,results/stage8/d02_near_dup_sensitivity.csv::model=M05::fold_mean_diff
+D02,M05,pooled_auc_removed,0.8720372300732581,results/stage8/d02_near_dup_sensitivity.csv::model=M05::pooled_auc_removed
+D02,M05,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M05::n_removed
+D02,M05,original_split_auc_orig_test,0.8984,results/stage8/d02_original_split.csv::model=M05::auc_orig_test
+D02,M05,original_split_auc_rest,0.8714015151515152,results/stage8/d02_original_split.csv::model=M05::auc_rest
+D02,M05,original_split_diff,0.02699848484848477,results/stage8/d02_original_split.csv::model=M05::diff
+D02,M05,original_split_diff_ci_lo,-0.01217179516262274,results/stage8/d02_original_split.csv::model=M05::diff_ci_lo
+D02,M05,original_split_diff_ci_hi,0.06308715009754684,results/stage8/d02_original_split.csv::model=M05::diff_ci_hi
+D02,M06,pooled_auc,0.8854033041788144,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M06::pooled_auc
+D02,M06,pooled_ci_lo,0.8728866108530161,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M06::ci_lo
+D02,M06,pooled_ci_hi,0.897395344656342,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M06::ci_hi
+D02,M06,fold_mean_auc_all,0.9009602480447961,results/stage8/d02_near_dup_sensitivity.csv::model=M06::fold_mean_auc_all
+D02,M06,fold_mean_auc_removed,0.898916888877992,results/stage8/d02_near_dup_sensitivity.csv::model=M06::fold_mean_auc_removed
+D02,M06,fold_mean_diff,-0.002043359166804093,results/stage8/d02_near_dup_sensitivity.csv::model=M06::fold_mean_diff
+D02,M06,pooled_auc_removed,0.8829472985306771,results/stage8/d02_near_dup_sensitivity.csv::model=M06::pooled_auc_removed
+D02,M06,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M06::n_removed
+D02,M06,original_split_auc_orig_test,0.8883333333333333,results/stage8/d02_original_split.csv::model=M06::auc_orig_test
+D02,M06,original_split_auc_rest,0.8850608356290175,results/stage8/d02_original_split.csv::model=M06::auc_rest
+D02,M06,original_split_diff,0.003272497704315813,results/stage8/d02_original_split.csv::model=M06::diff
+D02,M06,original_split_diff_ci_lo,-0.03959823156292352,results/stage8/d02_original_split.csv::model=M06::diff_ci_lo
+D02,M06,original_split_diff_ci_hi,0.04245547138903529,results/stage8/d02_original_split.csv::model=M06::diff_ci_hi
+D02,M07,pooled_auc,0.8982005183025591,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M07::pooled_auc
+D02,M07,pooled_ci_lo,0.88684116471377,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M07::ci_lo
+D02,M07,pooled_ci_hi,0.9090778558994355,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M07::ci_hi
+D02,M07,fold_mean_auc_all,0.9239923180156417,results/stage8/d02_near_dup_sensitivity.csv::model=M07::fold_mean_auc_all
+D02,M07,fold_mean_auc_removed,0.922589818042902,results/stage8/d02_near_dup_sensitivity.csv::model=M07::fold_mean_auc_removed
+D02,M07,fold_mean_diff,-0.0014024999727397791,results/stage8/d02_near_dup_sensitivity.csv::model=M07::fold_mean_diff
+D02,M07,pooled_auc_removed,0.8968979294364966,results/stage8/d02_near_dup_sensitivity.csv::model=M07::pooled_auc_removed
+D02,M07,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M07::n_removed
+D02,M07,original_split_auc_orig_test,0.9234444444444444,results/stage8/d02_original_split.csv::model=M07::auc_orig_test
+D02,M07,original_split_auc_rest,0.8952287075298438,results/stage8/d02_original_split.csv::model=M07::auc_rest
+D02,M07,original_split_diff,0.028215736914600553,results/stage8/d02_original_split.csv::model=M07::diff
+D02,M07,original_split_diff_ci_lo,-0.007075814514920114,results/stage8/d02_original_split.csv::model=M07::diff_ci_lo
+D02,M07,original_split_diff_ci_hi,0.05820526367327039,results/stage8/d02_original_split.csv::model=M07::diff_ci_hi
+D02,M08,pooled_auc,0.8711342496182146,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M08::pooled_auc
+D02,M08,pooled_ci_lo,0.8573259068059714,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M08::ci_lo
+D02,M08,pooled_ci_hi,0.8844177751786048,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M08::ci_hi
+D02,M08,fold_mean_auc_all,0.9029247072978851,results/stage8/d02_near_dup_sensitivity.csv::model=M08::fold_mean_auc_all
+D02,M08,fold_mean_auc_removed,0.9012115799037911,results/stage8/d02_near_dup_sensitivity.csv::model=M08::fold_mean_auc_removed
+D02,M08,fold_mean_diff,-0.0017131273940940162,results/stage8/d02_near_dup_sensitivity.csv::model=M08::fold_mean_diff
+D02,M08,pooled_auc_removed,0.8696935337597766,results/stage8/d02_near_dup_sensitivity.csv::model=M08::pooled_auc_removed
+D02,M08,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M08::n_removed
+D02,M08,original_split_auc_orig_test,0.9082666666666667,results/stage8/d02_original_split.csv::model=M08::auc_orig_test
+D02,M08,original_split_auc_rest,0.8669467401285583,results/stage8/d02_original_split.csv::model=M08::auc_rest
+D02,M08,original_split_diff,0.04131992653810834,results/stage8/d02_original_split.csv::model=M08::diff
+D02,M08,original_split_diff_ci_lo,0.002606010292549452,results/stage8/d02_original_split.csv::model=M08::diff_ci_lo
+D02,M08,original_split_diff_ci_hi,0.07629855485016154,results/stage8/d02_original_split.csv::model=M08::diff_ci_hi
+D02,M09,pooled_auc,0.8674214447683836,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M09::pooled_auc
+D02,M09,pooled_ci_lo,0.855117504519018,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M09::ci_lo
+D02,M09,pooled_ci_hi,0.8800200488772334,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M09::ci_hi
+D02,M09,fold_mean_auc_all,0.8753112129205423,results/stage8/d02_near_dup_sensitivity.csv::model=M09::fold_mean_auc_all
+D02,M09,fold_mean_auc_removed,0.873615766207697,results/stage8/d02_near_dup_sensitivity.csv::model=M09::fold_mean_auc_removed
+D02,M09,fold_mean_diff,-0.0016954467128452722,results/stage8/d02_near_dup_sensitivity.csv::model=M09::fold_mean_diff
+D02,M09,pooled_auc_removed,0.8654516031308647,results/stage8/d02_near_dup_sensitivity.csv::model=M09::pooled_auc_removed
+D02,M09,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M09::n_removed
+D02,M09,original_split_auc_orig_test,0.9039555555555555,results/stage8/d02_original_split.csv::model=M09::auc_orig_test
+D02,M09,original_split_auc_rest,0.8630150941230487,results/stage8/d02_original_split.csv::model=M09::auc_rest
+D02,M09,original_split_diff,0.04094046143250685,results/stage8/d02_original_split.csv::model=M09::diff
+D02,M09,original_split_diff_ci_lo,0.00246730320914582,results/stage8/d02_original_split.csv::model=M09::diff_ci_lo
+D02,M09,original_split_diff_ci_hi,0.07447544025444487,results/stage8/d02_original_split.csv::model=M09::diff_ci_hi
+D02,M10,pooled_auc,0.8745427830996344,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M10::pooled_auc
+D02,M10,pooled_ci_lo,0.8619946157057872,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M10::ci_lo
+D02,M10,pooled_ci_hi,0.8872335977711503,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=M10::ci_hi
+D02,M10,fold_mean_auc_all,0.8852607709750566,results/stage8/d02_near_dup_sensitivity.csv::model=M10::fold_mean_auc_all
+D02,M10,fold_mean_auc_removed,0.8837135739567381,results/stage8/d02_near_dup_sensitivity.csv::model=M10::fold_mean_auc_removed
+D02,M10,fold_mean_diff,-0.0015471970183185135,results/stage8/d02_near_dup_sensitivity.csv::model=M10::fold_mean_diff
+D02,M10,pooled_auc_removed,0.8731028545379051,results/stage8/d02_near_dup_sensitivity.csv::model=M10::pooled_auc_removed
+D02,M10,n_removed,65.0,results/stage8/d02_near_dup_sensitivity.csv::model=M10::n_removed
+D02,M10,original_split_auc_orig_test,0.9104,results/stage8/d02_original_split.csv::model=M10::auc_orig_test
+D02,M10,original_split_auc_rest,0.8704927112029385,results/stage8/d02_original_split.csv::model=M10::auc_rest
+D02,M10,original_split_diff,0.03990728879706151,results/stage8/d02_original_split.csv::model=M10::diff
+D02,M10,original_split_diff_ci_lo,0.0027669226947653197,results/stage8/d02_original_split.csv::model=M10::diff_ci_lo
+D02,M10,original_split_diff_ci_hi,0.07370181014733451,results/stage8/d02_original_split.csv::model=M10::diff_ci_hi
+D02 baseline,image_stats_logreg,fold_mean_auc,0.7818408996251561,results/stage8/d02_image_stats_baseline.csv::baseline=image_stats_logreg::fold_mean_auc
+D02 baseline,image_stats_logreg,fold_std_auc,0.025620473438112242,results/stage8/d02_image_stats_baseline.csv::baseline=image_stats_logreg::fold_std_auc
+D02 baseline,image_stats_logreg,pooled_auc,0.78130084686936,results/stage8/d02_image_stats_baseline.csv::baseline=image_stats_logreg::pooled_auc
+D02 baseline,image_stats_logreg,pooled_auc_ci_lo,0.7653053344407709,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=baseline: image_stats_logreg::ci_lo
+D02 baseline,image_stats_logreg,pooled_auc_ci_hi,0.7977290847585922,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=baseline: image_stats_logreg::ci_hi
+D02 baseline,image_stats_random_forest,fold_mean_auc,0.7959206811976491,results/stage8/d02_image_stats_baseline.csv::baseline=image_stats_random_forest::fold_mean_auc
+D02 baseline,image_stats_random_forest,fold_std_auc,0.019278079549772415,results/stage8/d02_image_stats_baseline.csv::baseline=image_stats_random_forest::fold_std_auc
+D02 baseline,image_stats_random_forest,pooled_auc,0.7967365449581193,results/stage8/d02_image_stats_baseline.csv::baseline=image_stats_random_forest::pooled_auc
+D02 baseline,image_stats_random_forest,pooled_auc_ci_lo,0.7806642323559567,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=baseline: image_stats_random_forest::ci_lo
+D02 baseline,image_stats_random_forest,pooled_auc_ci_hi,0.8119587299863213,results/stage8/stats_bootstrap_ci.csv::dataset=D02_facial_images_A&level=image&model=baseline: image_stats_random_forest::ci_hi

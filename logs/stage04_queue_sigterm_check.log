@@ -1,0 +1,45 @@
+### start queue (own session), SIGTERM it after epoch 1
+2026-10-14T09:36:59 QUEUE D01_eye_tracking models ['M09'] folds [3] -> /tmp/claude-1001/-home-score-Documents-AI-project/4f92d53a-edd7-465a-9ad4-b89e6fdbac58/scratchpad/queue_sigterm_check/
+2026-10-14T09:36:59 M09: start /home/score/Documents/AI_project/asd_hybrid_10fold/scripts/train.py --dataset D01_eye_tracking --model M09 --folds 3 --out /tmp/claude-1001/-home-score-Documents-AI-project/4f92d53a-edd7-465a-9ad4-b89e6fdbac58/scratchpad/queue_sigterm_check --max-epochs 8
+[D01_eye_tracking M09 fold 3] START (new) input=clips policy=full n_train=897 n_val=225 n_test=119 pos_weight=2.0931 bs=64 max_epochs=8
+[D01_eye_tracking M09 fold 3] epoch 1/8 train_loss 0.9255 val_loss 1.0085 val_auc 0.3572 val_auc_child 0.1250 lr 5.33e-04 11.2s peak 3.17GB *best*
+### 2026-10-14T09:37:13+05:30 kill -TERM queue 111686
+2026-10-14T09:37:14 interrupt: waiting for train.py to save last.pt and exit
+[D01_eye_tracking M09 fold 3] epoch 2/8 train_loss 0.8994 val_loss 1.0523 val_auc 0.4278 val_auc_child 0.1250 lr 1.00e-03 3.2s peak 2.73GB *best*
+[D01_eye_tracking M09 fold 3] epoch 3/8 train_loss 0.8574 val_loss 1.1169 val_auc 0.5203 val_auc_child 0.5625 lr 9.33e-04 3.2s peak 2.73GB *best*
+[D01_eye_tracking M09 fold 3] epoch 4/8 train_loss 0.8330 val_loss 2.2700 val_auc 0.5054 val_auc_child 0.5625 lr 7.50e-04 3.1s peak 2.73GB (no improvement 1/8)
+[D01_eye_tracking M09 fold 3] epoch 5/8 train_loss 0.7813 val_loss 1.2979 val_auc 0.6093 val_auc_child 0.6250 lr 5.00e-04 3.2s peak 2.73GB *best*
+[D01_eye_tracking M09 fold 3] INTERRUPTED (signal SIGINT); status stays RUNNING, last.pt kept for resume
+train.py interrupted (signal SIGINT): re-run the same command to resume
+2026-10-14T09:37:30 QUEUE INTERRUPTED at M09: re-run the same command to resume
+### queue exit: 130
+D01_eye_tracking,M09,3,RUNNING,2026-10-14T09:37:02,,,,,,,,interrupted 2026-10-14T09:37:29 signal SIGINT
+best_model.pt
+config.yaml
+history.csv
+last.pt
+run_info.json
+### re-run the same queue command
+2026-10-14T09:37:32 QUEUE D01_eye_tracking models ['M09'] folds [3] -> /tmp/claude-1001/-home-score-Documents-AI-project/4f92d53a-edd7-465a-9ad4-b89e6fdbac58/scratchpad/queue_sigterm_check/
+2026-10-14T09:37:32 M09: start /home/score/Documents/AI_project/asd_hybrid_10fold/scripts/train.py --dataset D01_eye_tracking --model M09 --folds 3 --out /tmp/claude-1001/-home-score-Documents-AI-project/4f92d53a-edd7-465a-9ad4-b89e6fdbac58/scratchpad/queue_sigterm_check --max-epochs 8
+[D01_eye_tracking M09 fold 3] RESUME from last.pt: epoch 5 done, continuing at epoch 6 (best val AUC 0.6093 @ 5, patience 0/8)
+[D01_eye_tracking M09 fold 3] epoch 6/8 train_loss 0.7302 val_loss 1.3190 val_auc 0.5965 val_auc_child 0.6875 lr 2.50e-04 11.2s peak 3.18GB (no improvement 1/8)
+[D01_eye_tracking M09 fold 3] epoch 7/8 train_loss 0.7048 val_loss 1.2257 val_auc 0.6089 val_auc_child 0.6875 lr 6.70e-05 3.0s peak 2.73GB (no improvement 2/8)
+[D01_eye_tracking M09 fold 3] epoch 8/8 train_loss 0.6770 val_loss 1.2807 val_auc 0.5983 val_auc_child 0.6875 lr 0.00e+00 3.1s peak 2.73GB (no improvement 3/8)
+[D01_eye_tracking M09 fold 3] DONE epochs 8 best_epoch 5 val_auc 0.6093 test_auc 0.7488 peak 3.18GB 46s batches {'train': 120, 'val': 36, 'test': 2} test ids in train/val batches: 0
+2026-10-14T09:37:55 M09: train.py exit 0; validate_model_results: PASS
+2026-10-14T09:37:55 QUEUE DONE D01_eye_tracking: ['M09']
+### queue exit: 0
+### fold log
+2026-10-14 09:37:02 [D01_eye_tracking M09 fold 3] START (new) input=clips policy=full n_train=897 n_val=225 n_test=119 pos_weight=2.0931 bs=64 max_epochs=8
+2026-10-14 09:37:13 [D01_eye_tracking M09 fold 3] epoch 1/8 train_loss 0.9255 val_loss 1.0085 val_auc 0.3572 val_auc_child 0.1250 lr 5.33e-04 11.2s peak 3.17GB *best*
+2026-10-14 09:37:16 [D01_eye_tracking M09 fold 3] epoch 2/8 train_loss 0.8994 val_loss 1.0523 val_auc 0.4278 val_auc_child 0.1250 lr 1.00e-03 3.2s peak 2.73GB *best*
+2026-10-14 09:37:19 [D01_eye_tracking M09 fold 3] epoch 3/8 train_loss 0.8574 val_loss 1.1169 val_auc 0.5203 val_auc_child 0.5625 lr 9.33e-04 3.2s peak 2.73GB *best*
+2026-10-14 09:37:23 [D01_eye_tracking M09 fold 3] epoch 4/8 train_loss 0.8330 val_loss 2.2700 val_auc 0.5054 val_auc_child 0.5625 lr 7.50e-04 3.1s peak 2.73GB (no improvement 1/8)
+2026-10-14 09:37:26 [D01_eye_tracking M09 fold 3] epoch 5/8 train_loss 0.7813 val_loss 1.2979 val_auc 0.6093 val_auc_child 0.6250 lr 5.00e-04 3.2s peak 2.73GB *best*
+2026-10-14 09:37:29 [D01_eye_tracking M09 fold 3] INTERRUPTED (signal SIGINT); status stays RUNNING, last.pt kept for resume
+2026-10-14 09:37:35 [D01_eye_tracking M09 fold 3] RESUME from last.pt: epoch 5 done, continuing at epoch 6 (best val AUC 0.6093 @ 5, patience 0/8)
+2026-10-14 09:37:46 [D01_eye_tracking M09 fold 3] epoch 6/8 train_loss 0.7302 val_loss 1.3190 val_auc 0.5965 val_auc_child 0.6875 lr 2.50e-04 11.2s peak 3.18GB (no improvement 1/8)
+2026-10-14 09:37:49 [D01_eye_tracking M09 fold 3] epoch 7/8 train_loss 0.7048 val_loss 1.2257 val_auc 0.6089 val_auc_child 0.6875 lr 6.70e-05 3.0s peak 2.73GB (no improvement 2/8)
+2026-10-14 09:37:52 [D01_eye_tracking M09 fold 3] epoch 8/8 train_loss 0.6770 val_loss 1.2807 val_auc 0.5983 val_auc_child 0.6875 lr 0.00e+00 3.1s peak 2.73GB (no improvement 3/8)
+2026-10-14 09:37:54 [D01_eye_tracking M09 fold 3] DONE epochs 8 best_epoch 5 val_auc 0.6093 test_auc 0.7488 peak 3.18GB 46s batches {'train': 120, 'val': 36, 'test': 2} test ids in train/val batches: 0

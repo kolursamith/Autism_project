@@ -1,0 +1,3 @@
+deterministic cuDNN (benchmark off), subset 12/class of fold 1, 3 epochs: straight vs 1 epoch + simulated kill + resume
+D01_eye_tracking M01 max |diff|: {'train_loss': 0.0, 'val_loss': 0.0, 'val_auc': 0.0, 'lr': 0.0, 'test_y_prob': 0.0}
+D02_facial_images_A M09 max |diff|: {'train_loss': 0.0, 'val_loss': 0.0, 'val_auc': 0.0, 'lr': 0.0, 'test_y_prob': 0.0}

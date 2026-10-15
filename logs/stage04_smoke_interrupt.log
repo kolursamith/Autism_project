@@ -1,0 +1,38 @@
+### 2026-10-14T09:32:35+05:30 step 1: start scripts/train.py --dataset D02 --model M03 --folds 1 --max-epochs 3 --out results_smoke
+[D02_facial_images_A M03 fold 1] START (new) input=images policy=last_stage n_train=2268 n_val=378 n_test=294 pos_weight=1.0000 bs=64 max_epochs=3
+[D02_facial_images_A M03 fold 1] epoch 1/3 train_loss 0.6829 val_loss 0.6437 val_auc 0.7840 lr 2.57e-04 10.3s peak 0.98GB *best*
+### 2026-10-14T09:32:48+05:30 epoch 1 finished -> kill -INT 109882
+[D02_facial_images_A M03 fold 1] INTERRUPTED (signal SIGINT); status stays RUNNING, last.pt kept for resume
+train.py interrupted (signal SIGINT): re-run the same command to resume
+### exit code after SIGINT: 130
+### step 2: state after the interruption
+D02_facial_images_A,M03,1,RUNNING,2026-10-14T09:32:37,,,,,,,,interrupted 2026-10-14T09:32:49 signal SIGINT
+total 313208
+drwxrwxr-x 2 score score      4096 Oct 14 09:32 .
+drwxrwxr-x 3 score score      4096 Oct 14 09:32 ..
+-rw-rw-r-- 1 score score  97389895 Oct 14 09:32 best_model.pt
+-rw-rw-r-- 1 score score      1739 Oct 14 09:32 config.yaml
+-rw-rw-r-- 1 score score       169 Oct 14 09:32 history.csv
+-rw-rw-r-- 1 score score 223311137 Oct 14 09:32 last.pt
+-rw-rw-r-- 1 score score      1737 Oct 14 09:32 run_info.json
+### 2026-10-14T09:32:50+05:30 step 3: restart the same command
+[D02_facial_images_A M03 fold 1] RESUME from last.pt: epoch 1 done, continuing at epoch 2 (best val AUC 0.7840 @ 1, patience 0/8)
+[D02_facial_images_A M03 fold 1] epoch 2/3 train_loss 0.5343 val_loss 0.4851 val_auc 0.8686 lr 5.00e-04 10.5s peak 0.98GB *best*
+[D02_facial_images_A M03 fold 1] epoch 3/3 train_loss 0.4513 val_loss 0.4328 val_auc 0.8903 lr 0.00e+00 4.9s peak 0.72GB *best*
+[D02_facial_images_A M03 fold 1] DONE epochs 3 best_epoch 3 val_auc 0.8903 test_auc 0.8502 peak 0.98GB 30s batches {'train': 108, 'val': 24, 'test': 5} test ids in train/val batches: 0
+### exit code after restart: 0
+### fold log:
+2026-10-14 09:32:38 [D02_facial_images_A M03 fold 1] START (new) input=images policy=last_stage n_train=2268 n_val=378 n_test=294 pos_weight=1.0000 bs=64 max_epochs=3
+2026-10-14 09:32:48 [D02_facial_images_A M03 fold 1] epoch 1/3 train_loss 0.6829 val_loss 0.6437 val_auc 0.7840 lr 2.57e-04 10.3s peak 0.98GB *best*
+2026-10-14 09:32:49 [D02_facial_images_A M03 fold 1] INTERRUPTED (signal SIGINT); status stays RUNNING, last.pt kept for resume
+2026-10-14 09:32:53 [D02_facial_images_A M03 fold 1] RESUME from last.pt: epoch 1 done, continuing at epoch 2 (best val AUC 0.7840 @ 1, patience 0/8)
+2026-10-14 09:33:03 [D02_facial_images_A M03 fold 1] epoch 2/3 train_loss 0.5343 val_loss 0.4851 val_auc 0.8686 lr 5.00e-04 10.5s peak 0.98GB *best*
+2026-10-14 09:33:08 [D02_facial_images_A M03 fold 1] epoch 3/3 train_loss 0.4513 val_loss 0.4328 val_auc 0.8903 lr 0.00e+00 4.9s peak 0.72GB *best*
+2026-10-14 09:33:11 [D02_facial_images_A M03 fold 1] DONE epochs 3 best_epoch 3 val_auc 0.8903 test_auc 0.8502 peak 0.98GB 30s batches {'train': 108, 'val': 24, 'test': 5} test ids in train/val batches: 0
+### step 4: straight reference run
+[D02_facial_images_A M03 fold 1] START (new) input=images policy=last_stage n_train=2268 n_val=378 n_test=294 pos_weight=1.0000 bs=64 max_epochs=3
+[D02_facial_images_A M03 fold 1] epoch 1/3 train_loss 0.6829 val_loss 0.6437 val_auc 0.7841 lr 2.57e-04 10.4s peak 0.98GB *best*
+[D02_facial_images_A M03 fold 1] epoch 2/3 train_loss 0.5343 val_loss 0.4853 val_auc 0.8685 lr 5.00e-04 4.8s peak 0.73GB *best*
+[D02_facial_images_A M03 fold 1] epoch 3/3 train_loss 0.4516 val_loss 0.4331 val_auc 0.8903 lr 0.00e+00 4.8s peak 0.73GB *best*
+[D02_facial_images_A M03 fold 1] DONE epochs 3 best_epoch 3 val_auc 0.8903 test_auc 0.8502 peak 0.98GB 23s batches {'train': 108, 'val': 24, 'test': 5} test ids in train/val batches: 0
+INTERRUPT_TEST_END

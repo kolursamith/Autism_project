@@ -1,0 +1,51 @@
+{
+ "key": [
+  "Participant",
+  "RecordingTime [ms]",
+  "Trial",
+  "Point of Regard Right X [px]",
+  "Point of Regard Right Y [px]"
+ ],
+ "string_key_all_rows": {
+  "rows": 2252943,
+  "distinct": 1969116,
+  "duplicate_rows_removed": 283827,
+  "of_which_duplicate_within_same_file": 18509
+ },
+ "string_key_identified_rows": {
+  "rows": 1351157,
+  "distinct": 1145882,
+  "duplicate_rows_removed": 205275,
+  "of_which_duplicate_within_same_file": 18490
+ },
+ "numeric_key_all_rows(time round 3dp, coords round 4dp, '-'->NaN)": {
+  "rows": 2252943,
+  "distinct": 1924191,
+  "duplicate_rows_removed": 328752,
+  "of_which_duplicate_within_same_file": 18509
+ },
+ "numeric_key_identified_rows": {
+  "rows": 1351157,
+  "distinct": 1103660,
+  "duplicate_rows_removed": 247497,
+  "of_which_duplicate_within_same_file": 18490
+ },
+ "example_formats_PoR_X": [
+  "-",
+  "595.6325",
+  "597.3023",
+  "596.9685",
+  "596.4349",
+  "599.7004",
+  "599.9091",
+  "599.3040"
+ ],
+ "example_formats_RecordingTime_first_row_per_file": {
+  "1.csv": "4780015.315",
+  "10.csv": "4677761.695",
+  "11.csv": "2866439.252",
+  "12.csv": "2147597.233",
+  "13.csv": "1134179.066",
+  "14.csv": "629691.898"
+ }
+}

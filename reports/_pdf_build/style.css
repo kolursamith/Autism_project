@@ -1,0 +1,5 @@
+@page { size: A4 landscape; margin: 12mm; }
+body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 9pt; line-height: 1.35; }
+h1 { font-size: 16pt; border-bottom: 2px solid #333; } h2 { font-size: 13pt; margin-top: 18pt; border-bottom: 1px solid #999; } h3 { font-size: 11pt; }
+table { border-collapse: collapse; width: 100%; font-size: 7pt; } th, td { border: 1px solid #aaa; padding: 3px; vertical-align: top; word-break: break-word; }
+th { background: #eee; } pre, code { font-family: "DejaVu Sans Mono", monospace; font-size: 7pt; } pre { white-space: pre-wrap; background: #f6f6f6; padding: 4px; }

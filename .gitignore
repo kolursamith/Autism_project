@@ -1,0 +1,10 @@
+# Large or machine-specific files kept OUT of the GitHub repository (user decision 2026-10-15:
+# "project without weights", private repo). Raw datasets live outside this folder and are never added.
+.venv/
+cache/
+results_smoke/
+*.pt
+__pycache__/
+*.pyc
+.pytest_cache/
+*.lock

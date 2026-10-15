@@ -1,0 +1,67 @@
+stage: 7
+dataset: D05_toddler_screening
+experiment: set_all
+experiment_note: 'LABEL-DEFINITIONAL UPPER BOUND: label == (A1..A10 sum >= 4); does
+  NOT measure autism prediction'
+model_id: hist_gb
+fold: 9
+seed: 51
+feature_set: set_all
+numeric_features:
+- A1
+- A2
+- A3
+- A4
+- A5
+- A6
+- A7
+- A8
+- A9
+- A10
+- Age_Mons
+- Qchat-10-Score
+categorical_features:
+- Sex
+- Ethnicity
+- Jaundice
+- Family_mem_with_ASD
+- Who completed the test
+model:
+  class: HistGradientBoostingClassifier
+  params: {}
+  note: default params; class balance via sample_weight = compute_sample_weight('balanced',
+    y_train)
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  categorical_features: from_dtype
+  class_weight: null
+  early_stopping: auto
+  interaction_cst: null
+  l2_regularization: 0.0
+  learning_rate: 0.1
+  loss: log_loss
+  max_bins: 255
+  max_depth: null
+  max_features: 1.0
+  max_iter: 100
+  max_leaf_nodes: 31
+  min_samples_leaf: 20
+  monotonic_cst: null
+  n_iter_no_change: 10
+  random_state: 51
+  scoring: loss
+  tol: 1.0e-07
+  validation_fraction: 0.1
+  verbose: 0
+  warm_start: false

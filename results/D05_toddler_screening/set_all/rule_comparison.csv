@@ -1,0 +1,7 @@
+model,rule_equals_label_all_rows,n,agreement_with_rule_at_0.5,n_disagreements_at_0.5,pooled_oof_roc_auc_vs_rule
+exact rule: sum(A1..A10) >= 4,True,1054,,,
+dummy_majority,,1054,0.6907020872865275,326.0,0.5
+logreg,,1054,1.0,0.0,1.0
+random_forest,,1054,1.0,0.0,1.0
+hist_gb,,1054,1.0,0.0,1.0
+mlp,,1054,0.9838709677419355,17.0,0.9988454796737005

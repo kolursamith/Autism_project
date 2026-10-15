@@ -1,0 +1,6 @@
+baseline,level,description,n,pooled_auc,fold_mean_auc,fold_std_auc
+quality_LR3,child,LR on mean_valid_ratio + mean_blink_ratio + tracking_ratio_before_filtering (fit per fold),57,0.8234567901234567,0.85,0.21604056419392417
+quality_LR_valid_ratio,child,LR on mean_valid_ratio (fit per fold),57,0.828395061728395,0.85,0.21604056419392417
+one_minus_valid_ratio,child,1 - mean valid_ratio (no fitting),57,0.8419753086419753,0.85,0.21604056419392417
+clip_one_minus_valid_ratio,clip,each clip: 1 - its own valid_ratio (no fitting),1241,0.6777995036260346,0.6700765152158656,0.13142204930233234
+clip_LR_valid_blink,clip,LR on clip valid_ratio + blink_ratio (fit per fold on training clips),1241,0.6512375194963398,0.6653981965437719,0.1397250133047247

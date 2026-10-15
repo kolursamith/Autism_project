@@ -1,0 +1,32 @@
+# M01 EfficientNetB3 + BiLSTM + Attention - Stage 3 model config (policy confirmed and lr mirrored from configs/training.yaml in Stage 4; batch_size set by scripts/03_profile_models.py)
+model_id: M01
+name: EfficientNetB3 + BiLSTM + Attention
+seed: 42
+encoder:
+  type: timm
+  timm_name: efficientnet_b3.ra2_in1k
+  family: efficientnet
+  input_size:
+    sequence: 224
+    tokens: 224
+projection:
+  d: 256
+  dropout: 0.3
+temporal:
+  type: bilstm
+  hidden: 128
+pooling: attention
+head:
+  type: linear
+  dropout: 0.3
+  attention_hidden: 128
+  mlp_hidden: 128
+policy:
+  sequence: frozen
+  tokens: last_stage
+lr:
+  head_lr: 0.0005
+  backbone_lr: 5.0e-05
+batch_size:
+  sequence: 64
+  tokens: 64

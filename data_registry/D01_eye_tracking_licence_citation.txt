@@ -1,0 +1,3 @@
+===== Citation.txt =====
+Cilia, F., Carette, R., Elbattah, M., Guérin, J., & Dequen, G. (2022). Eye-Tracking Dataset to Support the Research on Autism Spectrum Disorder. In Proceedings of the IJCAI–ECAI Workshop on Scarce Data in Artificial Intelligence for Healthcare (SDAIH).
+

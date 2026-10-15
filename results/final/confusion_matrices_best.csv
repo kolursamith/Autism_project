@@ -1,0 +1,8 @@
+dataset,model,tn,fp,fn,tp,source
+D01 clip,M08,572,232,195,242,results/D01_eye_tracking/M08/summary.json::pooled_out_of_fold::threshold_0.5::confusion_matrix
+D01 child,M07,27,3,10,17,results/D01_eye_tracking/M07/summary.json::pooled_out_of_fold_child::threshold_0.5::confusion_matrix
+D02,M07,1246,224,271,1199,results/D02_facial_images_A/M07/summary.json::pooled_out_of_fold::threshold_0.5::confusion_matrix
+D04,mlp,586,53,60,101,results/D04_autism_prediction/set_all/mlp/summary.json::pooled_out_of_fold::threshold_0.5::confusion_matrix
+D05 set_all,logreg,326,0,0,728,results/D05_toddler_screening/set_all/logreg/summary.json::pooled_out_of_fold::threshold_0.5::confusion_matrix
+D05 set_honest,hist_gb,172,154,278,450,results/D05_toddler_screening/set_honest/hist_gb/summary.json::pooled_out_of_fold::threshold_0.5::confusion_matrix
+D06,logreg,297,292,205,206,results/D06_early_autism/set_all/logreg/summary.json::pooled_out_of_fold::threshold_0.5::confusion_matrix

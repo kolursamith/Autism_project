@@ -1,0 +1,10 @@
+Stage 10 audit, first run (before exact CSV parsing), B1: 4000 checks, 23 mismatches, ALL at the stored validation
+(Youden) threshold, none at threshold 0.5 and none in ROC-AUC:
+- D05_toddler_screening/set_all/hist_gb folds 1-7, 10 (19 values: balanced accuracy + sensitivity): the predictions.csv text
+  is 0.9999780982691833 (= the stored threshold) but pandas.read_csv's default C float parser returned 0.9999780982691832
+  (1 ulp lower), so p >= threshold flipped for the tied positives.
+- D01_eye_tracking/M02/fold_04 and M10/fold_07 (4 values: balanced accuracy + specificity): one test clip each has a float32
+  probability equal to the float32 validation threshold; predictions.csv stores float32 values in shortest float32 form
+  (0.9036349), which read as float64 lies just below the threshold 0.9036349058151245 (= float64 of the same float32).
+Cause: the audit's own parsing, not the stored metrics. Fix in scripts/10_audit.py read_pred(): float_precision="round_trip"
+and, for deep runs, cast back to float32. Second run: 0 mismatches. Stored files unchanged.

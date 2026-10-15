@@ -1,0 +1,249 @@
+section,model,quantity,value,source
+D01_child,-,chi2,7.688475836431277,results/stage8/stats_friedman_nemenyi.json::D01_child::chi2
+D01_child,-,p,0.5658193277205503,results/stage8/stats_friedman_nemenyi.json::D01_child::p
+D01_child,-,iman_davenport_F,0.840663360702388,results/stage8/stats_friedman_nemenyi.json::D01_child::iman_davenport_F
+D01_child,-,iman_davenport_p,0.5810811940697527,results/stage8/stats_friedman_nemenyi.json::D01_child::iman_davenport_p
+D01_child,-,nemenyi_cd,4.283647813349612,results/stage8/stats_friedman_nemenyi.json::D01_child::nemenyi_cd
+D01_child,-,n_sig_pairs_nemenyi,0.0,results/stage8/stats_friedman_nemenyi.json::D01_child::n_sig_pairs_nemenyi
+D01_child,-,n_folds_used,10.0,results/stage8/stats_friedman_nemenyi.json::D01_child::n_folds_used
+D01_child,M01,avg_rank,5.45,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M01
+D01_child,M02,avg_rank,6.75,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M02
+D01_child,M03,avg_rank,6.45,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M03
+D01_child,M04,avg_rank,4.0,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M04
+D01_child,M05,avg_rank,5.2,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M05
+D01_child,M06,avg_rank,5.35,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M06
+D01_child,M07,avg_rank,4.75,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M07
+D01_child,M08,avg_rank,5.3,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M08
+D01_child,M09,avg_rank,5.75,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M09
+D01_child,M10,avg_rank,6.0,results/stage8/stats_friedman_nemenyi.json::D01_child::avg_ranks::M10
+D01_clip,-,chi2,21.185454545454547,results/stage8/stats_friedman_nemenyi.json::D01_clip::chi2
+D01_clip,-,p,0.011851949048424536,results/stage8/stats_friedman_nemenyi.json::D01_clip::p
+D01_clip,-,iman_davenport_F,2.770767279644896,results/stage8/stats_friedman_nemenyi.json::D01_clip::iman_davenport_F
+D01_clip,-,iman_davenport_p,0.007036787986393966,results/stage8/stats_friedman_nemenyi.json::D01_clip::iman_davenport_p
+D01_clip,-,nemenyi_cd,4.283647813349612,results/stage8/stats_friedman_nemenyi.json::D01_clip::nemenyi_cd
+D01_clip,-,n_sig_pairs_nemenyi,0.0,results/stage8/stats_friedman_nemenyi.json::D01_clip::n_sig_pairs_nemenyi
+D01_clip,-,n_folds_used,10.0,results/stage8/stats_friedman_nemenyi.json::D01_clip::n_folds_used
+D01_clip,M01,avg_rank,5.4,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M01
+D01_clip,M02,avg_rank,7.5,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M02
+D01_clip,M03,avg_rank,6.5,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M03
+D01_clip,M04,avg_rank,3.9,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M04
+D01_clip,M05,avg_rank,4.6,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M05
+D01_clip,M06,avg_rank,6.1,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M06
+D01_clip,M07,avg_rank,3.3,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M07
+D01_clip,M08,avg_rank,4.1,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M08
+D01_clip,M09,avg_rank,7.3,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M09
+D01_clip,M10,avg_rank,6.3,results/stage8/stats_friedman_nemenyi.json::D01_clip::avg_ranks::M10
+D02_image,-,chi2,62.92359005457858,results/stage8/stats_friedman_nemenyi.json::D02_image::chi2
+D02_image,-,p,3.650322610374023e-10,results/stage8/stats_friedman_nemenyi.json::D02_image::p
+D02_image,-,iman_davenport_F,20.915339649264315,results/stage8/stats_friedman_nemenyi.json::D02_image::iman_davenport_F
+D02_image,-,iman_davenport_p,9.710239253616067e-18,results/stage8/stats_friedman_nemenyi.json::D02_image::iman_davenport_p
+D02_image,-,nemenyi_cd,4.283647813349612,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_cd
+D02_image,-,n_sig_pairs_nemenyi,11.0,results/stage8/stats_friedman_nemenyi.json::D02_image::n_sig_pairs_nemenyi
+D02_image,-,n_folds_used,10.0,results/stage8/stats_friedman_nemenyi.json::D02_image::n_folds_used
+D02_image,M01,avg_rank,4.8,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M01
+D02_image,M02,avg_rank,8.75,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M02
+D02_image,M03,avg_rank,6.25,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M03
+D02_image,M04,avg_rank,1.4,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M04
+D02_image,M05,avg_rank,7.9,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M05
+D02_image,M06,avg_rank,4.2,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M06
+D02_image,M07,avg_rank,2.1,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M07
+D02_image,M08,avg_rank,4.4,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M08
+D02_image,M09,avg_rank,7.9,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M09
+D02_image,M10,avg_rank,7.3,results/stage8/stats_friedman_nemenyi.json::D02_image::avg_ranks::M10
+D02_image,M02-M04,nemenyi_p,2.534818787314208e-06,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M02::M04
+D02_image,M02-M06,nemenyi_p,0.02691669361363669,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M02::M06
+D02_image,M02-M07,nemenyi_p,3.96878548193369e-05,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M02::M07
+D02_image,M02-M08,nemenyi_p,0.04306208262695432,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M02::M08
+D02_image,M03-M04,nemenyi_p,0.01260890466442588,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M03::M04
+D02_image,M04-M05,nemenyi_p,6.905131910339701e-05,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M04::M05
+D02_image,M04-M09,nemenyi_p,6.905131910339701e-05,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M04::M09
+D02_image,M04-M10,nemenyi_p,0.0005557937816762504,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M04::M10
+D02_image,M05-M07,nemenyi_p,0.0007707459909845893,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M05::M07
+D02_image,M07-M09,nemenyi_p,0.0007707459909845893,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M07::M09
+D02_image,M07-M10,nemenyi_p,0.00481710997093221,results/stage8/stats_friedman_nemenyi.json::D02_image::nemenyi_p::M07::M10
+D01_clip,M08 vs M01,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M01::mean_auc_best
+D01_clip,M08 vs M01,nadeau_bengio_mean_auc_other,0.6450231046515571,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M01::mean_auc_other
+D01_clip,M08 vs M01,nadeau_bengio_mean_diff,0.04126035706853954,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M01::mean_diff
+D01_clip,M08 vs M01,nadeau_bengio_t,1.2459365401822164,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M01::t
+D01_clip,M08 vs M01,nadeau_bengio_p,0.24424404960867793,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M01::p
+D01_clip,M08 vs M01,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M01::p_holm
+D01_clip,M08 vs M02,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M02::mean_auc_best
+D01_clip,M08 vs M02,nadeau_bengio_mean_auc_other,0.5947833766066087,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M02::mean_auc_other
+D01_clip,M08 vs M02,nadeau_bengio_mean_diff,0.09150008511348781,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M02::mean_diff
+D01_clip,M08 vs M02,nadeau_bengio_t,1.6747897781620744,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M02::t
+D01_clip,M08 vs M02,nadeau_bengio_p,0.1282977292854611,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M02::p
+D01_clip,M08 vs M02,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M02::p_holm
+D01_clip,M08 vs M03,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M03::mean_auc_best
+D01_clip,M08 vs M03,nadeau_bengio_mean_auc_other,0.6352378913842289,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M03::mean_auc_other
+D01_clip,M08 vs M03,nadeau_bengio_mean_diff,0.05104557033586761,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M03::mean_diff
+D01_clip,M08 vs M03,nadeau_bengio_t,1.2730266706483784,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M03::t
+D01_clip,M08 vs M03,nadeau_bengio_p,0.23490689152862587,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M03::p
+D01_clip,M08 vs M03,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M03::p_holm
+D01_clip,M08 vs M04,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M04::mean_auc_best
+D01_clip,M08 vs M04,nadeau_bengio_mean_auc_other,0.6826760367696634,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M04::mean_auc_other
+D01_clip,M08 vs M04,nadeau_bengio_mean_diff,0.003607424950433258,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M04::mean_diff
+D01_clip,M08 vs M04,nadeau_bengio_t,0.0924807911188183,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M04::t
+D01_clip,M08 vs M04,nadeau_bengio_p,0.9283419292859795,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M04::p
+D01_clip,M08 vs M04,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M04::p_holm
+D01_clip,M08 vs M05,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M05::mean_auc_best
+D01_clip,M08 vs M05,nadeau_bengio_mean_auc_other,0.6569492694281651,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M05::mean_auc_other
+D01_clip,M08 vs M05,nadeau_bengio_mean_diff,0.029334192291931422,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M05::mean_diff
+D01_clip,M08 vs M05,nadeau_bengio_t,0.6390405146373163,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M05::t
+D01_clip,M08 vs M05,nadeau_bengio_p,0.5387183124402556,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M05::p
+D01_clip,M08 vs M05,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M05::p_holm
+D01_clip,M08 vs M06,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M06::mean_auc_best
+D01_clip,M08 vs M06,nadeau_bengio_mean_auc_other,0.6392646407864604,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M06::mean_auc_other
+D01_clip,M08 vs M06,nadeau_bengio_mean_diff,0.047018820933636206,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M06::mean_diff
+D01_clip,M08 vs M06,nadeau_bengio_t,1.286005027103563,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M06::t
+D01_clip,M08 vs M06,nadeau_bengio_p,0.230539653713774,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M06::p
+D01_clip,M08 vs M06,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M06::p_holm
+D01_clip,M08 vs M07,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M07::mean_auc_best
+D01_clip,M08 vs M07,nadeau_bengio_mean_auc_other,0.6777954825999595,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M07::mean_auc_other
+D01_clip,M08 vs M07,nadeau_bengio_mean_diff,0.008487979120137035,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M07::mean_diff
+D01_clip,M08 vs M07,nadeau_bengio_t,0.23333777709982456,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M07::t
+D01_clip,M08 vs M07,nadeau_bengio_p,0.8207197481816964,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M07::p
+D01_clip,M08 vs M07,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M07::p_holm
+D01_clip,M08 vs M09,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M09::mean_auc_best
+D01_clip,M08 vs M09,nadeau_bengio_mean_auc_other,0.6050301800599185,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M09::mean_auc_other
+D01_clip,M08 vs M09,nadeau_bengio_mean_diff,0.0812532816601781,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M09::mean_diff
+D01_clip,M08 vs M09,nadeau_bengio_t,1.5845381607741131,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M09::t
+D01_clip,M08 vs M09,nadeau_bengio_p,0.14753202207192265,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M09::p
+D01_clip,M08 vs M09,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M09::p_holm
+D01_clip,M08 vs M10,nadeau_bengio_mean_auc_best,0.6862834617200966,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M10::mean_auc_best
+D01_clip,M08 vs M10,nadeau_bengio_mean_auc_other,0.6382505777918316,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M10::mean_auc_other
+D01_clip,M08 vs M10,nadeau_bengio_mean_diff,0.048032883928265005,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M10::mean_diff
+D01_clip,M08 vs M10,nadeau_bengio_t,1.1248193615603308,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M10::t
+D01_clip,M08 vs M10,nadeau_bengio_p,0.2897681607677149,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M10::p
+D01_clip,M08 vs M10,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_clip&other=M10::p_holm
+D01_child,M04 vs M01,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M01::mean_auc_best
+D01_child,M04 vs M01,nadeau_bengio_mean_auc_other,0.7611111111111111,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M01::mean_auc_other
+D01_child,M04 vs M01,nadeau_bengio_mean_diff,0.09444444444444444,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M01::mean_diff
+D01_child,M04 vs M01,nadeau_bengio_t,1.0301453831396405,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M01::t
+D01_child,M04 vs M01,nadeau_bengio_p,0.3298297014806633,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M01::p
+D01_child,M04 vs M01,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M01::p_holm
+D01_child,M04 vs M02,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M02::mean_auc_best
+D01_child,M04 vs M02,nadeau_bengio_mean_auc_other,0.6777777777777778,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M02::mean_auc_other
+D01_child,M04 vs M02,nadeau_bengio_mean_diff,0.1777777777777778,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M02::mean_diff
+D01_child,M04 vs M02,nadeau_bengio_t,1.3386808330698634,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M02::t
+D01_child,M04 vs M02,nadeau_bengio_p,0.21350475605947253,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M02::p
+D01_child,M04 vs M02,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M02::p_holm
+D01_child,M04 vs M03,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M03::mean_auc_best
+D01_child,M04 vs M03,nadeau_bengio_mean_auc_other,0.7444444444444446,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M03::mean_auc_other
+D01_child,M04 vs M03,nadeau_bengio_mean_diff,0.11111111111111112,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M03::mean_diff
+D01_child,M04 vs M03,nadeau_bengio_t,1.745025152241333,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M03::t
+D01_child,M04 vs M03,nadeau_bengio_p,0.1149396443478832,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M03::p
+D01_child,M04 vs M03,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M03::p_holm
+D01_child,M04 vs M05,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M05::mean_auc_best
+D01_child,M04 vs M05,nadeau_bengio_mean_auc_other,0.7666666666666667,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M05::mean_auc_other
+D01_child,M04 vs M05,nadeau_bengio_mean_diff,0.08888888888888889,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M05::mean_diff
+D01_child,M04 vs M05,nadeau_bengio_t,1.0426026758520508,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M05::t
+D01_child,M04 vs M05,nadeau_bengio_p,0.3243278010787745,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M05::p
+D01_child,M04 vs M05,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M05::p_holm
+D01_child,M04 vs M06,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M06::mean_auc_best
+D01_child,M04 vs M06,nadeau_bengio_mean_auc_other,0.7833333333333334,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M06::mean_auc_other
+D01_child,M04 vs M06,nadeau_bengio_mean_diff,0.07222222222222222,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M06::mean_diff
+D01_child,M04 vs M06,nadeau_bengio_t,1.0948933682651896,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M06::t
+D01_child,M04 vs M06,nadeau_bengio_p,0.3019977746353246,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M06::p
+D01_child,M04 vs M06,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M06::p_holm
+D01_child,M04 vs M07,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M07::mean_auc_best
+D01_child,M04 vs M07,nadeau_bengio_mean_auc_other,0.8,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M07::mean_auc_other
+D01_child,M04 vs M07,nadeau_bengio_mean_diff,0.055555555555555566,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M07::mean_diff
+D01_child,M04 vs M07,nadeau_bengio_t,0.6882472016116855,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M07::t
+D01_child,M04 vs M07,nadeau_bengio_p,0.5086464915963443,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M07::p
+D01_child,M04 vs M07,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M07::p_holm
+D01_child,M04 vs M08,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M08::mean_auc_best
+D01_child,M04 vs M08,nadeau_bengio_mean_auc_other,0.8277777777777777,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M08::mean_auc_other
+D01_child,M04 vs M08,nadeau_bengio_mean_diff,0.02777777777777779,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M08::mean_diff
+D01_child,M04 vs M08,nadeau_bengio_t,0.24165972609347475,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M08::t
+D01_child,M04 vs M08,nadeau_bengio_p,0.8144599868730522,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M08::p
+D01_child,M04 vs M08,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M08::p_holm
+D01_child,M04 vs M09,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M09::mean_auc_best
+D01_child,M04 vs M09,nadeau_bengio_mean_auc_other,0.7055555555555556,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M09::mean_auc_other
+D01_child,M04 vs M09,nadeau_bengio_mean_diff,0.15,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M09::mean_diff
+D01_child,M04 vs M09,nadeau_bengio_t,1.2220625433296377,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M09::t
+D01_child,M04 vs M09,nadeau_bengio_p,0.25272409982974753,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M09::p
+D01_child,M04 vs M09,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M09::p_holm
+D01_child,M04 vs M10,nadeau_bengio_mean_auc_best,0.8555555555555555,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M10::mean_auc_best
+D01_child,M04 vs M10,nadeau_bengio_mean_auc_other,0.7611111111111112,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M10::mean_auc_other
+D01_child,M04 vs M10,nadeau_bengio_mean_diff,0.09444444444444444,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M10::mean_diff
+D01_child,M04 vs M10,nadeau_bengio_t,1.386390633415667,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M10::t
+D01_child,M04 vs M10,nadeau_bengio_p,0.1990066611459343,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M10::p
+D01_child,M04 vs M10,nadeau_bengio_p_holm,1.0,results/stage8/stats_nadeau_bengio.csv::analysis=D01_child&other=M10::p_holm
+D02_image,M04 vs M01,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M01::mean_auc_best
+D02_image,M04 vs M01,nadeau_bengio_mean_auc_other,0.9014600397982322,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M01::mean_auc_other
+D02_image,M04 vs M01,nadeau_bengio_mean_diff,0.029721412374473576,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M01::mean_diff
+D02_image,M04 vs M01,nadeau_bengio_t,4.145069459530216,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M01::t
+D02_image,M04 vs M01,nadeau_bengio_p,0.00250267816135624,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M01::p
+D02_image,M04 vs M01,nadeau_bengio_p_holm,0.010496435665004075,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M01::p_holm
+D02_image,M04 vs M02,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M02::mean_auc_best
+D02_image,M04 vs M02,nadeau_bengio_mean_auc_other,0.8666527835624047,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M02::mean_auc_other
+D02_image,M04 vs M02,nadeau_bengio_mean_diff,0.06452866861030127,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M02::mean_diff
+D02_image,M04 vs M02,nadeau_bengio_t,2.6452653689693992,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M02::t
+D02_image,M04 vs M02,nadeau_bengio_p,0.026682474718289214,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M02::p
+D02_image,M04 vs M02,nadeau_bengio_p_holm,0.05336494943657843,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M02::p_holm
+D02_image,M04 vs M03,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M03::mean_auc_best
+D02_image,M04 vs M03,nadeau_bengio_mean_auc_other,0.8901383682724792,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M03::mean_auc_other
+D02_image,M04 vs M03,nadeau_bengio_mean_diff,0.04104308390022675,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M03::mean_diff
+D02_image,M04 vs M03,nadeau_bengio_t,4.940400826427362,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M03::t
+D02_image,M04 vs M03,nadeau_bengio_p,0.0008017978131341509,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M03::p
+D02_image,M04 vs M03,nadeau_bengio_p_holm,0.005612584691939056,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M03::p_holm
+D02_image,M04 vs M05,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M05::mean_auc_best
+D02_image,M04 vs M05,nadeau_bengio_mean_auc_other,0.8813364801702994,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M05::mean_auc_other
+D02_image,M04 vs M05,nadeau_bengio_mean_diff,0.04984497200240641,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M05::mean_diff
+D02_image,M04 vs M05,nadeau_bengio_t,5.654773268422304,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M05::t
+D02_image,M04 vs M05,nadeau_bengio_p,0.0003117013871752193,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M05::p
+D02_image,M04 vs M05,nadeau_bengio_p_holm,0.0028053124845769735,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M05::p_holm
+D02_image,M04 vs M06,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M06::mean_auc_best
+D02_image,M04 vs M06,nadeau_bengio_mean_auc_other,0.9009602480447961,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M06::mean_auc_other
+D02_image,M04 vs M06,nadeau_bengio_mean_diff,0.030221204127909664,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M06::mean_diff
+D02_image,M04 vs M06,nadeau_bengio_t,4.819102297238136,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M06::t
+D02_image,M04 vs M06,nadeau_bengio_p,0.0009481611714944641,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M06::p
+D02_image,M04 vs M06,nadeau_bengio_p_holm,0.005688967028966785,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M06::p_holm
+D02_image,M04 vs M07,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M07::mean_auc_best
+D02_image,M04 vs M07,nadeau_bengio_mean_auc_other,0.9239923180156417,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M07::mean_auc_other
+D02_image,M04 vs M07,nadeau_bengio_mean_diff,0.007189134157064181,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M07::mean_diff
+D02_image,M04 vs M07,nadeau_bengio_t,0.8575010469271911,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M07::t
+D02_image,M04 vs M07,nadeau_bengio_p,0.41341914660677015,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M07::p
+D02_image,M04 vs M07,nadeau_bengio_p_holm,0.41341914660677015,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M07::p_holm
+D02_image,M04 vs M08,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M08::mean_auc_best
+D02_image,M04 vs M08,nadeau_bengio_mean_auc_other,0.9029247072978851,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M08::mean_auc_other
+D02_image,M04 vs M08,nadeau_bengio_mean_diff,0.028256744874820695,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M08::mean_diff
+D02_image,M04 vs M08,nadeau_bengio_t,3.5289392712234613,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M08::t
+D02_image,M04 vs M08,nadeau_bengio_p,0.006424632584680452,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M08::p
+D02_image,M04 vs M08,nadeau_bengio_p_holm,0.019273897754041355,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M08::p_holm
+D02_image,M04 vs M09,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M09::mean_auc_best
+D02_image,M04 vs M09,nadeau_bengio_mean_auc_other,0.8753112129205423,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M09::mean_auc_other
+D02_image,M04 vs M09,nadeau_bengio_mean_diff,0.055870239252163466,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M09::mean_diff
+D02_image,M04 vs M09,nadeau_bengio_t,4.26382793554932,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M09::t
+D02_image,M04 vs M09,nadeau_bengio_p,0.002099287133000815,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M09::p
+D02_image,M04 vs M09,nadeau_bengio_p_holm,0.010496435665004075,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M09::p_holm
+D02_image,M04 vs M10,nadeau_bengio_mean_auc_best,0.9311814521727058,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M10::mean_auc_best
+D02_image,M04 vs M10,nadeau_bengio_mean_auc_other,0.8852607709750566,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M10::mean_auc_other
+D02_image,M04 vs M10,nadeau_bengio_mean_diff,0.04592068119764914,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M10::mean_diff
+D02_image,M04 vs M10,nadeau_bengio_t,5.095279903290306,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M10::t
+D02_image,M04 vs M10,nadeau_bengio_p,0.0006492793604458633,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M10::p
+D02_image,M04 vs M10,nadeau_bengio_p_holm,0.005194234883566906,results/stage8/stats_nadeau_bengio.csv::analysis=D02_image&other=M10::p_holm
+pretrained_vs_scratch D01 clip,"pretrained (M01,M03,M04,M06,M07,M08,M10)",mean_of_fold_mean_auc,0.6577901708148282,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::mean_of_fold_mean_auc"
+pretrained_vs_scratch D01 clip,"pretrained (M01,M03,M04,M06,M07,M08,M10)",min_fold_mean_auc,0.6352378913842289,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::min_fold_mean_auc"
+pretrained_vs_scratch D01 clip,"pretrained (M01,M03,M04,M06,M07,M08,M10)",max_fold_mean_auc,0.6862834617200966,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::max_fold_mean_auc"
+pretrained_vs_scratch D01 clip,"pretrained (M01,M03,M04,M06,M07,M08,M10)",mean_pooled_auc,0.6512615087361493,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::mean_pooled_auc"
+pretrained_vs_scratch D01 clip,"from scratch (M02,M05,M09)",mean_of_fold_mean_auc,0.6189209420315641,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=from scratch (M02,M05,M09)::mean_of_fold_mean_auc"
+pretrained_vs_scratch D01 clip,"from scratch (M02,M05,M09)",min_fold_mean_auc,0.5947833766066087,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=from scratch (M02,M05,M09)::min_fold_mean_auc"
+pretrained_vs_scratch D01 clip,"from scratch (M02,M05,M09)",max_fold_mean_auc,0.6569492694281651,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=from scratch (M02,M05,M09)::max_fold_mean_auc"
+pretrained_vs_scratch D01 clip,"from scratch (M02,M05,M09)",mean_pooled_auc,0.5734855470929108,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 clip&group=from scratch (M02,M05,M09)::mean_pooled_auc"
+pretrained_vs_scratch D01 child,"pretrained (M01,M03,M04,M06,M07,M08,M10)",mean_of_fold_mean_auc,0.7904761904761904,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::mean_of_fold_mean_auc"
+pretrained_vs_scratch D01 child,"pretrained (M01,M03,M04,M06,M07,M08,M10)",min_fold_mean_auc,0.7444444444444445,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::min_fold_mean_auc"
+pretrained_vs_scratch D01 child,"pretrained (M01,M03,M04,M06,M07,M08,M10)",max_fold_mean_auc,0.8555555555555557,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::max_fold_mean_auc"
+pretrained_vs_scratch D01 child,"pretrained (M01,M03,M04,M06,M07,M08,M10)",mean_pooled_auc,0.7550264550264549,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::mean_pooled_auc"
+pretrained_vs_scratch D01 child,"from scratch (M02,M05,M09)",mean_of_fold_mean_auc,0.7166666666666667,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=from scratch (M02,M05,M09)::mean_of_fold_mean_auc"
+pretrained_vs_scratch D01 child,"from scratch (M02,M05,M09)",min_fold_mean_auc,0.6777777777777778,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=from scratch (M02,M05,M09)::min_fold_mean_auc"
+pretrained_vs_scratch D01 child,"from scratch (M02,M05,M09)",max_fold_mean_auc,0.7666666666666666,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=from scratch (M02,M05,M09)::max_fold_mean_auc"
+pretrained_vs_scratch D01 child,"from scratch (M02,M05,M09)",mean_pooled_auc,0.58559670781893,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D01 child&group=from scratch (M02,M05,M09)::mean_pooled_auc"
+pretrained_vs_scratch D02 image,"pretrained (M01,M03,M04,M06,M07,M08,M10)",mean_of_fold_mean_auc,0.9051311292252565,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::mean_of_fold_mean_auc"
+pretrained_vs_scratch D02 image,"pretrained (M01,M03,M04,M06,M07,M08,M10)",min_fold_mean_auc,0.8852607709750566,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::min_fold_mean_auc"
+pretrained_vs_scratch D02 image,"pretrained (M01,M03,M04,M06,M07,M08,M10)",max_fold_mean_auc,0.9311814521727058,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::max_fold_mean_auc"
+pretrained_vs_scratch D02 image,"pretrained (M01,M03,M04,M06,M07,M08,M10)",mean_pooled_auc,0.8841037464548501,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=pretrained (M01,M03,M04,M06,M07,M08,M10)::mean_pooled_auc"
+pretrained_vs_scratch D02 image,"from scratch (M02,M05,M09)",mean_of_fold_mean_auc,0.8744334922177487,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=from scratch (M02,M05,M09)::mean_of_fold_mean_auc"
+pretrained_vs_scratch D02 image,"from scratch (M02,M05,M09)",min_fold_mean_auc,0.8666527835624047,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=from scratch (M02,M05,M09)::min_fold_mean_auc"
+pretrained_vs_scratch D02 image,"from scratch (M02,M05,M09)",max_fold_mean_auc,0.8813364801702994,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=from scratch (M02,M05,M09)::max_fold_mean_auc"
+pretrained_vs_scratch D02 image,"from scratch (M02,M05,M09)",mean_pooled_auc,0.8701447699261111,"results/stage8/stats_pretrained_vs_scratch.csv::analysis=D02 image&group=from scratch (M02,M05,M09)::mean_pooled_auc"

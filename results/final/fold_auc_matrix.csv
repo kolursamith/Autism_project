@@ -1,0 +1,501 @@
+dataset,model,fold,roc_auc,source
+D01 clip,M01,1,0.6677861017824852,results/D01_eye_tracking/M01/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,2,0.6574440052700922,results/D01_eye_tracking/M01/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,3,0.6872705018359853,results/D01_eye_tracking/M01/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,4,0.8016781083142639,results/D01_eye_tracking/M01/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,5,0.764141414141414,results/D01_eye_tracking/M01/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,6,0.4678308823529412,results/D01_eye_tracking/M01/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,7,0.6799886621315192,results/D01_eye_tracking/M01/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,8,0.5868456078083406,results/D01_eye_tracking/M01/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,9,0.6589259796806967,results/D01_eye_tracking/M01/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M01,10,0.47831978319783197,results/D01_eye_tracking/M01/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,1,0.6657194523378972,results/D01_eye_tracking/M02/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,2,0.737417654808959,results/D01_eye_tracking/M02/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,3,0.7671358629130968,results/D01_eye_tracking/M02/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,4,0.5985888634630053,results/D01_eye_tracking/M02/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,5,0.6893939393939393,results/D01_eye_tracking/M02/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,6,0.4149816176470588,results/D01_eye_tracking/M02/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,7,0.6365504535147392,results/D01_eye_tracking/M02/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,8,0.5065439219165928,results/D01_eye_tracking/M02/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,9,0.5737784228350266,results/D01_eye_tracking/M02/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M02,10,0.35772357723577236,results/D01_eye_tracking/M02/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,1,0.657582020149832,results/D01_eye_tracking/M03/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,2,0.6469038208168643,results/D01_eye_tracking/M03/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,3,0.6739596083231334,results/D01_eye_tracking/M03/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,4,0.7686880244088482,results/D01_eye_tracking/M03/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,5,0.7989898989898989,results/D01_eye_tracking/M03/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,6,0.44025735294117646,results/D01_eye_tracking/M03/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,7,0.6664540816326531,results/D01_eye_tracking/M03/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,8,0.575421472937001,results/D01_eye_tracking/M03/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,9,0.6049830672472182,results/D01_eye_tracking/M03/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M03,10,0.5191395663956639,results/D01_eye_tracking/M03/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,1,0.5979075174373547,results/D01_eye_tracking/M04/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,2,0.663768115942029,results/D01_eye_tracking/M04/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,3,0.6825275397796817,results/D01_eye_tracking/M04/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,4,0.7954805491990845,results/D01_eye_tracking/M04/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,5,0.8133838383838384,results/D01_eye_tracking/M04/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,6,0.6305147058823529,results/D01_eye_tracking/M04/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,7,0.7110969387755103,results/D01_eye_tracking/M04/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,8,0.6792369121561668,results/D01_eye_tracking/M04/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,9,0.7044025157232704,results/D01_eye_tracking/M04/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M04,10,0.5484417344173442,results/D01_eye_tracking/M04/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,1,0.6223198140015499,results/D01_eye_tracking/M05/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,2,0.6782608695652174,results/D01_eye_tracking/M05/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,3,0.7570379436964505,results/D01_eye_tracking/M05/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,4,0.7028985507246377,results/D01_eye_tracking/M05/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,5,0.8136363636363636,results/D01_eye_tracking/M05/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,6,0.5018382352941176,results/D01_eye_tracking/M05/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,7,0.7302295918367347,results/D01_eye_tracking/M05/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,8,0.5316104702750666,results/D01_eye_tracking/M05/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,9,0.743347847121432,results/D01_eye_tracking/M05/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M05,10,0.4883130081300813,results/D01_eye_tracking/M05/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,1,0.5567036941358822,results/D01_eye_tracking/M06/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,2,0.6205533596837945,results/D01_eye_tracking/M06/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,3,0.7913096695226438,results/D01_eye_tracking/M06/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,4,0.7846109839816934,results/D01_eye_tracking/M06/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,5,0.7659090909090909,results/D01_eye_tracking/M06/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,6,0.5082720588235294,results/D01_eye_tracking/M06/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,7,0.6611394557823128,results/D01_eye_tracking/M06/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,8,0.5732031943212068,results/D01_eye_tracking/M06/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,9,0.6090953072085148,results/D01_eye_tracking/M06/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M06,10,0.5218495934959348,results/D01_eye_tracking/M06/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,1,0.6066907775768534,results/D01_eye_tracking/M07/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,2,0.6695652173913044,results/D01_eye_tracking/M07/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,3,0.7513769889840881,results/D01_eye_tracking/M07/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,4,0.8108314263920671,results/D01_eye_tracking/M07/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,5,0.8136363636363637,results/D01_eye_tracking/M07/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,6,0.5386029411764706,results/D01_eye_tracking/M07/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,7,0.699404761904762,results/D01_eye_tracking/M07/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,8,0.6342058562555457,results/D01_eye_tracking/M07/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,9,0.7121432027092405,results/D01_eye_tracking/M07/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M07,10,0.5414972899728998,results/D01_eye_tracking/M07/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,1,0.7321105657452854,results/D01_eye_tracking/M08/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,2,0.6038208168642951,results/D01_eye_tracking/M08/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,3,0.783812729498164,results/D01_eye_tracking/M08/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,4,0.9066552250190695,results/D01_eye_tracking/M08/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,5,0.793939393939394,results/D01_eye_tracking/M08/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,6,0.650735294117647,results/D01_eye_tracking/M08/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,7,0.6803429705215419,results/D01_eye_tracking/M08/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,8,0.6051464063886425,results/D01_eye_tracking/M08/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,9,0.6686018384131592,results/D01_eye_tracking/M08/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M08,10,0.43766937669376693,results/D01_eye_tracking/M08/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,1,0.6338155515370706,results/D01_eye_tracking/M09/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,2,0.7233201581027668,results/D01_eye_tracking/M09/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,3,0.682374541003672,results/D01_eye_tracking/M09/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,4,0.6389206712433257,results/D01_eye_tracking/M09/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,5,0.6727272727272727,results/D01_eye_tracking/M09/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,6,0.4581801470588236,results/D01_eye_tracking/M09/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,7,0.64328231292517,results/D01_eye_tracking/M09/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,8,0.5242901508429458,results/D01_eye_tracking/M09/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,9,0.5747460087082727,results/D01_eye_tracking/M09/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M09,10,0.49864498644986444,results/D01_eye_tracking/M09/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,1,0.6032033066391114,results/D01_eye_tracking/M10/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,2,0.6503293807641634,results/D01_eye_tracking/M10/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,3,0.6490208078335373,results/D01_eye_tracking/M10/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,4,0.8788138825324179,results/D01_eye_tracking/M10/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,5,0.8368686868686869,results/D01_eye_tracking/M10/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,6,0.44669117647058826,results/D01_eye_tracking/M10/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,7,0.6627692743764173,results/D01_eye_tracking/M10/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,8,0.5821872227151731,results/D01_eye_tracking/M10/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,9,0.556361877116594,results/D01_eye_tracking/M10/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D01 clip,M10,10,0.516260162601626,results/D01_eye_tracking/M10/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D01 child,M01,1,0.6666666666666667,results/D01_eye_tracking/M01/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,2,0.7777777777777778,results/D01_eye_tracking/M01/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,3,0.7777777777777778,results/D01_eye_tracking/M01/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,4,1.0,results/D01_eye_tracking/M01/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,5,1.0,results/D01_eye_tracking/M01/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,6,0.5,results/D01_eye_tracking/M01/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,7,1.0,results/D01_eye_tracking/M01/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,8,0.7777777777777778,results/D01_eye_tracking/M01/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,9,0.7777777777777779,results/D01_eye_tracking/M01/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M01,10,0.33333333333333337,results/D01_eye_tracking/M01/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,1,0.6666666666666667,results/D01_eye_tracking/M02/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,2,0.6666666666666666,results/D01_eye_tracking/M02/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,3,1.0,results/D01_eye_tracking/M02/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,4,0.7777777777777778,results/D01_eye_tracking/M02/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,5,0.8333333333333334,results/D01_eye_tracking/M02/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,6,0.16666666666666669,results/D01_eye_tracking/M02/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,7,1.0,results/D01_eye_tracking/M02/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,8,0.4444444444444444,results/D01_eye_tracking/M02/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,9,0.888888888888889,results/D01_eye_tracking/M02/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M02,10,0.33333333333333337,results/D01_eye_tracking/M02/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,1,0.5555555555555556,results/D01_eye_tracking/M03/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,2,0.6666666666666666,results/D01_eye_tracking/M03/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,3,0.7777777777777778,results/D01_eye_tracking/M03/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,4,1.0,results/D01_eye_tracking/M03/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,5,1.0,results/D01_eye_tracking/M03/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,6,0.5,results/D01_eye_tracking/M03/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,7,0.888888888888889,results/D01_eye_tracking/M03/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,8,0.6666666666666666,results/D01_eye_tracking/M03/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,9,0.888888888888889,results/D01_eye_tracking/M03/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M03,10,0.5,results/D01_eye_tracking/M03/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,1,0.5555555555555556,results/D01_eye_tracking/M04/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,2,0.7777777777777778,results/D01_eye_tracking/M04/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,3,0.7777777777777778,results/D01_eye_tracking/M04/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,4,1.0,results/D01_eye_tracking/M04/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,5,1.0,results/D01_eye_tracking/M04/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,6,0.8333333333333334,results/D01_eye_tracking/M04/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,7,0.888888888888889,results/D01_eye_tracking/M04/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,8,0.888888888888889,results/D01_eye_tracking/M04/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,9,1.0,results/D01_eye_tracking/M04/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M04,10,0.8333333333333334,results/D01_eye_tracking/M04/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,1,0.5555555555555556,results/D01_eye_tracking/M05/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,2,0.7777777777777778,results/D01_eye_tracking/M05/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,3,1.0,results/D01_eye_tracking/M05/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,4,0.6666666666666667,results/D01_eye_tracking/M05/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,5,0.8333333333333334,results/D01_eye_tracking/M05/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,6,0.6666666666666667,results/D01_eye_tracking/M05/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,7,1.0,results/D01_eye_tracking/M05/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,8,0.6666666666666666,results/D01_eye_tracking/M05/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,9,1.0,results/D01_eye_tracking/M05/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M05,10,0.5,results/D01_eye_tracking/M05/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,1,0.4444444444444444,results/D01_eye_tracking/M06/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,2,0.6666666666666666,results/D01_eye_tracking/M06/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,3,1.0,results/D01_eye_tracking/M06/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,4,1.0,results/D01_eye_tracking/M06/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,5,1.0,results/D01_eye_tracking/M06/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,6,0.6666666666666667,results/D01_eye_tracking/M06/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,7,0.888888888888889,results/D01_eye_tracking/M06/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,8,0.7777777777777779,results/D01_eye_tracking/M06/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,9,0.888888888888889,results/D01_eye_tracking/M06/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M06,10,0.5,results/D01_eye_tracking/M06/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,1,0.5555555555555556,results/D01_eye_tracking/M07/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,2,0.6666666666666666,results/D01_eye_tracking/M07/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,3,1.0,results/D01_eye_tracking/M07/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,4,1.0,results/D01_eye_tracking/M07/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,5,1.0,results/D01_eye_tracking/M07/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,6,0.5,results/D01_eye_tracking/M07/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,7,1.0,results/D01_eye_tracking/M07/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,8,0.888888888888889,results/D01_eye_tracking/M07/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,9,0.888888888888889,results/D01_eye_tracking/M07/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M07,10,0.5,results/D01_eye_tracking/M07/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,1,1.0,results/D01_eye_tracking/M08/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,2,0.6666666666666666,results/D01_eye_tracking/M08/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,3,1.0,results/D01_eye_tracking/M08/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,4,1.0,results/D01_eye_tracking/M08/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,5,1.0,results/D01_eye_tracking/M08/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,6,0.8333333333333334,results/D01_eye_tracking/M08/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,7,0.888888888888889,results/D01_eye_tracking/M08/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,8,0.7777777777777778,results/D01_eye_tracking/M08/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,9,0.7777777777777778,results/D01_eye_tracking/M08/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M08,10,0.33333333333333337,results/D01_eye_tracking/M08/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,1,0.6666666666666667,results/D01_eye_tracking/M09/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,2,0.7777777777777778,results/D01_eye_tracking/M09/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,3,1.0,results/D01_eye_tracking/M09/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,4,0.33333333333333337,results/D01_eye_tracking/M09/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,5,0.6666666666666667,results/D01_eye_tracking/M09/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,6,0.5,results/D01_eye_tracking/M09/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,7,1.0,results/D01_eye_tracking/M09/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,8,0.6666666666666666,results/D01_eye_tracking/M09/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,9,0.7777777777777779,results/D01_eye_tracking/M09/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M09,10,0.6666666666666667,results/D01_eye_tracking/M09/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,1,0.4444444444444444,results/D01_eye_tracking/M10/fold_01/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,2,0.7777777777777778,results/D01_eye_tracking/M10/fold_02/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,3,0.888888888888889,results/D01_eye_tracking/M10/fold_03/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,4,1.0,results/D01_eye_tracking/M10/fold_04/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,5,1.0,results/D01_eye_tracking/M10/fold_05/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,6,0.5,results/D01_eye_tracking/M10/fold_06/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,7,0.888888888888889,results/D01_eye_tracking/M10/fold_07/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,8,0.7777777777777778,results/D01_eye_tracking/M10/fold_08/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,9,0.6666666666666667,results/D01_eye_tracking/M10/fold_09/metrics.json::test_child::threshold_0.5::roc_auc
+D01 child,M10,10,0.6666666666666667,results/D01_eye_tracking/M10/fold_10/metrics.json::test_child::threshold_0.5::roc_auc
+D02,M01,1,0.9042065805914202,results/D02_facial_images_A/M01/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,2,0.8866907307140544,results/D02_facial_images_A/M01/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,3,0.8863436531075015,results/D02_facial_images_A/M01/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,4,0.9005275579619603,results/D02_facial_images_A/M01/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,5,0.8968022583182933,results/D02_facial_images_A/M01/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,6,0.9372020917210422,results/D02_facial_images_A/M01/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,7,0.8742884909065667,results/D02_facial_images_A/M01/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,8,0.9043685501411449,results/D02_facial_images_A/M01/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,9,0.887199777870332,results/D02_facial_images_A/M01/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M01,10,0.9369707066500069,results/D02_facial_images_A/M01/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,1,0.8832199546485261,results/D02_facial_images_A/M02/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,2,0.8845388495534268,results/D02_facial_images_A/M02/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,3,0.8691286038224814,results/D02_facial_images_A/M02/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,4,0.8985376463510575,results/D02_facial_images_A/M02/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,5,0.7430006016011846,results/D02_facial_images_A/M02/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,6,0.8732935351011153,results/D02_facial_images_A/M02/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,7,0.8684113101022722,results/D02_facial_images_A/M02/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,8,0.8723448563098708,results/D02_facial_images_A/M02/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,9,0.8657041047711602,results/D02_facial_images_A/M02/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M02,10,0.9083483733629506,results/D02_facial_images_A/M02/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,1,0.8921514183904855,results/D02_facial_images_A/M03/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,2,0.8994863251423016,results/D02_facial_images_A/M03/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,3,0.8838446943403212,results/D02_facial_images_A/M03/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,4,0.901753898838447,results/D02_facial_images_A/M03/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,5,0.8848859271599797,results/D02_facial_images_A/M03/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,6,0.8802813642463788,results/D02_facial_images_A/M03/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,7,0.8792169929196169,results/D02_facial_images_A/M03/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,8,0.883127400620112,results/D02_facial_images_A/M03/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,9,0.8882872877041973,results/D02_facial_images_A/M03/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M03,10,0.9083483733629506,results/D02_facial_images_A/M03/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,1,0.9280161044009441,results/D02_facial_images_A/M04/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,2,0.9296820769123977,results/D02_facial_images_A/M04/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,3,0.9091813596186773,results/D02_facial_images_A/M04/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,4,0.9137859225322783,results/D02_facial_images_A/M04/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,5,0.9501365171919108,results/D02_facial_images_A/M04/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,6,0.9500671016706002,results/D02_facial_images_A/M04/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,7,0.9156601416076635,results/D02_facial_images_A/M04/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,8,0.9401638206302929,results/D02_facial_images_A/M04/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,9,0.9301679855615715,results/D02_facial_images_A/M04/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M04,10,0.9449534916007218,results/D02_facial_images_A/M04/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,1,0.8545513443472628,results/D02_facial_images_A/M05/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,2,0.8814382896015548,results/D02_facial_images_A/M05/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,3,0.8769725577305753,results/D02_facial_images_A/M05/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,4,0.9012448516821695,results/D02_facial_images_A/M05/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,5,0.895899856541256,results/D02_facial_images_A/M05/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,6,0.8730852885371836,results/D02_facial_images_A/M05/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,7,0.8689434957656532,results/D02_facial_images_A/M05/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,8,0.8866213151927438,results/D02_facial_images_A/M05/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,9,0.8682956175667546,results/D02_facial_images_A/M05/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M05,10,0.9063121847378406,results/D02_facial_images_A/M05/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,1,0.887477439955574,results/D02_facial_images_A/M06/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,2,0.9018001758526539,results/D02_facial_images_A/M06/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,3,0.8848165116386691,results/D02_facial_images_A/M06/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,4,0.9037438104493498,results/D02_facial_images_A/M06/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,5,0.9030265167291407,results/D02_facial_images_A/M06/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,6,0.9067980933870147,results/D02_facial_images_A/M06/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,7,0.9027951316581053,results/D02_facial_images_A/M06/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,8,0.8931232356888335,results/D02_facial_images_A/M06/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,9,0.9025174695728632,results/D02_facial_images_A/M06/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M06,10,0.9235040955157573,results/D02_facial_images_A/M06/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,1,0.9173955296404276,results/D02_facial_images_A/M07/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,2,0.934356055347309,results/D02_facial_images_A/M07/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,3,0.8946966541718728,results/D02_facial_images_A/M07/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,4,0.9302836780970891,results/D02_facial_images_A/M07/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,5,0.9443056134018233,results/D02_facial_images_A/M07/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,6,0.9072608635290852,results/D02_facial_images_A/M07/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,7,0.9338932852052386,results/D02_facial_images_A/M07/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,8,0.9182285158961543,results/D02_facial_images_A/M07/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,9,0.9292424452774307,results/D02_facial_images_A/M07/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M07,10,0.9302605395899857,results/D02_facial_images_A/M07/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,1,0.8911333240779304,results/D02_facial_images_A/M08/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,2,0.9031884862788654,results/D02_facial_images_A/M08/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,3,0.9022398074876209,results/D02_facial_images_A/M08/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,4,0.914572631773798,results/D02_facial_images_A/M08/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,5,0.8923596649544171,results/D02_facial_images_A/M08/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,6,0.9262344393539729,results/D02_facial_images_A/M08/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,7,0.8976583830811236,results/D02_facial_images_A/M08/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,8,0.9086028969410893,results/D02_facial_images_A/M08/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,9,0.8930769586746263,results/D02_facial_images_A/M08/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M08,10,0.9001804803554073,results/D02_facial_images_A/M08/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,1,0.8846545420889443,results/D02_facial_images_A/M09/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,2,0.891110185570827,results/D02_facial_images_A/M09/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,3,0.8332407793049191,results/D02_facial_images_A/M09/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,4,0.89927807857837,results/D02_facial_images_A/M09/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,5,0.8931463741959369,results/D02_facial_images_A/M09/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,6,0.8342357351103707,results/D02_facial_images_A/M09/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,7,0.8674163542968207,results/D02_facial_images_A/M09/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,8,0.8919894488407608,results/D02_facial_images_A/M09/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,9,0.849021241149521,results/D02_facial_images_A/M09/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M09,10,0.9090193900689527,results/D02_facial_images_A/M09/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,1,0.8578138738488592,results/D02_facial_images_A/M10/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,2,0.8977046600953307,results/D02_facial_images_A/M10/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,3,0.8693599888935166,results/D02_facial_images_A/M10/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,4,0.8885880882965431,results/D02_facial_images_A/M10/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,5,0.89067055393586,results/D02_facial_images_A/M10/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,6,0.8773659123513351,results/D02_facial_images_A/M10/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,7,0.8897218751446156,results/D02_facial_images_A/M10/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,8,0.8712804849831088,results/D02_facial_images_A/M10/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,9,0.9011985746679624,results/D02_facial_images_A/M10/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D02,M10,10,0.9089036975334351,results/D02_facial_images_A/M10/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,1,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,2,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,3,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,4,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,5,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,6,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,7,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,8,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,9,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D04,dummy_majority,10,0.5,results/D04_autism_prediction/set_all/dummy_majority/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,1,0.916015625,results/D04_autism_prediction/set_all/logreg/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,2,0.916015625,results/D04_autism_prediction/set_all/logreg/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,3,0.9560546875,results/D04_autism_prediction/set_all/logreg/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,4,0.9458450046685342,results/D04_autism_prediction/set_all/logreg/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,5,0.8916015625,results/D04_autism_prediction/set_all/logreg/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,6,0.931640625,results/D04_autism_prediction/set_all/logreg/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,7,0.8994140625,results/D04_autism_prediction/set_all/logreg/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,8,0.9072265625,results/D04_autism_prediction/set_all/logreg/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,9,0.8642578125,results/D04_autism_prediction/set_all/logreg/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D04,logreg,10,0.8203125,results/D04_autism_prediction/set_all/logreg/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,1,0.89599609375,results/D04_autism_prediction/set_all/random_forest/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,2,0.9130859375,results/D04_autism_prediction/set_all/random_forest/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,3,0.9541015625,results/D04_autism_prediction/set_all/random_forest/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,4,0.9561157796451913,results/D04_autism_prediction/set_all/random_forest/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,5,0.8984375,results/D04_autism_prediction/set_all/random_forest/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,6,0.9169921875,results/D04_autism_prediction/set_all/random_forest/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,7,0.86083984375,results/D04_autism_prediction/set_all/random_forest/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,8,0.91455078125,results/D04_autism_prediction/set_all/random_forest/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,9,0.857421875,results/D04_autism_prediction/set_all/random_forest/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D04,random_forest,10,0.83056640625,results/D04_autism_prediction/set_all/random_forest/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,1,0.8779296875,results/D04_autism_prediction/set_all/hist_gb/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,2,0.8740234375,results/D04_autism_prediction/set_all/hist_gb/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,3,0.91796875,results/D04_autism_prediction/set_all/hist_gb/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,4,0.9449112978524743,results/D04_autism_prediction/set_all/hist_gb/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,5,0.890625,results/D04_autism_prediction/set_all/hist_gb/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,6,0.908203125,results/D04_autism_prediction/set_all/hist_gb/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,7,0.8330078125,results/D04_autism_prediction/set_all/hist_gb/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,8,0.880859375,results/D04_autism_prediction/set_all/hist_gb/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,9,0.84375,results/D04_autism_prediction/set_all/hist_gb/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D04,hist_gb,10,0.837890625,results/D04_autism_prediction/set_all/hist_gb/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,1,0.9208984375,results/D04_autism_prediction/set_all/mlp/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,2,0.9091796875,results/D04_autism_prediction/set_all/mlp/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,3,0.9560546875,results/D04_autism_prediction/set_all/mlp/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,4,0.9589169000933707,results/D04_autism_prediction/set_all/mlp/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,5,0.9130859375,results/D04_autism_prediction/set_all/mlp/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,6,0.916015625,results/D04_autism_prediction/set_all/mlp/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,7,0.8896484375,results/D04_autism_prediction/set_all/mlp/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,8,0.9208984375,results/D04_autism_prediction/set_all/mlp/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,9,0.8662109375,results/D04_autism_prediction/set_all/mlp/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D04,mlp,10,0.8681640625,results/D04_autism_prediction/set_all/mlp/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,1,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,2,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,3,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,4,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,5,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,6,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,7,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,8,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,9,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,dummy_majority,10,0.5,results/D05_toddler_screening/set_all/dummy_majority/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,1,1.0,results/D05_toddler_screening/set_all/logreg/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,2,1.0,results/D05_toddler_screening/set_all/logreg/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,3,1.0,results/D05_toddler_screening/set_all/logreg/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,4,1.0,results/D05_toddler_screening/set_all/logreg/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,5,1.0,results/D05_toddler_screening/set_all/logreg/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,6,0.9999999999999999,results/D05_toddler_screening/set_all/logreg/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,7,1.0,results/D05_toddler_screening/set_all/logreg/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,8,1.0,results/D05_toddler_screening/set_all/logreg/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,9,1.0,results/D05_toddler_screening/set_all/logreg/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,logreg,10,1.0,results/D05_toddler_screening/set_all/logreg/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,1,1.0,results/D05_toddler_screening/set_all/random_forest/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,2,1.0,results/D05_toddler_screening/set_all/random_forest/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,3,1.0,results/D05_toddler_screening/set_all/random_forest/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,4,1.0,results/D05_toddler_screening/set_all/random_forest/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,5,1.0,results/D05_toddler_screening/set_all/random_forest/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,6,1.0,results/D05_toddler_screening/set_all/random_forest/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,7,1.0,results/D05_toddler_screening/set_all/random_forest/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,8,1.0,results/D05_toddler_screening/set_all/random_forest/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,9,1.0,results/D05_toddler_screening/set_all/random_forest/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,random_forest,10,1.0,results/D05_toddler_screening/set_all/random_forest/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,1,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,2,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,3,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,4,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,5,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,6,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,7,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,8,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,9,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,hist_gb,10,1.0,results/D05_toddler_screening/set_all/hist_gb/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,1,0.9908675799086758,results/D05_toddler_screening/set_all/mlp/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,2,1.0,results/D05_toddler_screening/set_all/mlp/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,3,0.9987157534246576,results/D05_toddler_screening/set_all/mlp/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,4,1.0,results/D05_toddler_screening/set_all/mlp/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,5,0.9962640099626401,results/D05_toddler_screening/set_all/mlp/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,6,0.9995848899958488,results/D05_toddler_screening/set_all/mlp/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,7,1.0,results/D05_toddler_screening/set_all/mlp/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,8,1.0,results/D05_toddler_screening/set_all/mlp/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,9,0.9995791245791246,results/D05_toddler_screening/set_all/mlp/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_all,mlp,10,1.0,results/D05_toddler_screening/set_all/mlp/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,1,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,2,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,3,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,4,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,5,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,6,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,7,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,8,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,9,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,dummy_majority,10,0.5,results/D05_toddler_screening/set_honest/dummy_majority/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,1,0.6683271066832711,results/D05_toddler_screening/set_honest/logreg/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,2,0.5980308219178082,results/D05_toddler_screening/set_honest/logreg/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,3,0.6273544520547945,results/D05_toddler_screening/set_honest/logreg/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,4,0.5704195205479452,results/D05_toddler_screening/set_honest/logreg/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,5,0.5413034454130344,results/D05_toddler_screening/set_honest/logreg/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,6,0.6178912411789124,results/D05_toddler_screening/set_honest/logreg/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,7,0.5813615608136156,results/D05_toddler_screening/set_honest/logreg/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,8,0.7106481481481481,results/D05_toddler_screening/set_honest/logreg/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,9,0.4671717171717171,results/D05_toddler_screening/set_honest/logreg/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,logreg,10,0.5547945205479452,results/D05_toddler_screening/set_honest/logreg/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,1,0.667496886674969,results/D05_toddler_screening/set_honest/random_forest/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,2,0.6374143835616438,results/D05_toddler_screening/set_honest/random_forest/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,3,0.6354880136986301,results/D05_toddler_screening/set_honest/random_forest/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,4,0.5969606164383562,results/D05_toddler_screening/set_honest/random_forest/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,5,0.6670817766708178,results/D05_toddler_screening/set_honest/random_forest/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,6,0.6567040265670402,results/D05_toddler_screening/set_honest/random_forest/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,7,0.6274387712743877,results/D05_toddler_screening/set_honest/random_forest/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,8,0.6357323232323233,results/D05_toddler_screening/set_honest/random_forest/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,9,0.43392255892255893,results/D05_toddler_screening/set_honest/random_forest/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,random_forest,10,0.564640410958904,results/D05_toddler_screening/set_honest/random_forest/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,1,0.689082606890826,results/D05_toddler_screening/set_honest/hist_gb/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,2,0.6001712328767124,results/D05_toddler_screening/set_honest/hist_gb/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,3,0.6594606164383561,results/D05_toddler_screening/set_honest/hist_gb/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,4,0.5909674657534246,results/D05_toddler_screening/set_honest/hist_gb/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,5,0.6886674968866751,results/D05_toddler_screening/set_honest/hist_gb/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,6,0.6398920713989207,results/D05_toddler_screening/set_honest/hist_gb/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,7,0.6112494811124947,results/D05_toddler_screening/set_honest/hist_gb/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,8,0.6550925925925926,results/D05_toddler_screening/set_honest/hist_gb/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,9,0.45117845117845123,results/D05_toddler_screening/set_honest/hist_gb/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,hist_gb,10,0.5308219178082192,results/D05_toddler_screening/set_honest/hist_gb/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,1,0.660024906600249,results/D05_toddler_screening/set_honest/mlp/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,2,0.6361301369863013,results/D05_toddler_screening/set_honest/mlp/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,3,0.6675941780821918,results/D05_toddler_screening/set_honest/mlp/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,4,0.6102311643835616,results/D05_toddler_screening/set_honest/mlp/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,5,0.6728933167289332,results/D05_toddler_screening/set_honest/mlp/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,6,0.5074719800747197,results/D05_toddler_screening/set_honest/mlp/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,7,0.6398920713989207,results/D05_toddler_screening/set_honest/mlp/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,8,0.5519781144781145,results/D05_toddler_screening/set_honest/mlp/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,9,0.49537037037037035,results/D05_toddler_screening/set_honest/mlp/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D05 set_honest,mlp,10,0.5282534246575342,results/D05_toddler_screening/set_honest/mlp/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,1,0.5,results/D06_early_autism/set_all/dummy_majority/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,2,0.5,results/D06_early_autism/set_all/dummy_majority/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,3,0.5,results/D06_early_autism/set_all/dummy_majority/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,4,0.5,results/D06_early_autism/set_all/dummy_majority/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,5,0.5,results/D06_early_autism/set_all/dummy_majority/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,6,0.5,results/D06_early_autism/set_all/dummy_majority/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,7,0.5,results/D06_early_autism/set_all/dummy_majority/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,8,0.5,results/D06_early_autism/set_all/dummy_majority/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,9,0.5,results/D06_early_autism/set_all/dummy_majority/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D06,dummy_majority,10,0.5,results/D06_early_autism/set_all/dummy_majority/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,1,0.48615130219098807,results/D06_early_autism/set_all/logreg/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,2,0.44233154195948743,results/D06_early_autism/set_all/logreg/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,3,0.46713517982637454,results/D06_early_autism/set_all/logreg/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,4,0.6134766432410086,results/D06_early_autism/set_all/logreg/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,5,0.4869780901198842,results/D06_early_autism/set_all/logreg/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,6,0.4274493592393551,results/D06_early_autism/set_all/logreg/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,7,0.5770979743695742,results/D06_early_autism/set_all/logreg/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,8,0.441091360066143,results/D06_early_autism/set_all/logreg/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,9,0.42662257131045894,results/D06_early_autism/set_all/logreg/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D06,logreg,10,0.44170771756978655,results/D06_early_autism/set_all/logreg/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,1,0.41752790409260027,results/D06_early_autism/set_all/random_forest/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,2,0.5675899131872674,results/D06_early_autism/set_all/random_forest/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,3,0.46279454319966934,results/D06_early_autism/set_all/random_forest/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,4,0.45886730053741215,results/D06_early_autism/set_all/random_forest/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,5,0.5163290615957008,results/D06_early_autism/set_all/random_forest/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,6,0.4282761471682514,results/D06_early_autism/set_all/random_forest/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,7,0.40698635799917326,results/D06_early_autism/set_all/random_forest/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,8,0.492765605622158,results/D06_early_autism/set_all/random_forest/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,9,0.48491112029764366,results/D06_early_autism/set_all/random_forest/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D06,random_forest,10,0.42179802955665024,results/D06_early_autism/set_all/random_forest/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,1,0.4472922695328648,results/D06_early_autism/set_all/hist_gb/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,2,0.48573790822653995,results/D06_early_autism/set_all/hist_gb/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,3,0.4142207523770153,results/D06_early_autism/set_all/hist_gb/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,4,0.39355105415460934,results/D06_early_autism/set_all/hist_gb/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,5,0.513848697809012,results/D06_early_autism/set_all/hist_gb/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,6,0.48739148408433236,results/D06_early_autism/set_all/hist_gb/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,7,0.44687887556841666,results/D06_early_autism/set_all/hist_gb/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,8,0.4952459694088467,results/D06_early_autism/set_all/hist_gb/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,9,0.4803637866887143,results/D06_early_autism/set_all/hist_gb/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D06,hist_gb,10,0.43021346469622335,results/D06_early_autism/set_all/hist_gb/fold_10/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,1,0.44811905746176106,results/D06_early_autism/set_all/mlp/fold_01/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,2,0.5576684580405126,results/D06_early_autism/set_all/mlp/fold_02/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,3,0.4559735427862754,results/D06_early_autism/set_all/mlp/fold_03/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,4,0.41298057048367093,results/D06_early_autism/set_all/mlp/fold_04/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,5,0.38859032658123194,results/D06_early_autism/set_all/mlp/fold_05/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,6,0.3381562629185614,results/D06_early_autism/set_all/mlp/fold_06/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,7,0.45556014882182716,results/D06_early_autism/set_all/mlp/fold_07/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,8,0.5341050020669698,results/D06_early_autism/set_all/mlp/fold_08/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,9,0.46796196775527077,results/D06_early_autism/set_all/mlp/fold_09/metrics.json::test::threshold_0.5::roc_auc
+D06,mlp,10,0.4281609195402299,results/D06_early_autism/set_all/mlp/fold_10/metrics.json::test::threshold_0.5::roc_auc

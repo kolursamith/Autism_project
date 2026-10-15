@@ -1,0 +1,14 @@
+{
+ "bootstrap": "2000 resamples of matched pairs, seed 42",
+ "caliper": 0.05,
+ "max_abs_diff_in_pair": 0.04190283368077574,
+ "mean_valid_ratio_asd_all": 0.8427179653033702,
+ "mean_valid_ratio_asd_matched": 0.9034939092976779,
+ "mean_valid_ratio_td_all": 0.9312922819977676,
+ "mean_valid_ratio_td_matched": 0.9101248457317264,
+ "n_asd": 27,
+ "n_pairs": 14,
+ "n_td": 30,
+ "smd_all": -1.3255083817366762,
+ "smd_matched": -0.15598620096248375
+}

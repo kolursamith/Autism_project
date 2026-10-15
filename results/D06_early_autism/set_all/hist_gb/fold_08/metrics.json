@@ -1,0 +1,89 @@
+{
+ "dataset": "D06_early_autism",
+ "experiment": "set_all",
+ "fold": 8,
+ "model_id": "hist_gb",
+ "test": {
+  "threshold_0.5": {
+   "accuracy": 0.53,
+   "balanced_accuracy": 0.5272840016535758,
+   "brier": 0.29743405153421204,
+   "confusion_matrix": [
+    [
+     32,
+     27
+    ],
+    [
+     20,
+     21
+    ]
+   ],
+   "f1": 0.47191011235955055,
+   "n": 100,
+   "n_neg": 59,
+   "n_pos": 41,
+   "pr_auc": 0.4113484993203518,
+   "precision": 0.4375,
+   "recall": 0.5121951219512195,
+   "roc_auc": 0.4952459694088467,
+   "sensitivity": 0.5121951219512195,
+   "specificity": 0.5423728813559322,
+   "threshold": 0.5
+  },
+  "threshold_val_youden": {
+   "accuracy": 0.55,
+   "balanced_accuracy": 0.4661016949152542,
+   "brier": 0.29743405153421204,
+   "confusion_matrix": [
+    [
+     55,
+     4
+    ],
+    [
+     41,
+     0
+    ]
+   ],
+   "f1": 0.0,
+   "n": 100,
+   "n_neg": 59,
+   "n_pos": 41,
+   "pr_auc": 0.4113484993203518,
+   "precision": 0.0,
+   "recall": 0.0,
+   "roc_auc": 0.4952459694088467,
+   "sensitivity": 0.0,
+   "specificity": 0.9322033898305084,
+   "threshold": 0.851791794307717
+  }
+ },
+ "val": {
+  "threshold_0.5": {
+   "accuracy": 0.4765625,
+   "balanced_accuracy": 0.4564779874213837,
+   "brier": 0.327905661812701,
+   "confusion_matrix": [
+    [
+     43,
+     32
+    ],
+    [
+     35,
+     18
+    ]
+   ],
+   "f1": 0.3495145631067961,
+   "n": 128,
+   "n_neg": 75,
+   "n_pos": 53,
+   "pr_auc": 0.38701892380199776,
+   "precision": 0.36,
+   "recall": 0.33962264150943394,
+   "roc_auc": 0.4077987421383647,
+   "sensitivity": 0.33962264150943394,
+   "specificity": 0.5733333333333334,
+   "threshold": 0.5
+  }
+ },
+ "val_threshold_youden": 0.851791794307717
+}

@@ -1,0 +1,11 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+rootdir: /home/score/Documents/AI_project/asd_hybrid_10fold
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 2 items
+
+tests/test_stage02_snapshot.py::test_latest_snapshot_checksums_match_current_files PASSED [ 50%]
+tests/test_stage02_snapshot.py::test_latest_snapshot_info_and_code_copy PASSED [100%]
+
+============================== 2 passed in 0.97s ===============================

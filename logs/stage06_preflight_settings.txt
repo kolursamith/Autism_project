@@ -1,0 +1,21 @@
+== DISK (from the Stage 4 D02 smoke checkpoints)
+  smoke M07 best_model.pt 345.1 MB for 86,261,633 params (4.001 B/param)
+  smoke M03 best_model.pt 97.4 MB for 24,263,617 params (4.014 B/param)
+  best_model.pt x 100: 7.78 GB; largest transient last.pt: 0.41 GB; other files ~7 MB
+  ESTIMATED NEED 8.19 GB | FREE 894.1 GB | 3x need 24.57 GB -> OK
+== D02 SETTINGS (merged configs/models/Mxx.yaml + configs/training.yaml, fold 1)
+model   mode  input     policy  head_lr  backbone_lr  bb/head  batch  max_epochs  patience
+  M01 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+  M02 tokens images       full   0.0010      0.00100      1.0     64          40         8
+  M03 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+  M04 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+  M05 tokens images       full   0.0010      0.00100      1.0     64          40         8
+  M06 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+  M07 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+  M08 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+  M09 tokens images       full   0.0010      0.00100      1.0     64          40         8
+  M10 tokens images last_stage   0.0005      0.00005      0.1     64          40         8
+train_transform: {'random_resized_crop': {'size': 224, 'scale': [0.8, 1.0]}, 'horizontal_flip_p': 0.5, 'color_jitter': {'brightness': 0.1, 'contrast': 0.1, 'saturation': 0.1}}
+eval_transform : {'resize_shorter_side': 224, 'center_crop': 224}
+early_stopping : {'monitor': 'val_roc_auc', 'mode': 'max', 'patience': 8, 'min_delta': 0.0001}
+num_workers    : auto | seed = 42 + fold

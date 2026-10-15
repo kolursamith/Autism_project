@@ -1,0 +1,22 @@
+# Stage 2 pre-flight 2026-10-13T16:56:50+05:30
+A1:
+STAGE 1 DECISION: PASS
+SETUP DECISION: PASS - all setup items done and verified (37 passed, 37/37 facts CONFIRMED); the git commit requirement was withdrawn by the user on 2026-10-13 and replaced by the local snapshot snapshots/stage_01/
+A2: check_gpu
+python 3.12.3 | /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+torch.__version__ = 2.14.1+cu130
+torch.version.cuda = 13.0
+torch.backends.cudnn.version() = 92400
+torch.cuda.is_available() = True
+nvidia driver = 580.178.04
+device name = NVIDIA RTX A2000 12GB
+total memory = 11.618 GiB
+4096x4096 fp32 matmul on cuda: 29.45 ms (4.67 TFLOP/s)
+max_memory_allocated = 264.1 MiB
+GPU CHECK: OK
+check_gpu exit=0
+A2: pytest
+.....................................                                    [100%]
+37 passed in 5.34s
+A3: code_hash(src,scripts,configs,tests) before Stage 2 =
+5bdabb7a29af177206a347cfc72f1f1c429c3fa692e221b27559df648fbb817c

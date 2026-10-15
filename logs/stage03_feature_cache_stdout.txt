@@ -1,0 +1,9 @@
+M01: efficientnet_b3.ra2_in1k -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/features/efficientnet_b3.ra2_in1k_D01.npy shape [1241, 8, 1536] float16 in 21.7 s
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+M03: resnet50.a1_in1k -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/features/resnet50.a1_in1k_D01.npy shape [1241, 8, 2048] float16 in 13.7 s
+M04: convnext_tiny.in12k_ft_in1k -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/features/convnext_tiny.in12k_ft_in1k_D01.npy shape [1241, 8, 768] float16 in 24.1 s
+M06: densenet121.ra_in1k -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/features/densenet121.ra_in1k_D01.npy shape [1241, 8, 1024] float16 in 17.0 s
+M07: vit_base_patch16_224.augreg2_in21k_ft_in1k -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/features/vit_base_patch16_224.augreg2_in21k_ft_in1k_D01.npy shape [1241, 8, 768] float16 in 22.3 s
+M08: efficientnet_b0.ra_in1k -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/features/efficientnet_b0.ra_in1k_D01.npy shape [1241, 8, 1280] float16 in 12.2 s
+M10: shares the resnet50.a1_in1k cache built for M03
+CACHE_EXIT=0

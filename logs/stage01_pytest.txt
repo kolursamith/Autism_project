@@ -1,0 +1,33 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/score/Documents/AI_project/asd_hybrid_10fold/.venv/bin/python
+rootdir: /home/score/Documents/AI_project/asd_hybrid_10fold
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 24 items
+
+tests/test_stage01.py::test_skeleton_dir_exists[configs] PASSED          [  4%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/data] PASSED         [  8%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/models] PASSED       [ 12%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/training] PASSED     [ 16%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/evaluation] PASSED   [ 20%]
+tests/test_stage01.py::test_skeleton_dir_exists[src/utils] PASSED        [ 25%]
+tests/test_stage01.py::test_skeleton_dir_exists[scripts] PASSED          [ 29%]
+tests/test_stage01.py::test_skeleton_dir_exists[tests] PASSED            [ 33%]
+tests/test_stage01.py::test_skeleton_dir_exists[data_registry] PASSED    [ 37%]
+tests/test_stage01.py::test_skeleton_dir_exists[splits] PASSED           [ 41%]
+tests/test_stage01.py::test_skeleton_dir_exists[cache] PASSED            [ 45%]
+tests/test_stage01.py::test_skeleton_dir_exists[results] PASSED          [ 50%]
+tests/test_stage01.py::test_skeleton_dir_exists[reports] PASSED          [ 54%]
+tests/test_stage01.py::test_skeleton_dir_exists[logs] PASSED             [ 58%]
+tests/test_stage01.py::test_results_readme_and_gitignore PASSED          [ 62%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D01_eye_tracking] PASSED [ 66%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D02_facial_images_A] PASSED [ 70%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D03_facial_images_B] PASSED [ 75%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D04_autism_prediction] PASSED [ 79%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D05_toddler_screening] PASSED [ 83%]
+tests/test_stage01.py::test_audit_json_loads_and_nonzero[D06_early_autism] PASSED [ 87%]
+tests/test_stage01.py::test_registry_exists PASSED                       [ 91%]
+tests/test_stage01.py::test_raw_data_unmodified PASSED                   [ 95%]
+tests/test_stage01.py::test_cuda_available PASSED                        [100%]
+
+============================== 24 passed in 1.08s ==============================

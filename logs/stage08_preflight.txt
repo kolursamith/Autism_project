@@ -1,0 +1,9 @@
+A1 reports/STAGE_05_REPORT.md last line: STAGE 5 DECISION: PASS
+A1 reports/STAGE_06_REPORT.md last line: STAGE 6 DECISION: PASS
+A1 reports/STAGE_07_REPORT.md last line: STAGE 7 DECISION: PASS
+A2 snapshot stage_05 (2026-10-14T10:57:13): 425 recorded lines; CHECKSUMS file matches its code_hash: True; splits/cache/results files differing: 0; code/report files added or changed since (expected for later stages): 8 ['reports/STAGE_06_REPORT.md', 'scripts/06b_verify.py', 'scripts/06b_write_report.py', 'scripts/08a_preflight.py', 'scripts/stage6_launch.sh', 'scripts/stage6_status.py', 'scripts/stage6_stop.sh', 'tests/test_stage02_snapshot.py']
+A2 snapshot stage_06 (2026-10-14T15:51:44): 1075 recorded lines; CHECKSUMS file matches its code_hash: True; splits/cache/results files differing: 0; code/report files added or changed since (expected for later stages): 1 ['scripts/08a_preflight.py']
+A2 snapshot stage_07 (2026-10-14T10:57:15): 647 recorded lines; CHECKSUMS file matches its code_hash: True; splits/cache/results files differing: 0; code/report files added or changed since (expected for later stages): 8 ['reports/STAGE_06_REPORT.md', 'scripts/06b_verify.py', 'scripts/06b_write_report.py', 'scripts/08a_preflight.py', 'scripts/stage6_launch.sh', 'scripts/stage6_status.py', 'scripts/stage6_stop.sh', 'tests/test_stage02_snapshot.py']
+A3 split hashes vs SPLITS_MANIFEST.json: OK
+A4 recorded sha256 of 2407 files under results/D0*/ (no *.pt), incl. 800 predictions.csv / metrics.json -> results/stage8/preflight_results_manifest.sha256
+A PRE-FLIGHT: OK

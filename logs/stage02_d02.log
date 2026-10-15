@@ -1,0 +1,40 @@
+D1: real class folder names per split: {'test': ['Autistic', 'Non-Autistic'], 'train': ['Autistic', 'Non_Autistic'], 'valid': ['Autistic', 'Non_Autistic']}
+D1: pooled 2940 images; per split x label:
+| original_split | label | n |
+|---|---|---|
+| test | 0 | 150 |
+| test | 1 | 150 |
+| train | 0 | 1193 |
+| train | 1 | 1193 |
+| valid | 0 | 127 |
+| valid | 1 | 127 |
+D2: modes {'RGB': 2940}; width 114-2471, height 126-2872; md5 duplicates 0
+D2: 11 near-duplicate pairs (Hamming <= 4); 2929 groups; group size distribution {1: 2918, 2: 11}
+D2: groups with both labels (label conflicts): 0 []; images excluded: 0
+D2: near-duplicate groups (size > 1):
+| group_id | image_id | label | original_split |
+|---|---|---|---|
+| g0143 | test/autistic/Autistic.93.jpg | 1 | test |
+| g0221 | test/nonautistic/Non_Autistic.28.jpg | 0 | test |
+| g0263 | test/nonautistic/Non_Autistic.66.jpg | 0 | test |
+| g0437 | train/autistic/Autistic.1120.jpg | 1 | train |
+| g0560 | train/autistic/Autistic.159.jpg | 1 | train |
+| g0560 | train/autistic/Autistic.264.jpg | 1 | train |
+| g0752 | train/autistic/Autistic.332.jpg | 1 | train |
+| g0771 | train/autistic/Autistic.35.jpg | 1 | train |
+| g0771 | train/autistic/Autistic.682.jpg | 1 | train |
+| g0752 | train/autistic/Autistic.693.jpg | 1 | train |
+| g1226 | train/autistic/Autistic.761.jpg | 1 | train |
+| g0437 | train/autistic/Autistic.859.jpg | 1 | train |
+| g0143 | train/autistic/Autistic.873.jpg | 1 | train |
+| g1544 | train/nonautistic/Non_Autistic.1048.jpg | 0 | train |
+| g1599 | train/nonautistic/Non_Autistic.1098.jpg | 0 | train |
+| g1599 | train/nonautistic/Non_Autistic.1107.jpg | 0 | train |
+| g0221 | train/nonautistic/Non_Autistic.124.jpg | 0 | train |
+| g1887 | train/nonautistic/Non_Autistic.286.jpg | 0 | train |
+| g1887 | train/nonautistic/Non_Autistic.526.jpg | 0 | train |
+| g0263 | train/nonautistic/Non_Autistic.828.jpg | 0 | train |
+| g1226 | valid/autistic/32.jpg | 1 | valid |
+| g1544 | valid/nonautistic/127.jpg | 0 | valid |
+D2: groups spanning original splits: 5
+D3: manifest.csv written: 2940 images, labels {1: 1470, 0: 1470} (1=autistic)

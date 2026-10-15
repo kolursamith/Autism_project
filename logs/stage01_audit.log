@@ -1,0 +1,34 @@
+[17:59:58] auditing D01_eye_tracking -> Eye-Tracking Dataset
+[17:59:58] eye 1.csv
+[17:59:58] eye 2.csv
+[17:59:58] eye 3.csv
+[17:59:59] eye 4.csv
+[17:59:59] eye 5.csv
+[17:59:59] eye 6.csv
+[17:59:59] eye 7.csv
+[17:59:59] eye 8.csv
+[18:00:00] eye 9.csv
+[18:00:00] eye 10.csv
+[18:00:00] eye 11.csv
+[18:00:01] eye 12.csv
+[18:00:01] eye 13.csv
+[18:00:01] eye 14.csv
+[18:00:01] eye 15.csv
+[18:00:01] eye 16.csv
+[18:00:02] eye 17.csv
+[18:00:03] eye 18.csv
+[18:00:03] eye 19.csv
+[18:00:04] eye 20.csv
+[18:00:04] eye 21.csv
+[18:00:05] eye 22.csv
+[18:00:06] eye 23.csv
+[18:00:06] eye 24.csv
+[18:00:06] eye 25.csv
+[18:00:10] auditing D02_facial_images_A -> Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for Enhanced Classification Accuracy
+[18:00:10] D02_facial_images_A hashing 2940 images
+[18:00:15] auditing D03_facial_images_B -> AutismDataset
+[18:00:15] D03_facial_images_B hashing 2940 images
+[18:00:20] auditing D04_autism_prediction -> Autism_prediction dataset
+[18:00:20] auditing D05_toddler_screening -> Autism_dataset
+[18:00:20] auditing D06_early_autism -> early_autism
+[18:00:21] done; wrote 6 audits

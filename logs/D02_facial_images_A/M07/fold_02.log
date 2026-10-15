@@ -1,0 +1,29 @@
+2026-10-14 13:13:30 [D02_facial_images_A M07 fold 2] START (new) input=images policy=last_stage n_train=2268 n_val=378 n_test=294 pos_weight=1.0000 bs=64 max_epochs=40
+2026-10-14 13:13:39 [D02_facial_images_A M07 fold 2] epoch 1/40 train_loss 0.6344 val_loss 0.4756 val_auc 0.8654 lr 2.57e-04 8.5s peak 1.04GB *best*
+2026-10-14 13:13:50 [D02_facial_images_A M07 fold 2] epoch 2/40 train_loss 0.4178 val_loss 0.3772 val_auc 0.9129 lr 5.00e-04 9.0s peak 1.04GB *best*
+2026-10-14 13:13:59 [D02_facial_images_A M07 fold 2] epoch 3/40 train_loss 0.3522 val_loss 0.3938 val_auc 0.9061 lr 4.99e-04 8.2s peak 1.04GB (no improvement 1/8)
+2026-10-14 13:14:07 [D02_facial_images_A M07 fold 2] epoch 4/40 train_loss 0.3112 val_loss 0.3912 val_auc 0.9129 lr 4.97e-04 8.2s peak 1.04GB (no improvement 2/8)
+2026-10-14 13:14:16 [D02_facial_images_A M07 fold 2] epoch 5/40 train_loss 0.2555 val_loss 0.4284 val_auc 0.9076 lr 4.92e-04 8.2s peak 1.04GB (no improvement 3/8)
+2026-10-14 13:14:25 [D02_facial_images_A M07 fold 2] epoch 6/40 train_loss 0.2577 val_loss 0.3728 val_auc 0.9204 lr 4.86e-04 8.6s peak 1.04GB *best*
+2026-10-14 13:14:34 [D02_facial_images_A M07 fold 2] epoch 7/40 train_loss 0.1902 val_loss 0.4891 val_auc 0.9169 lr 4.79e-04 8.2s peak 1.04GB (no improvement 1/8)
+2026-10-14 13:14:43 [D02_facial_images_A M07 fold 2] epoch 8/40 train_loss 0.1473 val_loss 0.4756 val_auc 0.9155 lr 4.70e-04 8.7s peak 1.04GB (no improvement 2/8)
+2026-10-14 13:14:51 [D02_facial_images_A M07 fold 2] epoch 9/40 train_loss 0.1452 val_loss 0.5487 val_auc 0.9204 lr 4.59e-04 8.2s peak 1.04GB (no improvement 3/8)
+2026-10-14 13:15:00 [D02_facial_images_A M07 fold 2] epoch 10/40 train_loss 0.1228 val_loss 0.4937 val_auc 0.9177 lr 4.47e-04 8.2s peak 1.04GB (no improvement 4/8)
+2026-10-14 13:15:09 [D02_facial_images_A M07 fold 2] epoch 11/40 train_loss 0.0974 val_loss 0.5323 val_auc 0.9211 lr 4.34e-04 8.6s peak 1.04GB *best*
+2026-10-14 13:15:18 [D02_facial_images_A M07 fold 2] epoch 12/40 train_loss 0.0916 val_loss 0.5734 val_auc 0.9140 lr 4.19e-04 8.2s peak 1.04GB (no improvement 1/8)
+2026-10-14 13:15:26 [D02_facial_images_A M07 fold 2] epoch 13/40 train_loss 0.0746 val_loss 0.5735 val_auc 0.9187 lr 4.04e-04 8.2s peak 1.04GB (no improvement 2/8)
+2026-10-14 13:15:35 [D02_facial_images_A M07 fold 2] epoch 14/40 train_loss 0.0562 val_loss 0.5892 val_auc 0.9160 lr 3.87e-04 8.2s peak 1.04GB (no improvement 3/8)
+2026-10-14 13:15:44 [D02_facial_images_A M07 fold 2] epoch 15/40 train_loss 0.0520 val_loss 0.6354 val_auc 0.9236 lr 3.69e-04 8.6s peak 1.04GB *best*
+2026-10-14 13:15:52 [D02_facial_images_A M07 fold 2] epoch 16/40 train_loss 0.0519 val_loss 0.6195 val_auc 0.9206 lr 3.50e-04 8.2s peak 1.04GB (no improvement 1/8)
+2026-10-14 13:16:01 [D02_facial_images_A M07 fold 2] epoch 17/40 train_loss 0.0506 val_loss 0.5980 val_auc 0.9211 lr 3.31e-04 8.2s peak 1.04GB (no improvement 2/8)
+2026-10-14 13:16:09 [D02_facial_images_A M07 fold 2] epoch 18/40 train_loss 0.0374 val_loss 0.6187 val_auc 0.9215 lr 3.11e-04 8.2s peak 1.04GB (no improvement 3/8)
+2026-10-14 13:16:18 [D02_facial_images_A M07 fold 2] epoch 19/40 train_loss 0.0302 val_loss 0.6958 val_auc 0.9264 lr 2.91e-04 8.6s peak 1.04GB *best*
+2026-10-14 13:16:27 [D02_facial_images_A M07 fold 2] epoch 20/40 train_loss 0.0440 val_loss 0.7043 val_auc 0.9159 lr 2.71e-04 8.2s peak 1.04GB (no improvement 1/8)
+2026-10-14 13:16:36 [D02_facial_images_A M07 fold 2] epoch 21/40 train_loss 0.0201 val_loss 0.8026 val_auc 0.9209 lr 2.50e-04 8.3s peak 1.04GB (no improvement 2/8)
+2026-10-14 13:16:44 [D02_facial_images_A M07 fold 2] epoch 22/40 train_loss 0.0254 val_loss 0.7640 val_auc 0.9219 lr 2.29e-04 8.2s peak 1.04GB (no improvement 3/8)
+2026-10-14 13:16:53 [D02_facial_images_A M07 fold 2] epoch 23/40 train_loss 0.0216 val_loss 0.7516 val_auc 0.9221 lr 2.09e-04 8.2s peak 1.04GB (no improvement 4/8)
+2026-10-14 13:17:01 [D02_facial_images_A M07 fold 2] epoch 24/40 train_loss 0.0226 val_loss 0.7470 val_auc 0.9255 lr 1.89e-04 8.2s peak 1.04GB (no improvement 5/8)
+2026-10-14 13:17:10 [D02_facial_images_A M07 fold 2] epoch 25/40 train_loss 0.0145 val_loss 0.8031 val_auc 0.9239 lr 1.69e-04 8.2s peak 1.04GB (no improvement 6/8)
+2026-10-14 13:17:18 [D02_facial_images_A M07 fold 2] epoch 26/40 train_loss 0.0089 val_loss 0.8331 val_auc 0.9234 lr 1.50e-04 8.2s peak 1.04GB (no improvement 7/8)
+2026-10-14 13:17:27 [D02_facial_images_A M07 fold 2] epoch 27/40 train_loss 0.0213 val_loss 0.8344 val_auc 0.9264 lr 1.31e-04 8.3s peak 1.04GB (no improvement 8/8) -> early stop
+2026-10-14 13:17:29 [D02_facial_images_A M07 fold 2] DONE epochs 27 best_epoch 19 val_auc 0.9264 test_auc 0.9344 peak 1.04GB 240s batches {'train': 972, 'val': 168, 'test': 5} test ids in train/val batches: 0

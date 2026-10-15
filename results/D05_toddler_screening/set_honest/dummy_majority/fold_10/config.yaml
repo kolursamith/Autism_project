@@ -1,0 +1,37 @@
+stage: 7
+dataset: D05_toddler_screening
+experiment: set_honest
+experiment_note: A1-A10 and Qchat-10-Score removed (age, sex, ethnicity, jaundice,
+  family history, respondent)
+model_id: dummy_majority
+fold: 10
+seed: 52
+feature_set: set_honest
+numeric_features:
+- Age_Mons
+categorical_features:
+- Sex
+- Ethnicity
+- Jaundice
+- Family_mem_with_ASD
+- Who completed the test
+model:
+  class: DummyClassifier
+  params:
+    strategy: most_frequent
+preprocessing:
+  numeric:
+  - SimpleImputer(strategy=median)
+  - StandardScaler()
+  categorical:
+  - SimpleImputer(strategy=most_frequent)
+  - OneHotEncoder(handle_unknown=ignore
+  - dense)
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation
+n_jobs: 2
+classifier_params:
+  constant: null
+  random_state: null
+  strategy: most_frequent

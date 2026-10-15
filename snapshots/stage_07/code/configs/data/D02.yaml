@@ -1,0 +1,13 @@
+# D02 facial images (DFDK folder) - Stage 2 parameters (DD-05, DD-06, DD-07). Used by src/data/d02_faces.py
+dataset_id: D02_facial_images_A
+seed: 42
+splits: [train, valid, test]          # original sub-folders, pooled (DD-05); kept as original_split only
+class_map: {autistic: 1, nonautistic: 0}   # class folder name lower-cased, non-letters removed
+near_duplicate:
+  hash: imagehash.phash (64-bit)
+  max_hamming: 4                      # edge if Hamming <= 4; group_id = connected component (DD-07)
+  drop_mixed_label_groups: true       # groups containing both labels are label conflicts -> excluded
+excluded_dataset: D03_facial_images_B # never read (DD-06); tests check that no manifest path starts with its folder
+loader_note: >-
+  No pixel preprocessing is stored. Resize to 224 and ImageNet normalisation happen in the Stage 4 data loader;
+  augmentation is applied to the training part only.

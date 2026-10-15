@@ -1,0 +1,52 @@
+reports/*.md lines matching 'diagnos|detect|clinical|clinically|identif(y|ies) (autism|asd)|predicts? autism|distinguish(es)? (autism|asd|children)': 46
+   25  explicit negation / limitation (screening-support framing)
+   16  pytest test name (software check, not about autism)
+    3  dataset folder name (proper noun of the D02 source, cannot be renamed)
+    2  data column name (D06 label column)
+claims needing a rewrite: 0
+reports/FINAL_RESULTS_REPORT.md:5 [explicit negation / limitation] > Screening-support research only. No result in this report is a diagnosis or an estimate of clinical accuracy.
+reports/FINAL_RESULTS_REPORT.md:9 [explicit negation / limitation] We trained and compared ten hybrid deep-learning architectures (a pretrained or custom-CNN spatial encoder, a recurrent or Transformer temporal encode
+reports/FINAL_RESULTS_REPORT.md:321 [explicit negation / limitation] - Cannot be claimed: that the D01 models learned gaze behaviour characteristic of autism; that any D01 model outperforms a recording-quality measure; 
+reports/FINAL_RESULTS_REPORT.md:326 [explicit negation / limitation] - Near-duplicate leakage at pHash <= 8 does not explain the results (AUC change -0.002 to -0.001); different photos of the same child cannot be detect
+reports/FINAL_RESULTS_REPORT.md:329 [explicit negation / limitation] - Cannot be claimed: that facial phenotype was learned; clinical validity; generalisation to clinical photos or other populations (web-collected image
+reports/FINAL_RESULTS_REPORT.md:334 [explicit negation / limitation] - No result in this project is a diagnosis or a clinical accuracy estimate.
+reports/FINAL_RESULTS_REPORT.md:342 [explicit negation / limitation] - D02 images were collected from the web with unknown diagnosis verification, age range, consent and acquisition conditions; image artefacts alone sep
+reports/STAGE_01_REPORT.md:129 [dataset folder name] - **D02_facial_images_A** <- `Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for E
+reports/STAGE_01_REPORT.md:135 [dataset folder name] The folder truncated in the file manager is, in full: `Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cros
+reports/STAGE_01_REPORT.md:140 [dataset folder name] | **D02_facial_images_A** | `Autism Spectrum Disorder Detection using Facial Traits Dual Framework DenseRes with K-Fold Cross Validation (DFDK) for En
+reports/STAGE_02_REPORT.md:3 [explicit negation / limitation] Project: Reliability-Weighted Multimodal AI for Early Autism Risk Screening in Children (BITE308L). Screening-support research, not diagnosis. Seed 42
+reports/STAGE_02_REPORT.md:176 [data column name] - excluded: `Unnamed: 10`, `Diagnosed_ASD`
+reports/STAGE_02_REPORT.md:190 [data column name] | Diagnosed_ASD | label ['yes'] -> 1, ['no'] -> 0, stored as 'label' | 1000 |
+reports/STAGE_03_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. No model was trained on real labels in this stage (tests use random inputs and random 0/1 labels only). No 
+reports/STAGE_04_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. The values below come from 2-epoch smoke tests and are meaningless as performance estimates; they only show
+reports/STAGE_04_REPORT.md:369 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M01] PASSED [ 85%]
+reports/STAGE_04_REPORT.md:375 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M09] PASSED [ 86%]
+reports/STAGE_04_REPORT.md:398 [pytest test name] tests/test_stage04_units.py::test_verify_manifest_detects_modified_temp_copy PASSED [ 94%]
+reports/STAGE_05_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. 57 children (27 ASD / 30 TD), 1,241 clips of 8 x 1-s gaze windows; child-grouped 10-fold CV (5-6 test child
+reports/STAGE_05_REPORT.md:587 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M01] PASSED [ 83%]
+reports/STAGE_05_REPORT.md:593 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M09] PASSED [ 84%]
+reports/STAGE_05_REPORT.md:616 [pytest test name] tests/test_stage04_units.py::test_verify_manifest_detects_modified_temp_copy PASSED [ 91%]
+reports/STAGE_05_REPORT.md:656 [explicit negation / limitation] - No result is a diagnosis or a clinical accuracy estimate.
+reports/STAGE_06_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. 2,940 facial images (1,470 autistic / 1,470 non-autistic, web-collected DFDK folder; original train/valid/t
+reports/STAGE_06_REPORT.md:118 [explicit negation / limitation] These are image-level results. D02 has no subject identifiers, so the same child may appear in several images and in both training and test folds; gro
+reports/STAGE_06_REPORT.md:450 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M01] PASSED [ 83%]
+reports/STAGE_06_REPORT.md:456 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M09] PASSED [ 84%]
+reports/STAGE_06_REPORT.md:479 [pytest test name] tests/test_stage04_units.py::test_verify_manifest_detects_modified_temp_copy PASSED [ 91%]
+reports/STAGE_06_REPORT.md:520 [explicit negation / limitation] - No result is a diagnosis or a clinical accuracy estimate.
+reports/STAGE_07_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. Run on 2026-10-14 BEFORE Stage 6, with the user's explicit approval, while the S5 GPU training was running.
+reports/STAGE_07_REPORT.md:97 [explicit negation / limitation] - **D06**: no model exceeds the majority baseline: mean ROC-AUCs are 0.45-0.48. The descriptive single-feature AUCs below are all close to 0.5, i.e. t
+reports/STAGE_07_REPORT.md:110 [explicit negation / limitation] None of these numbers is a diagnostic accuracy; the tables are small, single-source screening datasets.
+reports/STAGE_07_REPORT.md:128 [pytest test name] tabular/tests/test_stage07.py::test_check_fold_detects_corrupted_split PASSED [ 31%]
+reports/STAGE_08_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. Stage 8 trains NO deep model: every analysis reads the saved out-of-fold predictions / metrics of Stages 5-
+reports/STAGE_08_REPORT.md:452 [explicit negation / limitation] - Cannot be claimed: that the D01 models learned gaze behaviour characteristic of autism; that any D01 model outperforms a recording-quality measure; 
+reports/STAGE_08_REPORT.md:456 [explicit negation / limitation] - Near-duplicate leakage at pHash <= 8 does not explain the results (AUC change -0.002 to -0.001); different photos of the same child cannot be detect
+reports/STAGE_08_REPORT.md:459 [explicit negation / limitation] - Cannot be claimed: that facial phenotype was learned; clinical validity; generalisation to clinical photos or other populations (web-collected image
+reports/STAGE_08_REPORT.md:463 [explicit negation / limitation] - No result in this project is a diagnosis or a clinical accuracy estimate.
+reports/STAGE_08_REPORT.md:756 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M01] PASSED [ 80%]
+reports/STAGE_08_REPORT.md:762 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M09] PASSED [ 82%]
+reports/STAGE_08_REPORT.md:785 [pytest test name] tests/test_stage04_units.py::test_verify_manifest_detects_modified_temp_copy PASSED [ 89%]
+reports/STAGE_09_REPORT.md:3 [explicit negation / limitation] Screening-support research, not diagnosis. Stage 9 collects and presents; it trains nothing and recomputes no metric (results/D0*/ and results/stage8/
+reports/STAGE_09_REPORT.md:62 [explicit negation / limitation] > We trained and compared ten hybrid deep-learning architectures (a pretrained or custom-CNN spatial encoder, a recurrent or Transformer temporal enco
+reports/STAGE_09_REPORT.md:359 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M01] PASSED [ 76%]
+reports/STAGE_09_REPORT.md:365 [pytest test name] tests/test_stage04_engine.py::test_checks_detect_incomplete_results[M09] PASSED [ 78%]
+reports/STAGE_09_REPORT.md:388 [pytest test name] tests/test_stage04_units.py::test_verify_manifest_detects_modified_temp_copy PASSED [ 84%]

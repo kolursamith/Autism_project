@@ -1,0 +1,15 @@
+2026-10-14 10:31:02 [D01_eye_tracking M08 fold 3] START (new) input=cached_features policy=frozen n_train=897 n_val=225 n_test=119 pos_weight=2.0931 bs=64 max_epochs=40
+2026-10-14 10:31:03 [D01_eye_tracking M08 fold 3] epoch 1/40 train_loss 0.9242 val_loss 1.3304 val_auc 0.5958 val_auc_child 0.5625 lr 2.67e-04 0.6s peak 0.08GB *best*
+2026-10-14 10:31:04 [D01_eye_tracking M08 fold 3] epoch 2/40 train_loss 0.8587 val_loss 1.0758 val_auc 0.5652 val_auc_child 0.6250 lr 5.00e-04 0.6s peak 0.08GB (no improvement 1/8)
+2026-10-14 10:31:04 [D01_eye_tracking M08 fold 3] epoch 3/40 train_loss 0.8389 val_loss 1.7973 val_auc 0.5755 val_auc_child 0.6250 lr 4.99e-04 0.6s peak 0.08GB (no improvement 2/8)
+2026-10-14 10:31:05 [D01_eye_tracking M08 fold 3] epoch 4/40 train_loss 0.9305 val_loss 1.3435 val_auc 0.6017 val_auc_child 0.6875 lr 4.97e-04 0.6s peak 0.08GB *best*
+2026-10-14 10:31:06 [D01_eye_tracking M08 fold 3] epoch 5/40 train_loss 0.8366 val_loss 1.1773 val_auc 0.6175 val_auc_child 0.6875 lr 4.92e-04 0.6s peak 0.08GB *best*
+2026-10-14 10:31:06 [D01_eye_tracking M08 fold 3] epoch 6/40 train_loss 0.7460 val_loss 1.6853 val_auc 0.5727 val_auc_child 0.6250 lr 4.86e-04 0.6s peak 0.08GB (no improvement 1/8)
+2026-10-14 10:31:07 [D01_eye_tracking M08 fold 3] epoch 7/40 train_loss 0.7454 val_loss 1.1393 val_auc 0.5700 val_auc_child 0.6250 lr 4.79e-04 0.6s peak 0.08GB (no improvement 2/8)
+2026-10-14 10:31:07 [D01_eye_tracking M08 fold 3] epoch 8/40 train_loss 0.6774 val_loss 1.4537 val_auc 0.5724 val_auc_child 0.6250 lr 4.70e-04 0.6s peak 0.08GB (no improvement 3/8)
+2026-10-14 10:31:08 [D01_eye_tracking M08 fold 3] epoch 9/40 train_loss 0.6578 val_loss 1.7819 val_auc 0.5853 val_auc_child 0.6875 lr 4.59e-04 0.6s peak 0.08GB (no improvement 4/8)
+2026-10-14 10:31:09 [D01_eye_tracking M08 fold 3] epoch 10/40 train_loss 0.6295 val_loss 2.0427 val_auc 0.5485 val_auc_child 0.6875 lr 4.47e-04 0.6s peak 0.08GB (no improvement 5/8)
+2026-10-14 10:31:09 [D01_eye_tracking M08 fold 3] epoch 11/40 train_loss 0.6229 val_loss 2.0346 val_auc 0.5760 val_auc_child 0.6250 lr 4.34e-04 0.6s peak 0.08GB (no improvement 6/8)
+2026-10-14 10:31:10 [D01_eye_tracking M08 fold 3] epoch 12/40 train_loss 0.5345 val_loss 2.0715 val_auc 0.5773 val_auc_child 0.7500 lr 4.19e-04 0.6s peak 0.08GB (no improvement 7/8)
+2026-10-14 10:31:11 [D01_eye_tracking M08 fold 3] epoch 13/40 train_loss 0.5152 val_loss 2.0862 val_auc 0.5817 val_auc_child 0.6875 lr 4.04e-04 0.6s peak 0.08GB (no improvement 8/8) -> early stop
+2026-10-14 10:31:11 [D01_eye_tracking M08 fold 3] DONE epochs 13 best_epoch 5 val_auc 0.6175 test_auc 0.7838 peak 0.09GB 9s batches {'train': 195, 'val': 56, 'test': 2} test ids in train/val batches: 0

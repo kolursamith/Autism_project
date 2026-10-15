@@ -1,0 +1,7 @@
+# Stage 4 pre-flight 2026-10-14T09:17:41+05:30
+A1 STAGE_03_REPORT last line: STAGE 3 DECISION: PASS
+A1 snapshots/stage_03 checksums match current files: test_stage02_snapshot PASSED (2/2)
+A2 verify_manifest(): OK (all split file sha256 match SPLITS_MANIFEST.json)
+A2 check_gpu: GPU CHECK: OK
+A2 nvidia-smi compute processes: 0
+A2 full pytest: ======================= 269 passed in 109.94s (0:01:49) ========================

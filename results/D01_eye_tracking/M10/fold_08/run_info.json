@@ -1,0 +1,97 @@
+{
+ "batch_counts": {
+  "test": 3,
+  "train": 195,
+  "val": 42
+ },
+ "batch_size": 64,
+ "best_epoch": 5,
+ "best_val_auc": 0.6849881796690308,
+ "code_hash_src": "19499656a14f650c62d67fdb3f85b82352b1f514c5f77b867c080bc2f76b467d",
+ "config_sha256": "7865f04fbd3edd9c25bbbf1f2fdf45f8a176a9262cd28d03def3d2d05c06238d",
+ "cuda": "13.0",
+ "cudnn": 92400,
+ "cudnn_benchmark": true,
+ "cudnn_deterministic": false,
+ "dataset": "D01_eye_tracking",
+ "driver": "580.178.04",
+ "end_time": "2026-10-14T10:45:13",
+ "epochs_run": 13,
+ "feature_cache": {
+  "amp": true,
+  "clips_index_sha256": "3683b5664eae4b2f81c0abf2ff23e1ee65585b5c6771112c69bbc876e79d56ac",
+  "dtype": "float16",
+  "n_clips_used": 1241,
+  "sha256": "ebfae0d69d7a1d70906c9f6c31c702daaa109706ec6818db09f3ec33702dc038",
+  "shape": [
+   1241,
+   8,
+   2048
+  ],
+  "timm_name": "resnet50.a1_in1k"
+ },
+ "fold": 8,
+ "gpu_name": "NVIDIA RTX A2000 12GB",
+ "hf_hub_offline": "1",
+ "max_epochs": 40,
+ "model_id": "M10",
+ "n_ids_seen": {
+  "train": 934,
+  "val": 166
+ },
+ "n_used": {
+  "test": 141,
+  "train": 934,
+  "val": 166
+ },
+ "nondeterminism_note": "cudnn.benchmark=True: cuDNN may pick different algorithms between processes, so results can differ in the last digits between runs",
+ "num_workers": 8,
+ "peak_gpu_gb": 0.261627392,
+ "pos_weight": 1.9556962025316456,
+ "python": "3.12.3",
+ "resumed": false,
+ "seconds": 10.774986028671265,
+ "seed": 50,
+ "sessions": [
+  {
+   "end": "2026-10-14T10:45:13",
+   "end_epoch": 13,
+   "seconds": 10.774986028671265,
+   "start": "2026-10-14T10:45:02",
+   "start_epoch": 1
+  }
+ ],
+ "split_counts": {
+  "test": {
+   "n_groups": 6,
+   "n_samples": 141
+  },
+  "train": {
+   "n_groups": 43,
+   "n_samples": 934
+  },
+  "val": {
+   "n_groups": 8,
+   "n_samples": 166
+  }
+ },
+ "split_files": {
+  "splits/D01_eye_tracking/fold_08.json": "afe544996cb1f29a0e0df38886e4aacfa986322449f03aa850fc1df00936191c",
+  "splits/D01_eye_tracking/folds.csv": "dc8290a628db6d6bbd75c789816cf4aa4a8c6d698629f124d145f9a95197db26",
+  "splits/SPLITS_MANIFEST.json": "538c0d4d402e532d78b578f2a5fc1a24d17574e256215df7463ba812d59c4efc"
+ },
+ "start_time": "2026-10-14T10:45:02",
+ "status": "DONE",
+ "stopped_early": true,
+ "subset_per_class": null,
+ "test_ids_in_train_or_val_batches": 0,
+ "test_ids_sha256": "31d4fa3d7c4c2799a82a203f47b7f4637f125bc89a3015c599a8be7a83c4d396",
+ "test_seconds": 0.571279764175415,
+ "timm": "1.0.30",
+ "torch": "2.14.1+cu130",
+ "weights": {
+  "sha256": "773525d5821de224f8f30c33377b7a795d7863e08522698200d3217d3f2a41bb",
+  "timm_name": "resnet50.a1_in1k",
+  "verified_against": "reports/stage03_weights.csv"
+ }
+}

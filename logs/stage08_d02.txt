@@ -1,0 +1,24 @@
+C1 test images with a pHash <= 8 neighbour among the fold's training (train+val) images: 65 of 2940 (per fold [8, 5, 8, 6, 7, 5, 9, 5, 6, 6]); <= 4: 0; nearest neighbour has the same label: 55 of 65
+C1 M01 fold-mean AUC all 0.901 -> without near-dups 0.899 (-0.002); pooled 0.882 -> 0.880
+C1 M02 fold-mean AUC all 0.867 -> without near-dups 0.865 (-0.002); pooled 0.869 -> 0.867
+C1 M03 fold-mean AUC all 0.890 -> without near-dups 0.889 (-0.002); pooled 0.882 -> 0.881
+C1 M04 fold-mean AUC all 0.931 -> without near-dups 0.929 (-0.002); pooled 0.896 -> 0.894
+C1 M05 fold-mean AUC all 0.881 -> without near-dups 0.879 (-0.002); pooled 0.874 -> 0.872
+C1 M06 fold-mean AUC all 0.901 -> without near-dups 0.899 (-0.002); pooled 0.885 -> 0.883
+C1 M07 fold-mean AUC all 0.924 -> without near-dups 0.923 (-0.001); pooled 0.898 -> 0.897
+C1 M08 fold-mean AUC all 0.903 -> without near-dups 0.901 (-0.002); pooled 0.871 -> 0.870
+C1 M09 fold-mean AUC all 0.875 -> without near-dups 0.874 (-0.002); pooled 0.867 -> 0.865
+C1 M10 fold-mean AUC all 0.885 -> without near-dups 0.884 (-0.002); pooled 0.875 -> 0.873
+C2 image_stats_logreg: AUC 0.782 ± 0.026 (pooled 0.781); >= 0.75: True
+C2 image_stats_random_forest: AUC 0.796 ± 0.019 (pooled 0.797); >= 0.75: True
+C2 strongest single features (direction-free AUC): mean_r 0.661, std_r 0.641, std_g 0.634, brightness_mean 0.628, brightness_std 0.628
+C3 M01 orig-test 0.899 [0.861, 0.932] vs rest 0.880 [0.867, 0.893]; diff +0.020 [-0.022, +0.054]
+C3 M02 orig-test 0.904 [0.867, 0.938] vs rest 0.864 [0.851, 0.878]; diff +0.040 [+0.001, +0.075]
+C3 M03 orig-test 0.907 [0.872, 0.938] vs rest 0.879 [0.866, 0.892]; diff +0.028 [-0.009, +0.061]
+C3 M04 orig-test 0.941 [0.910, 0.967] vs rest 0.890 [0.877, 0.903]; diff +0.050 [+0.018, +0.079]
+C3 M05 orig-test 0.898 [0.861, 0.931] vs rest 0.871 [0.858, 0.885]; diff +0.027 [-0.012, +0.063]
+C3 M06 orig-test 0.888 [0.846, 0.924] vs rest 0.885 [0.872, 0.898]; diff +0.003 [-0.040, +0.042]
+C3 M07 orig-test 0.923 [0.890, 0.952] vs rest 0.895 [0.883, 0.907]; diff +0.028 [-0.007, +0.058]
+C3 M08 orig-test 0.908 [0.872, 0.942] vs rest 0.867 [0.852, 0.882]; diff +0.041 [+0.003, +0.076]
+C3 M09 orig-test 0.904 [0.868, 0.936] vs rest 0.863 [0.850, 0.877]; diff +0.041 [+0.002, +0.074]
+C3 M10 orig-test 0.910 [0.874, 0.943] vs rest 0.870 [0.857, 0.884]; diff +0.040 [+0.003, +0.074]

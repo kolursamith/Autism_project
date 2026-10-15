@@ -1,0 +1,29 @@
+# Stage 7 - tabular baselines (fixed hyperparameters, NO tuning). Run early (2026-10-14) in parallel with S5, CPU only.
+# Splits: splits/<ds>/fold_XX.json (Stage 2, read-only, sha256-verified). Data: cache/<ds>/clean.csv + columns.yaml.
+seed_base: 42                  # random_state = seed_base + fold
+n_jobs: 2                      # CPU cores for sklearn (RandomForest); BLAS / OpenMP threads also capped at 2
+experiments:
+  - {dataset: D04_autism_prediction, experiment: set_all, feature_set: set_all,
+     note: "features per columns.yaml (A1-A10 scores, age, result, demographics); test.csv (unlabelled) never read"}
+  - {dataset: D05_toddler_screening, experiment: set_all, feature_set: set_all,
+     note: "LABEL-DEFINITIONAL UPPER BOUND: label == (A1..A10 sum >= 4); does NOT measure autism prediction"}
+  - {dataset: D05_toddler_screening, experiment: set_honest, feature_set: set_honest,
+     note: "A1-A10 and Qchat-10-Score removed (age, sex, ethnicity, jaundice, family history, respondent)"}
+  - {dataset: D06_early_autism, experiment: set_all, feature_set: set_all, note: "features per columns.yaml"}
+preprocessing:                 # fitted on the TRAIN part of each fold only, inside a sklearn Pipeline
+  numeric: [SimpleImputer(strategy=median), StandardScaler()]
+  categorical: [SimpleImputer(strategy=most_frequent), OneHotEncoder(handle_unknown=ignore, dense)]
+models:
+  dummy_majority: {class: DummyClassifier, params: {strategy: most_frequent}}
+  logreg: {class: LogisticRegression, params: {C: 1.0, class_weight: balanced, max_iter: 5000}, note: "L2 (default)"}
+  random_forest: {class: RandomForestClassifier, params: {n_estimators: 500, class_weight: balanced_subsample}}
+  hist_gb: {class: HistGradientBoostingClassifier, params: {}, note: "default params; class balance via
+            sample_weight = compute_sample_weight('balanced', y_train)"}
+  mlp:
+    class: MLPClassifier
+    params: {hidden_layer_sizes: [64, 32]}   # other params sklearn defaults (relu, adam, lr 0.001, alpha 1e-4)
+    early_stopping: {monitor: val_roc_auc, data: fold VALIDATION part only, patience: 10, min_delta: 0.0001,
+                     max_epochs: 200}         # one partial_fit pass over the train part per epoch; best epoch kept
+thresholds:
+  primary: 0.5
+  secondary: youden_j_on_validation          # chosen on the fold's validation predictions, never on test

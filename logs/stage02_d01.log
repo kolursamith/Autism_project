@@ -1,0 +1,67 @@
+C1: 25 files, 7 distinct column counts, 2252943 raw rows
+C1: canonical fields absent in some files (filled with NaN / right eye used):
+canonical
+event_left                                         8.csv, 13.csv
+pupil_left     5.csv, 8.csv, 9.csv, 13.csv, 17.csv, 18.csv, 2...
+pupil_right         5.csv, 9.csv, 17.csv, 18.csv, 20.csv, 23.csv
+x_left                                             8.csv, 13.csv
+y_left                                             8.csv, 13.csv
+C2e: resolution evidence {'p_x': 1352.7, 'p_y': 1111.5, 'n_points': 880704, 'nearest_standard': [1280, 1024], 'x_min': -126.8, 'x_max': 1407.1, 'y_min': -101.9, 'y_max': 1126.2, 'x_range_centre': 640.2, 'y_range_centre': 512.2, 'x_median': 627.9, 'y_median': 377.8}
+C2e: origin-artefact evidence {'radius_px': 30, 'valid_without_origin_rule_near_corner': {'top_left': 9363, 'top_right': 8, 'bottom_left': 53, 'bottom_right': 213}, 'n_exactly_one_coordinate_zero': 8283, 'other_coordinate_range_when_one_is_zero': [-32.6, 32.1]}
+C3: trials overlapping in time within a (file, child): {'overlapping_trial_pairs': 2042, 'files': ['6.csv', '16.csv', '17.csv', '20.csv', '21.csv', '22.csv']}
+C2 cleaning steps:
+| step | rows_before | rows_after | removed |
+|---|---|---|---|
+| a. drop 'Unidentified' / missing participant | 2252943 | 1351157 | 901786 |
+| b. remove duplicate rows (DD-02 key, keep first) | 1351157 | 1103660 | 247497 |
+| b2. remove same (participant, t_ms, trial) with gaze within 0.05 px (export precision) | 1103660 | 1103427 | 233 |
+| c. keep participants present in metadata | 1103427 | 1103427 | 0 |
+| d. join label (ASD=1, TD=0); only id + class read from metadata (DD-03) | 1103427 | 1103427 | 0 |
+| e. mark invalid gaze (rows kept): 243986 rows invalid | 1103427 | 1103427 | 0 |
+C2b duplicates removed per file pair:
+| kept_in | removed_from | rows_removed | step |
+|---|---|---|---|
+| 8.csv | 11.csv | 46894 | b |
+| 10.csv | 25.csv | 46763 | b |
+| 21.csv | 22.csv | 35719 | b |
+| 21.csv | 24.csv | 30306 | b |
+| 1.csv | 16.csv | 29865 | b |
+| 14.csv | 21.csv | 22200 | b |
+| 4.csv | 21.csv | 16376 | b |
+| 17.csv | 17.csv | 9483 | b |
+| 23.csv | 23.csv | 3109 | b |
+| 20.csv | 20.csv | 2950 | b |
+| 25.csv | 25.csv | 2943 | b |
+| 18.csv | 21.csv | 297 | b |
+| 5.csv | 21.csv | 262 | b |
+| 9.csv | 21.csv | 247 | b |
+| 7.csv | 11.csv | 39 | b |
+| 7.csv | 8.csv | 39 | b |
+| 21.csv | 21.csv | 5 | b |
+| 7.csv | 8.csv | 233 | b2 |
+C2c excluded participants:
+| participant_id | reason |
+|---|---|
+| 12 | in metadata but no identified gaze rows |
+| 16 | in metadata but no identified gaze rows |
+C2b check: duplicate (participant_id, t_ms, trial) after dedupe = 0
+eye used: {'R': 868801, 'none': 222723, 'L': 11903}; events: {'Fixation': 745223, 'Blink': 173828, 'Saccade': 113527, 'other': 70849}
+C3: 2789 recordings, 3093 continuous segments, 1797 candidate 8-s clips; status counts {'kept': 1241, 'rejected_valid_ratio': 368, 'dropped_by_cap': 188}
+C3 children per class after filtering: {'ASD': 27, 'TD': 30}
+C3 children excluded:
+| participant_id | class | status |
+|---|---|---|
+| 12 | ASD | excluded: no identified gaze rows |
+| 16 | ASD | excluded: no identified gaze rows |
+C3 clips per child (capped): min 3.0, median 18.0, max 40.0; uncapped: min 3.0, median 18.0, max 86.0
+C3 clips per class (capped): {0: 804, 1: 437} (1=ASD, 0=TD); uncapped: {0: 976, 1: 453}
+C4: rendered (1241, 8, 3, 224, 224) in 19.8 s -> /home/score/Documents/AI_project/asd_hybrid_10fold/cache/D01_eye_tracking/clips_uint8.npy; non-black windows 9521 of 9928
+C5 quality features, ASD vs TD means over children:
+| index | ASD_mean | TD_mean |
+|---|---|---|
+| n_clips | 16.1852 | 26.8 |
+| mean_valid_ratio | 0.8427 | 0.9313 |
+| mean_blink_ratio | 0.1289 | 0.0498 |
+| tracking_ratio_before_filtering | 59.3765 | 83.8271 |
+| valid_fraction_before_filtering | 0.6537 | 0.8803 |
+done in 33.3 s

@@ -1,0 +1,46 @@
+{
+ "datetime": "2026-10-14T10:57:15",
+ "stage": 7,
+ "decision": "PASS",
+ "python": "3.12.3",
+ "torch": "2.14.1+cu130",
+ "torch_cuda": "13.0",
+ "gpu": "NVIDIA RTX A2000 12GB",
+ "n_files_checksummed": 647,
+ "hashed_dirs": [
+  "src",
+  "scripts",
+  "configs",
+  "tests",
+  "splits",
+  "reports",
+  "cache"
+ ],
+ "copied_dirs": [
+  "src",
+  "scripts",
+  "configs",
+  "tests",
+  "tabular",
+  "CLAUDE.md"
+ ],
+ "extra_dirs": [
+  "tabular"
+ ],
+ "extra_hash_globs": [
+  "results/D04_autism_prediction/**/metrics.json",
+  "results/D04_autism_prediction/**/predictions.csv",
+  "results/D04_autism_prediction/**/summary.json",
+  "results/D04_autism_prediction/**/leaderboard.csv",
+  "results/D05_toddler_screening/**/metrics.json",
+  "results/D05_toddler_screening/**/predictions.csv",
+  "results/D05_toddler_screening/**/summary.json",
+  "results/D05_toddler_screening/**/leaderboard.csv",
+  "results/D06_early_autism/**/metrics.json",
+  "results/D06_early_autism/**/predictions.csv",
+  "results/D06_early_autism/**/summary.json",
+  "results/D06_early_autism/**/leaderboard.csv"
+ ],
+ "code_hash": "4474ca8c7f58b3bee16770a37918abfaff7bac0be619d72bb60d1e46db398ea4",
+ "note": "Stage 7 (run early, before S6); code copy incl. tabular/, hashes tabular/ + D04/D05/D06 result files"
+}

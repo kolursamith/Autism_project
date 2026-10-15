@@ -1,0 +1,11 @@
+# Stage 3 pre-flight 2026-10-13T17:24:54
+A1 report last line: STAGE 2 DECISION: PASS
+A1 snapshot stage_02 vs current (splits/, configs/): 69 recorded, 69 current, identical = True
+A1 snapshot stage_02 vs current (all hashed dirs): identical = True
+A1 SPLITS_MANIFEST hashes match: True | code_hash_at_split_time fa421378addc1eed72622c9223476192f929117a1decb1a6fc3c235676acf2a5
+A3 code_hash(src,scripts,configs,tests) before Stage 3 = fa421378addc1eed72622c9223476192f929117a1decb1a6fc3c235676acf2a5
+4096x4096 fp32 matmul on cuda: 31.47 ms (4.37 TFLOP/s)
+max_memory_allocated = 264.1 MiB
+GPU CHECK: OK
+check_gpu exit=0
+169 passed in 33.15s

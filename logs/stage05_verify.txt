@@ -1,0 +1,15 @@
+4a registry: 100 D01 rows, status counts {'DONE': 100}, models ['M01', 'M02', 'M03', 'M04', 'M05', 'M06', 'M07', 'M08', 'M09', 'M10'], folds per model [10]
+4a split hashes vs SPLITS_MANIFEST.json: OK
+4a fold  1: 128 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  2: 124 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  3: 119 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  4: 149 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  5: 119 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  6: 81 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  7: 170 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  8: 141 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold  9: 92 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a fold 10: 118 test ids; all 10 models predicted exactly these ids: True; fold-file sha256 recorded by the 10 runs identical: True
+4a identical test ids per fold across models: True
+4b summarize: summary.json for 10 models + results/D01_eye_tracking/leaderboard.csv written
+D01 summary.json after re-summarize: identical to the pre-change manifest (10 files)

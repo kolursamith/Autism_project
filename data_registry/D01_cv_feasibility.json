@@ -1,0 +1,72 @@
+{
+ "n_participants": 57,
+ "asd": 27,
+ "td": 30,
+ "excluded_no_gaze": [
+  12,
+  16
+ ],
+ "folds": [
+  {
+   "fold": 1,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 2,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 3,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 4,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 5,
+   "n_test": 5,
+   "asd": 2,
+   "td": 3
+  },
+  {
+   "fold": 6,
+   "n_test": 5,
+   "asd": 2,
+   "td": 3
+  },
+  {
+   "fold": 7,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 8,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 9,
+   "n_test": 6,
+   "asd": 3,
+   "td": 3
+  },
+  {
+   "fold": 10,
+   "n_test": 5,
+   "asd": 2,
+   "td": 3
+  }
+ ],
+ "every_fold_has_asd_and_td": true
+}

@@ -1,0 +1,16 @@
+{
+ "zip": "submission/ASD_Hybrid_10fold_submission.zip",
+ "size_bytes": 5884740,
+ "size_mb": 5.61,
+ "n_files": 247,
+ "sha256": "6dbc3c0bc7a976e8d410fa134db2a429f9167506417923ba9632652571673871",
+ "final_manifest_sha256": "78aeff804d8bcb80ee94fda69c2b5962b35dd86c96d646d6c42d98b8963067ff",
+ "read_only": [
+  "results",
+  "splits",
+  "reports/figures/final"
+ ],
+ "writable_files_left_in_read_only_dirs": 0,
+ "undo_read_only": "chmod -R u+w results splits reports/figures/final",
+ "created": "2026-10-14T16:47:52"
+}

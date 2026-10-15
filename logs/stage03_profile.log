@@ -1,0 +1,83 @@
+weights:
+| models | timm_model | pretrained_tag | hf_hub_id | size_bytes | sha256 |
+|---|---|---|---|---|---|
+| M01 | efficientnet_b3 | ra2_in1k | timm/efficientnet_b3.ra2_in1k | 49335454 | 279d2a53898aa89dab43fd6bd7df9f706aea4cb9cf916223988bbcb8e5850469 |
+| M02 M05 M09 | (none: custom CNN, random init, trained from scratch) |  |  |  |  |
+| M03 M10 | resnet50 | a1_in1k | timm/resnet50.a1_in1k | 102469840 | 773525d5821de224f8f30c33377b7a795d7863e08522698200d3217d3f2a41bb |
+| M04 | convnext_tiny | in12k_ft_in1k | timm/convnext_tiny.in12k_ft_in1k | 114374272 | a1aefa409b513cf209b085424eb3efffe4e4a9f511491bc2c12ea35209e6bb95 |
+| M06 | densenet121 | ra_in1k | timm/densenet121.ra_in1k | 32334434 | eae900d8ae5b3716efa7f443fcc692aeb5a7f01f72581835c03c8c495f9eda10 |
+| M07 | vit_base_patch16_224 | augreg2_in21k_ft_in1k | timm/vit_base_patch16_224.augreg2_in21k_ft_in1k | 346284714 | 32aa17d6e17b43500f531d5f6dc9bc93e56ed8841b8a75682e1bb295d722405b |
+| M08 | efficientnet_b0 | ra_in1k | timm/efficientnet_b0.ra_in1k | 21355344 | d569899762ea9b1384ee07f4af64805cf8caa1c55f9253ebb1080dc40e87a2cd |
+frozen feature diversity (mean cosine; lower = more distinguishable):
+| timm_name | real_D01_cos_between_clips | real_D01_cos_between_frames | random_noise_cos_between_clips | random_noise_cos_between_frames |
+|---|---|---|---|---|
+| efficientnet_b3.ra2_in1k | 0.6947 | 0.3479 | 0.9956 | 0.9645 |
+| resnet50.a1_in1k | 0.8774 | 0.6427 | 0.9956 | 0.9662 |
+| convnext_tiny.in12k_ft_in1k | 0.875 | 0.6792 | 0.9994 | 0.9959 |
+| densenet121.ra_in1k | 0.8323 | 0.5632 | 0.9998 | 0.9987 |
+| vit_base_patch16_224.augreg2_in21k_ft_in1k | 0.8645 | 0.6348 | 0.9946 | 0.9679 |
+| efficientnet_b0.ra_in1k | 0.8491 | 0.6272 | 0.9984 | 0.9882 |
+  M01 sequence bs=64: peak 7.53 GB
+M01 sequence: {'model_id': 'M01', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 11521321, 'params_trainable': 825089, 'batch_size': 64, 'peak_mem_gb': 4.978, 's_per_train_step': 0.6321, 's_per_infer_batch': 0.6355, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.105, 'est_fold_min_live': 6.32, 's_per_train_step_cached': 0.00288, 'peak_mem_gb_cached': 0.182, 'est_fold_hours_cached': 0.0005, 'est_fold_min_cached': 0.029, 'status': 'ok'} (52 s)
+  M01 tokens bs=64: peak 1.00 GB
+M01 tokens: {'model_id': 'M01', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 49, 'params_total': 11533865, 'params_trainable': 4714747, 'batch_size': 64, 'peak_mem_gb': 0.719, 's_per_train_step': 0.0972, 's_per_infer_batch': 0.0828, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.039, 'est_fold_min_live': 2.33, 'status': 'ok'} (11 s)
+  M02 sequence bs=64: peak 3.17 GB
+M02 sequence: {'model_id': 'M02', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'full', 'seq_len': 8, 'params_total': 883745, 'params_trainable': 883745, 'batch_size': 64, 'peak_mem_gb': 2.728, 's_per_train_step': 0.1579, 's_per_infer_batch': 0.0508, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.026, 'est_fold_min_live': 1.58, 'status': 'ok'} (9 s)
+  M02 tokens bs=64: peak 1.57 GB
+M02 tokens: {'model_id': 'M02', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'full', 'seq_len': 196, 'params_total': 933921, 'params_trainable': 933921, 'batch_size': 64, 'peak_mem_gb': 1.529, 's_per_train_step': 0.081, 's_per_infer_batch': 0.0237, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.032, 'est_fold_min_live': 1.94, 'status': 'ok'} (6 s)
+  M03 sequence bs=64: peak 6.00 GB
+M03 sequence: {'model_id': 'M03', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 24251073, 'params_trainable': 743041, 'batch_size': 64, 'peak_mem_gb': 3.385, 's_per_train_step': 0.5878, 's_per_infer_batch': 0.5849, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.098, 'est_fold_min_live': 5.88, 's_per_train_step_cached': 0.00234, 'peak_mem_gb_cached': 0.222, 'est_fold_hours_cached': 0.0004, 'est_fold_min_cached': 0.023, 'status': 'ok'} (35 s)
+  M03 tokens bs=64: peak 0.85 GB
+M03 tokens: {'model_id': 'M03', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 49, 'params_total': 24263617, 'params_trainable': 15720321, 'batch_size': 64, 'peak_mem_gb': 0.655, 's_per_train_step': 0.0983, 's_per_infer_batch': 0.0765, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.039, 'est_fold_min_live': 2.36, 'status': 'ok'} (7 s)
+  M04 sequence bs=64: peak 4.83 GB
+M04 sequence: {'model_id': 'M04', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 28447073, 'params_trainable': 626945, 'batch_size': 64, 'peak_mem_gb': 4.838, 's_per_train_step': 0.746, 's_per_infer_batch': 0.7414, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.124, 'est_fold_min_live': 7.46, 's_per_train_step_cached': 0.00294, 'peak_mem_gb_cached': 0.244, 'est_fold_hours_cached': 0.0005, 'est_fold_min_cached': 0.029, 'status': 'ok'} (76 s)
+  M04 tokens bs=64: peak 0.72 GB
+M04 tokens: {'model_id': 'M04', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 49, 'params_total': 28459617, 'params_trainable': 16110081, 'batch_size': 64, 'peak_mem_gb': 0.852, 's_per_train_step': 0.1194, 's_per_infer_batch': 0.0967, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.048, 'est_fold_min_live': 2.87, 'status': 'ok'} (11 s)
+  M05 sequence bs=64: peak 2.73 GB
+M05 sequence: {'model_id': 'M05', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'full', 'seq_len': 8, 'params_total': 2070305, 'params_trainable': 2070305, 'batch_size': 64, 'peak_mem_gb': 2.743, 's_per_train_step': 0.1607, 's_per_infer_batch': 0.0517, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.027, 'est_fold_min_live': 1.61, 'status': 'ok'} (6 s)
+  M05 tokens bs=64: peak 1.67 GB
+M05 tokens: {'model_id': 'M05', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'full', 'seq_len': 196, 'params_total': 2168609, 'params_trainable': 2168609, 'batch_size': 64, 'peak_mem_gb': 1.689, 's_per_train_step': 0.0982, 's_per_infer_batch': 0.0285, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.039, 'est_fold_min_live': 2.36, 'status': 'ok'} (3 s)
+  M06 sequence bs=64: peak 4.13 GB
+M06 sequence: {'model_id': 'M06', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 7432705, 'params_trainable': 478849, 'batch_size': 64, 'peak_mem_gb': 3.006, 's_per_train_step': 0.6687, 's_per_infer_batch': 0.6639, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.111, 'est_fold_min_live': 6.69, 's_per_train_step_cached': 0.00247, 'peak_mem_gb_cached': 0.149, 'est_fold_hours_cached': 0.0004, 'est_fold_min_cached': 0.025, 'status': 'ok'} (39 s)
+  M06 tokens bs=64: peak 0.56 GB
+M06 tokens: {'model_id': 'M06', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 49, 'params_total': 7445249, 'params_trainable': 2651521, 'batch_size': 64, 'peak_mem_gb': 0.44, 's_per_train_step': 0.0994, 's_per_infer_batch': 0.087, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.04, 'est_fold_min_live': 2.38, 'status': 'ok'} (8 s)
+  M07 sequence bs=64: peak 3.23 GB
+M07 sequence: {'model_id': 'M07', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 86211457, 'params_trainable': 412801, 'batch_size': 64, 'peak_mem_gb': 3.234, 's_per_train_step': 1.1905, 's_per_infer_batch': 1.1866, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.198, 'est_fold_min_live': 11.91, 's_per_train_step_cached': 0.0025, 'peak_mem_gb_cached': 0.462, 'est_fold_hours_cached': 0.0004, 'est_fold_min_cached': 0.025, 'status': 'ok'} (63 s)
+  M07 tokens bs=64: peak 0.98 GB
+M07 tokens: {'model_id': 'M07', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 196, 'params_total': 86261633, 'params_trainable': 7552385, 'batch_size': 64, 'peak_mem_gb': 1.042, 's_per_train_step': 0.1837, 's_per_infer_batch': 0.1484, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.073, 'est_fold_min_live': 4.41, 'status': 'ok'} (9 s)
+  M08 sequence bs=64: peak 5.75 GB
+M08 sequence: {'model_id': 'M08', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 5953405, 'params_trainable': 1945857, 'batch_size': 64, 'peak_mem_gb': 3.525, 's_per_train_step': 0.326, 's_per_infer_batch': 0.3246, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.054, 'est_fold_min_live': 3.26, 's_per_train_step_cached': 0.00437, 'peak_mem_gb_cached': 0.163, 'est_fold_hours_cached': 0.0007, 'est_fold_min_cached': 0.044, 'status': 'ok'} (25 s)
+  M08 tokens bs=64: peak 0.76 GB
+M08 tokens: {'model_id': 'M08', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 49, 'params_total': 5976445, 'params_trainable': 3098289, 'batch_size': 64, 'peak_mem_gb': 0.503, 's_per_train_step': 0.0547, 's_per_infer_batch': 0.0437, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.022, 'est_fold_min_live': 1.31, 'status': 'ok'} (7 s)
+  M09 sequence bs=64: peak 2.72 GB
+M09 sequence: {'model_id': 'M09', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'full', 'seq_len': 8, 'params_total': 620193, 'params_trainable': 620193, 'batch_size': 64, 'peak_mem_gb': 2.725, 's_per_train_step': 0.1601, 's_per_infer_batch': 0.0513, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.027, 'est_fold_min_live': 1.6, 'status': 'ok'} (5 s)
+  M09 tokens bs=64: peak 1.47 GB
+M09 tokens: {'model_id': 'M09', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'full', 'seq_len': 196, 'params_total': 670369, 'params_trainable': 670369, 'batch_size': 64, 'peak_mem_gb': 1.471, 's_per_train_step': 0.081, 's_per_infer_batch': 0.0245, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.032, 'est_fold_min_live': 1.94, 'status': 'ok'} (3 s)
+  M10 sequence bs=64: peak 3.39 GB
+M10 sequence: {'model_id': 'M10', 'mode': 'sequence', 'dataset': 'D01_eye_tracking', 'policy': 'frozen', 'seq_len': 8, 'params_total': 26014273, 'params_trainable': 2506241, 'batch_size': 64, 'peak_mem_gb': 3.406, 's_per_train_step': 0.5962, 's_per_infer_batch': 0.5912, 'steps_per_epoch': 15, 'est_fold_hours_live': 0.099, 'est_fold_min_live': 5.96, 's_per_train_step_cached': 0.00509, 'peak_mem_gb_cached': 0.262, 'est_fold_hours_cached': 0.0008, 'est_fold_min_cached': 0.051, 'status': 'ok'} (31 s)
+  M10 tokens bs=64: peak 0.53 GB
+M10 tokens: {'model_id': 'M10', 'mode': 'tokens', 'dataset': 'D02_facial_images_A', 'policy': 'last_stage', 'seq_len': 49, 'params_total': 26037313, 'params_trainable': 17494017, 'batch_size': 64, 'peak_mem_gb': 0.674, 's_per_train_step': 0.1063, 's_per_infer_batch': 0.0791, 'steps_per_epoch': 36, 'est_fold_hours_live': 0.043, 'est_fold_min_live': 2.55, 'status': 'ok'} (5 s)
+profile:
+| model_id | mode | dataset | policy | seq_len | params_total | params_trainable | batch_size | peak_mem_gb | s_per_train_step | s_per_infer_batch | steps_per_epoch | est_fold_hours_live | est_fold_min_live | s_per_train_step_cached | peak_mem_gb_cached | est_fold_hours_cached | est_fold_min_cached | status |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| M01 | sequence | D01_eye_tracking | frozen | 8 | 11521321 | 825089 | 64 | 4.978 | 0.6321 | 0.6355 | 15 | 0.105 | 6.32 | 0.00288 | 0.182 | 0.0005 | 0.029 | ok |
+| M01 | tokens | D02_facial_images_A | last_stage | 49 | 11533865 | 4714747 | 64 | 0.719 | 0.0972 | 0.0828 | 36 | 0.039 | 2.33 | nan | nan | nan | nan | ok |
+| M02 | sequence | D01_eye_tracking | full | 8 | 883745 | 883745 | 64 | 2.728 | 0.1579 | 0.0508 | 15 | 0.026 | 1.58 | nan | nan | nan | nan | ok |
+| M02 | tokens | D02_facial_images_A | full | 196 | 933921 | 933921 | 64 | 1.529 | 0.081 | 0.0237 | 36 | 0.032 | 1.94 | nan | nan | nan | nan | ok |
+| M03 | sequence | D01_eye_tracking | frozen | 8 | 24251073 | 743041 | 64 | 3.385 | 0.5878 | 0.5849 | 15 | 0.098 | 5.88 | 0.00234 | 0.222 | 0.0004 | 0.023 | ok |
+| M03 | tokens | D02_facial_images_A | last_stage | 49 | 24263617 | 15720321 | 64 | 0.655 | 0.0983 | 0.0765 | 36 | 0.039 | 2.36 | nan | nan | nan | nan | ok |
+| M04 | sequence | D01_eye_tracking | frozen | 8 | 28447073 | 626945 | 64 | 4.838 | 0.746 | 0.7414 | 15 | 0.124 | 7.46 | 0.00294 | 0.244 | 0.0005 | 0.029 | ok |
+| M04 | tokens | D02_facial_images_A | last_stage | 49 | 28459617 | 16110081 | 64 | 0.852 | 0.1194 | 0.0967 | 36 | 0.048 | 2.87 | nan | nan | nan | nan | ok |
+| M05 | sequence | D01_eye_tracking | full | 8 | 2070305 | 2070305 | 64 | 2.743 | 0.1607 | 0.0517 | 15 | 0.027 | 1.61 | nan | nan | nan | nan | ok |
+| M05 | tokens | D02_facial_images_A | full | 196 | 2168609 | 2168609 | 64 | 1.689 | 0.0982 | 0.0285 | 36 | 0.039 | 2.36 | nan | nan | nan | nan | ok |
+| M06 | sequence | D01_eye_tracking | frozen | 8 | 7432705 | 478849 | 64 | 3.006 | 0.6687 | 0.6639 | 15 | 0.111 | 6.69 | 0.00247 | 0.149 | 0.0004 | 0.025 | ok |
+| M06 | tokens | D02_facial_images_A | last_stage | 49 | 7445249 | 2651521 | 64 | 0.44 | 0.0994 | 0.087 | 36 | 0.04 | 2.38 | nan | nan | nan | nan | ok |
+| M07 | sequence | D01_eye_tracking | frozen | 8 | 86211457 | 412801 | 64 | 3.234 | 1.1905 | 1.1866 | 15 | 0.198 | 11.91 | 0.0025 | 0.462 | 0.0004 | 0.025 | ok |
+| M07 | tokens | D02_facial_images_A | last_stage | 196 | 86261633 | 7552385 | 64 | 1.042 | 0.1837 | 0.1484 | 36 | 0.073 | 4.41 | nan | nan | nan | nan | ok |
+| M08 | sequence | D01_eye_tracking | frozen | 8 | 5953405 | 1945857 | 64 | 3.525 | 0.326 | 0.3246 | 15 | 0.054 | 3.26 | 0.00437 | 0.163 | 0.0007 | 0.044 | ok |
+| M08 | tokens | D02_facial_images_A | last_stage | 49 | 5976445 | 3098289 | 64 | 0.503 | 0.0547 | 0.0437 | 36 | 0.022 | 1.31 | nan | nan | nan | nan | ok |
+| M09 | sequence | D01_eye_tracking | full | 8 | 620193 | 620193 | 64 | 2.725 | 0.1601 | 0.0513 | 15 | 0.027 | 1.6 | nan | nan | nan | nan | ok |
+| M09 | tokens | D02_facial_images_A | full | 196 | 670369 | 670369 | 64 | 1.471 | 0.081 | 0.0245 | 36 | 0.032 | 1.94 | nan | nan | nan | nan | ok |
+| M10 | sequence | D01_eye_tracking | frozen | 8 | 26014273 | 2506241 | 64 | 3.406 | 0.5962 | 0.5912 | 15 | 0.099 | 5.96 | 0.00509 | 0.262 | 0.0008 | 0.051 | ok |
+| M10 | tokens | D02_facial_images_A | last_stage | 49 | 26037313 | 17494017 | 64 | 0.674 | 0.1063 | 0.0791 | 36 | 0.043 | 2.55 | nan | nan | nan | nan | ok |
+batch sizes written to configs/models/Mxx.yaml

@@ -1,0 +1,1 @@
+results/D0*/ (no *.pt): 2407 files recorded at pre-flight, 2407 now; identical sha256 + size + path for all: True (incl. 800 predictions.csv / metrics.json)

@@ -1,0 +1,12 @@
+# D06 early autism - Stage 2 cleaning (DD-10). Tabular baselines only.
+dataset_id: D06_early_autism
+seed: 42
+file: asd.csv
+id_column: Child_ID
+sample_prefix: "D06_"
+label: {column: Diagnosed_ASD, positive: ["Yes"], negative: ["No"]}
+missing_tokens: ["?"]
+numeric: [Age, Social_Interaction_Score, Communication_Score, Repetitive_Behavior_Score]
+categorical: [Gender, Jaundice, Family_ASD_History, Language_Delay]
+excluded:
+  "Unnamed: 10": "fully empty column (missing in all 1000 rows)"

@@ -1,0 +1,84 @@
+{
+ "batch_counts": {
+  "test": 5,
+  "train": 648,
+  "val": 114
+ },
+ "batch_size": 64,
+ "best_epoch": 10,
+ "best_val_auc": 0.9118165784832452,
+ "code_hash_src": "958ab0a7a008e83028186e67d0b9b014a9633ecc3aba0430ef6e0a1ee094b06a",
+ "config_sha256": "b4c310eac708a28eef8da71c19b8bc5117897657849cd5a5c03ffafe35e4e41b",
+ "cuda": "13.0",
+ "cudnn": 92400,
+ "cudnn_benchmark": true,
+ "cudnn_deterministic": false,
+ "dataset": "D02_facial_images_A",
+ "driver": "580.178.04",
+ "end_time": "2026-10-14T11:15:56",
+ "epochs_run": 18,
+ "fold": 7,
+ "gpu_name": "NVIDIA RTX A2000 12GB",
+ "hf_hub_offline": "1",
+ "max_epochs": 40,
+ "model_id": "M01",
+ "n_ids_seen": {
+  "train": 2268,
+  "val": 378
+ },
+ "n_used": {
+  "test": 294,
+  "train": 2268,
+  "val": 378
+ },
+ "nondeterminism_note": "cudnn.benchmark=True: cuDNN may pick different algorithms between processes, so results can differ in the last digits between runs",
+ "num_workers": 8,
+ "peak_gpu_gb": 0.742520832,
+ "pos_weight": 1.0,
+ "python": "3.12.3",
+ "resumed": false,
+ "seconds": 92.45655679702759,
+ "seed": 49,
+ "sessions": [
+  {
+   "end": "2026-10-14T11:15:56",
+   "end_epoch": 18,
+   "seconds": 92.45655679702759,
+   "start": "2026-10-14T11:14:23",
+   "start_epoch": 1
+  }
+ ],
+ "split_counts": {
+  "test": {
+   "n_groups": 293,
+   "n_samples": 294
+  },
+  "train": {
+   "n_groups": 2260,
+   "n_samples": 2268
+  },
+  "val": {
+   "n_groups": 376,
+   "n_samples": 378
+  }
+ },
+ "split_files": {
+  "splits/D02_facial_images_A/fold_07.json": "06936b75e2b4a709b69290f90bf4bac54b7259c3e4a5f98c2ed61df80ccbe328",
+  "splits/D02_facial_images_A/folds.csv": "d2c9d877256174736b6ec416b75b115595da7e25a670db632ceca2ce8ff96ebb",
+  "splits/SPLITS_MANIFEST.json": "538c0d4d402e532d78b578f2a5fc1a24d17574e256215df7463ba812d59c4efc"
+ },
+ "start_time": "2026-10-14T11:14:23",
+ "status": "DONE",
+ "stopped_early": true,
+ "subset_per_class": null,
+ "test_ids_in_train_or_val_batches": 0,
+ "test_ids_sha256": "2607fd74c588bb589f8ac582063e6a97d9b9f810125cf56f68cdc23d82dc2156",
+ "test_seconds": 1.7614610195159912,
+ "timm": "1.0.30",
+ "torch": "2.14.1+cu130",
+ "weights": {
+  "sha256": "279d2a53898aa89dab43fd6bd7df9f706aea4cb9cf916223988bbcb8e5850469",
+  "timm_name": "efficientnet_b3.ra2_in1k",
+  "verified_against": "reports/stage03_weights.csv"
+ }
+}

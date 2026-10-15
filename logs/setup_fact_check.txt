@@ -1,0 +1,41 @@
+| # | dataset | claim | value from file | verdict | source |
+|---|---|---|---|---|---|
+| 1 | D01 | 2,252,943 gaze rows | `2252943` | CONFIRMED | D01_eye_tracking_audit.json |
+| 2 | D01 | 25 gaze CSVs | `25` | CONFIRMED | D01_eye_tracking_audit.json |
+| 3 | D01 | 9 column layouts | `9` | CONFIRMED | D01_eye_tracking_audit.json |
+| 4 | D01 | metadata 59 participants (29 ASD / 30 TD) | `(59, {'TD': 30, 'ASD': 29})` | CONFIRMED | D01_eye_tracking_audit.json |
+| 5 | D01 | 57 with gaze rows | `57` | CONFIRMED | D01_eye_tracking_audit.json |
+| 6 | D01 | IDs 12 and 16 have no gaze rows | `[12, 16]` | CONFIRMED | D01_eye_tracking_audit.json |
+| 7 | D01 | ~40% of rows are 'Unidentified' | `901786 rows = 0.4003` | CONFIRMED | D01_eye_tracking_audit.json |
+| 8 | D01 | 329,034 duplicated rows | `329034 (= rows_total - distinct keys (RecordingTime [ms], Time of Day, Participant, Trial), all files pooled)` | CONFIRMED | D01_eye_tracking_audit.json |
+| 9 | D01 | files 8 & 11 share all rows | `{'files': ['8.csv', '11.csv'], 'shared_keys': 114285, 'rows_a': 114285, 'rows_b': 114285}` | CONFIRMED | D01_eye_tracking_audit.json |
+| 10 | D01 | file 1 is inside file 16 | `{'files': ['1.csv', '16.csv'], 'shared_keys': 34630, 'rows_a': 34630, 'rows_b': 110967}` | CONFIRMED | D01_eye_tracking_audit.json |
+| 11 | D01 | CARS only for ASD | `{'ASD': {'cars_missing': 0, 'n': 29}, 'TD': {'cars_missing': 30, 'n': 30}}` | CONFIRMED | D01_eye_tracking_audit.json |
+| 12 | D01 | ~60 Hz | `59.88` | CONFIRMED | D01_eye_tracking_audit.json |
+| 13 | D02 | 2,940 images | `2940` | CONFIRMED | D02_facial_images_A_audit.json |
+| 14 | D02 | train 2,386 / valid 254 / test 300 | `{'train': 2386, 'valid': 254, 'test': 300}` | CONFIRMED | D02_facial_images_A_audit.json |
+| 15 | D02 | balanced classes | `{'autistic': 1470, 'nonautistic': 1470}` | CONFIRMED | D02_facial_images_A_audit.json |
+| 16 | D02 | 0 unreadable | `0` | CONFIRMED | D02_facial_images_A_audit.json |
+| 17 | D02 | 0 exact duplicates | `0` | CONFIRMED | D02_facial_images_A_audit.json |
+| 18 | D02 | 11 near-duplicate pairs, 5 across splits | `(11, 5)` | CONFIRMED | D02_facial_images_A_audit.json |
+| 19 | D02 | no subject IDs | `NO subject/participant ID exists: filena` | CONFIRMED | D02_facial_images_A_audit.json |
+| 20 | D03 | same 2,940 images as D02 | `(2940, 2940)` | CONFIRMED | D02_facial_images_A_audit.json |
+| 21 | D03 | 2,541 byte-identical | `2541` | CONFIRMED | D02_facial_images_A_audit.json |
+| 22 | D03 | 399 re-saved copies of D02 test/valid | `(399, {'valid': 99, 'test': 300})` | CONFIRMED | D02_facial_images_A_audit.json |
+| 23 | D04 | train 800 rows (639/161) | `(800, {'0': 639, '1': 161})` | CONFIRMED | D04_autism_prediction_audit.json |
+| 24 | D04 | test.csv unlabelled | `[]` | CONFIRMED | D04_autism_prediction_audit.json |
+| 25 | D05 | Toddler label == (A1..A10 sum >= 4), accuracy 100% | `1.0` | CONFIRMED | D05_toddler_screening_audit.json |
+| 26 | D05 | Combined holds Toddler rows 5021-6074 | `[5021, 6074]` | CONFIRMED | D05_toddler_screening_audit.json |
+| 27 | D05 | all 1,054 embedded labels = NO | `{'no': 1054}` | CONFIRMED | D05_toddler_screening_audit.json |
+| 28 | D05 | 728 wrong labels | `728` | CONFIRMED | D05_toddler_screening_audit.json |
+| 29 | D05 | 847 duplicate rows in Combined | `847` | CONFIRMED | D05_toddler_screening_audit.json |
+| 30 | D06 | 1,000 rows (589/411) | `(1000, {'No': 589, 'Yes': 411})` | CONFIRMED | D06_early_autism_audit.json |
+| 31 | D06 | one fully empty column | `['Unnamed: 10']` | CONFIRMED | D06_early_autism_audit.json |
+| 32 | D06 | no leakage: best rule 0.601 vs majority 0.589 | `('ASD if Age >= 35', 0.601, 0.589)` | CONFIRMED | D06_early_autism_audit.json |
+| 33 | ENV | NVIDIA RTX A2000 12GB, driver 580 | `NVIDIA RTX A2000 12GB, 580.178.04` | CONFIRMED | live nvidia-smi |
+| 34 | ENV | driver CUDA 13.0 | `13.0` | CONFIRMED | live nvidia-smi |
+| 35 | ENV | Python 3.12.3 | `3.12.3` | CONFIRMED | live |
+| 36 | ENV | torch 2.14.1+cu130, CUDA available | `('2.14.1+cu130', True)` | CONFIRMED | live |
+| 37 | ENV | .venv inside project dir | `/home/score/Documents/AI_project/asd_hybrid_10fold/.venv` | CONFIRMED | live |
+
+TOTAL: 37 facts, 37 CONFIRMED, 0 CONTRADICTED

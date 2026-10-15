@@ -1,0 +1,37 @@
+{
+ "code_hash_tabular": "c596bc9d855a1450ed313bf436c85c339ce6099f4f1b1bc3a29cb244bf40900d",
+ "config_sha256": "5d452251e1371ef0c20bdde9364213c5be8bbdc184442ee5d2be00a38742a1ef",
+ "data_file": {
+  "cache/D05_toddler_screening/clean.csv": "c20638a930d6f01d98a56e6b5335a9018b1c350b3b0ee881af63d59e985c251f"
+ },
+ "dataset": "D05_toddler_screening",
+ "device": "cpu (CUDA_VISIBLE_DEVICES='')",
+ "end_time": "2026-10-14T10:14:22",
+ "experiment": "set_honest",
+ "fold": 1,
+ "model_id": "logreg",
+ "n": {
+  "test": 106,
+  "train": 812,
+  "val": 136
+ },
+ "n_features_after_preprocessing": 22,
+ "n_jobs": 2,
+ "numpy": "1.26.4",
+ "pandas": "3.0.6",
+ "python": "3.12.3",
+ "seconds": 0.025345802307128906,
+ "seed": 43,
+ "sklearn": "1.9.1",
+ "split_files": {
+  "splits/D05_toddler_screening/fold_01.json": "f26e5a80588eb2bf8491621de605501555b6150a71e33f1cb07b43e4530f01af",
+  "splits/D05_toddler_screening/folds.csv": "6444d5d29a30e3e2d5be17e6711dd7841d5c2472511d0b078cb4d90b3082ee89"
+ },
+ "stage": 7,
+ "status": "DONE",
+ "thread_env": {
+  "MKL_NUM_THREADS": "2",
+  "OMP_NUM_THREADS": "2",
+  "OPENBLAS_NUM_THREADS": "2"
+ }
+}

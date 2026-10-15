@@ -1,0 +1,89 @@
+{
+ "dataset": "D06_early_autism",
+ "experiment": "set_all",
+ "fold": 4,
+ "model_id": "logreg",
+ "test": {
+  "threshold_0.5": {
+   "accuracy": 0.57,
+   "balanced_accuracy": 0.5723439437784208,
+   "brier": 0.24432050035892658,
+   "confusion_matrix": [
+    [
+     33,
+     26
+    ],
+    [
+     17,
+     24
+    ]
+   ],
+   "f1": 0.5274725274725274,
+   "n": 100,
+   "n_neg": 59,
+   "n_pos": 41,
+   "pr_auc": 0.5632100934728301,
+   "precision": 0.48,
+   "recall": 0.5853658536585366,
+   "roc_auc": 0.6134766432410086,
+   "sensitivity": 0.5853658536585366,
+   "specificity": 0.559322033898305,
+   "threshold": 0.5
+  },
+  "threshold_val_youden": {
+   "accuracy": 0.59,
+   "balanced_accuracy": 0.5,
+   "brier": 0.24432050035892658,
+   "confusion_matrix": [
+    [
+     59,
+     0
+    ],
+    [
+     41,
+     0
+    ]
+   ],
+   "f1": 0.0,
+   "n": 100,
+   "n_neg": 59,
+   "n_pos": 41,
+   "pr_auc": 0.5632100934728301,
+   "precision": 0.0,
+   "recall": 0.0,
+   "roc_auc": 0.6134766432410086,
+   "sensitivity": 0.0,
+   "specificity": 1.0,
+   "threshold": 0.5845279380413594
+  }
+ },
+ "val": {
+  "threshold_0.5": {
+   "accuracy": 0.4263565891472868,
+   "balanced_accuracy": 0.4246524329692155,
+   "brier": 0.2549734302488769,
+   "confusion_matrix": [
+    [
+     33,
+     43
+    ],
+    [
+     31,
+     22
+    ]
+   ],
+   "f1": 0.3728813559322034,
+   "n": 129,
+   "n_neg": 76,
+   "n_pos": 53,
+   "pr_auc": 0.39030185272573664,
+   "precision": 0.3384615384615385,
+   "recall": 0.41509433962264153,
+   "roc_auc": 0.4240317775571002,
+   "sensitivity": 0.41509433962264153,
+   "specificity": 0.4342105263157895,
+   "threshold": 0.5
+  }
+ },
+ "val_threshold_youden": 0.5845279380413594
+}
